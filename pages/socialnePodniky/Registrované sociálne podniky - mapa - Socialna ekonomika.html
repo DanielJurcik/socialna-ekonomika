@@ -472,56 +472,114 @@ article {
     </div>
     
     <style>
-        html{
-            font-family: 'Roboto', sans-serif;
-        }
-    
-        .sp-switch{
-            display: flex;
-            border-radius: 40px;
-        }
-        .sp-switch a.sp-item{
-            width: 50%;
-            text-decoration: none;
-            background-color: #506ad3;
-            color: white;
-            letter-spacing: 12px;
-            font-size: 20px;
-            font-weight: 500;
-            padding: 10px;
-            text-indent:12px;
-            transition: 0.2s ease-in-out;
-        }
-    
-        .sp-switch a.sp-item:hover{
-            box-shadow: inset #506ad3 0px 0px 0px 3px, inset #fff 0px 0px 0px 6px;
-            /*box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;*/
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-        }
-    
-        .sp-switch .sp-item-wrapper p{
-            margin: 0;
-        }
-    
-        .right-side-radius{
-            border-bottom-right-radius: 40px;
-            border-top-right-radius: 40px;
-        }
-    
-        .left-side-radius{
-            border-bottom-left-radius: 40px;
-            border-top-left-radius: 40px;
-        }
-        .sp-switch .sp-item-wrapper{
-            display: flex;
-            justify-content: center;
-        }
-    
-        .sp-switch a.sp-item.active{
-            background-color: #3047a3;
-        }
-    </style>
+      .sp-switch{
+          display: flex;
+          border-radius: 20px;
+          margin-top: 32px;
+          margin-bottom: 32px;
+      }
+      .sp-switch a.sp-item{
+          width: 50%;
+          text-decoration: none;
+          background-color: #506ad3;
+          color: white;
+          letter-spacing: 12px;
+          font-size: 20px;
+          font-weight: 500;
+          padding: 10px;
+          text-indent:12px;
+          transition: 0.2s ease-in-out;
+      }
+  
+      .sp-switch a.sp-item:hover{
+          box-shadow: inset #506ad3 0px 0px 0px 3px, inset #fff 0px 0px 0px 6px;
+          /*box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;*/
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      }
+  
+      .sp-switch .sp-item-wrapper p{
+          margin: 0;
+      }
+  
+      .right-side-radius{
+          border-bottom-right-radius: 20px;
+          border-top-right-radius: 20px;
+      }
+  
+      .left-side-radius{
+          border-bottom-left-radius: 20px;
+          border-top-left-radius: 20px;
+      }
+      .sp-switch .sp-item-wrapper{
+          display: flex;
+          justify-content: center;
+      }
+  
+      .sp-switch a.sp-item.active{
+          background-color: #3047a3;
+      }
+  </style>
       <!-- SWITCH PODNIKY -->
+
+<!--COMPONENT:SocialPodnikyNumber START -->
+<div class="sp-numbers">
+  <div class="sp-numbers-item">
+      <p class="sp-numbers-text">380</p>
+      <p class="sp-numbers-sub-text">sociálnych podnikov</p>
+  </div>
+  <div class="sp-numbers-item">
+      <p class="sp-numbers-text">380</p>
+      <p class="sp-numbers-sub-text">sociálnych podnikov</p>
+  </div>
+  <div class="sp-numbers-item">
+      <p class="sp-numbers-text">380</p>
+      <p class="sp-numbers-sub-text">sociálnych podnikov</p>
+  </div>
+  <div class="sp-numbers-item">
+      <p class="sp-numbers-text">380</p>
+      <p class="sp-numbers-sub-text">sociálnych podnikov</p>
+  </div>
+  <div class="sp-numbers-item">
+      <p class="sp-numbers-text">380</p>
+      <p class="sp-numbers-sub-text">sociálnych podnikov</p>
+  </div>
+</div>
+
+<style>
+  .sp-numbers{
+      margin-top: 32px;
+      margin-bottom: 32px;
+      background: rgb(48,71,163);
+      background: linear-gradient(155deg, rgba(48,71,163,1) 0%, rgba(60,92,218,1) 100%);
+      border-radius: 20px;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      flex-basis: 150px;
+      justify-content: space-evenly;
+      color: #fff;
+      padding: 8px;
+  }
+  .sp-numbers .sp-numbers-item{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 16px;
+      text-align: center;
+  }
+  .sp-numbers .sp-numbers-item .sp-numbers-text{
+      font-size: 2.5rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+  }
+  .sp-numbers .sp-numbers-item .sp-numbers-sub-text{
+      font-size: 1rem;
+      color: rgb(240, 240, 240);
+      margin-bottom: 0.5rem;
+      margin-top: 0;
+  }
+</style>
+<!--COMPONENT END -->
 
 
       <div class="czr-wp-the-content" style="margin-top: 64px;">
