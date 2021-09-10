@@ -1,0 +1,47 @@
+<div class="custom-card-overlay" onclick="toggleClass('active')">
+    <div class="overlay-visible-part">
+        <p class="hover-text">Viac informácii</p>
+    </div>
+    <p>
+        <b>{{Názov}}</b>
+        <hr style="background: white;">
+        <b>IČO</b>: {{IČO}}<br>
+        <b>Sídlo</b>: {{Sídlo}}<br>
+        <b>Právna forma</b>: {{Právna forma}}<br>
+        <b>Prevádzka</b>: {{Adresa prevádzky}}<br>
+        <b>Telefón</b>: {{Telefón}}<br>
+        <b>E-mail</b>: {{E-mail}}<br>
+        <b>Predmet podnikania</b>: {{Predmet podnikania}}<br>
+        <b>Druh RSP</b>: {{Druh zariadenia}}<br>
+        <b>Merateľný pozitívny soc. vplyv</b>: {{Merateľný pozitívny soc. vplyv}}<br>
+        <b>Časť zisku</b>: {{Časť zisku}}<br>
+    </p>
+</div>
+<div class="sp-card-content">
+    <div class="card-headline">
+        <h1>{{Názov}}</h1>
+        <span class="samospravny-kraj">
+            {{Samosprávny kraj}}
+        </span>
+    </div>
+    <div class="detailed-info">
+        <div class="image-container">
+            <img class="image" src='{{Logo}}' />
+        </div>
+        <div class="data-container">
+            <div class="sp-zoznam-desc-item">
+                <img class="sp-icon" src="https://danieljurcik.com/wp-content/uploads/2021/08/Icon_location.svg">
+                {{Adresa prevádzky}}
+            </div>
+            <div class="sp-zoznam-desc-item">
+                <img class="sp-icon" src="https://danieljurcik.com/wp-content/uploads/2021/08/Icon_telephone.svg">
+                <a href="tel:{{Telefón}}">{{Telefón}}</a> 
+            </div>
+            <div class="sp-zoznam-desc-item">
+                <img href="{{Webová stránka}}" class="sp-icon"
+                    src="https://danieljurcik.com/wp-content/uploads/2021/08/Icon_web.svg">
+                <a class="web-page-link" href="{{Webová stránka}}" target="_blank">Webová stránka</a>
+            </div>
+        </div>
+    </div>
+</div>

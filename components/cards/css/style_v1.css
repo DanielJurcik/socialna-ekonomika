@@ -1,0 +1,144 @@
+.cards-container .card .card-content{
+  border-radius: 20px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cards-container .card .card-content .custom-card-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: calc(-100% + 40px);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #3047a3;
+  transition: 0.4s ease-in-out;
+  padding: 24px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 3;
+}
+
+.cards-container .card .card-content .custom-card-overlay:hover{
+  bottom: 0;
+}
+
+.cards-container .card .card-content .custom-card-overlay:hover .overlay-visible-part{
+  padding: 16px;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.cards-container .card .card-content .custom-card-overlay .overlay-visible-part{
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  transition: 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container .card .card-content .custom-card-overlay p{
+  margin: 0px;
+}
+
+.cards-container .card .card-content .custom-card-overlay .hover-text{
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cards-container .card .sp-card-content{
+  padding: 24px;
+  padding-bottom: 56px;
+}
+
+.cards-container .card .card-content .sp-icon{
+  width: 28px;
+  height: 28px;
+  z-index: 2;
+}
+
+.card .card-content .sp-card-content .detailed-info{
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: wrap;
+}
+
+.card .card-content .sp-card-content .card-headline h1{
+  margin: 0;
+  color: #303133;
+  font-size: 1.1rem;
+}
+
+.card .card-content .sp-card-content .card-headline .samospravny-kraj{
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.card .card-content .sp-card-content .image-container{
+  width: 150px;
+  height: 150px;    
+  overflow: hidden;
+  background: #fff;
+  margin-right: 16px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.card .card-content .sp-card-content .image-container img{
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+.card .card-content .sp-card-content .data-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .sp-card-content .data-container .sp-zoznam-desc-item{
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #303133;
+}
+
+.card .sp-card-content .data-container .sp-zoznam-desc-item a{
+  text-decoration: none;
+  color: #303133;
+  position: relative;
+  line-height: 16px;
+  z-index: 1;
+}
+
+.card .sp-card-content .data-container .sp-zoznam-desc-item .web-page-link{
+  color: white;
+}
+
+.card .data-container .web-page-link::before{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5e7df8;
+  z-index: -1;
+  content: "";
+  padding: 5px;
+  padding-right: 40px;
+  border-radius: 20px;
+  top: -5px;
+  left: -32px;
+  box-sizing: content-box;
+}

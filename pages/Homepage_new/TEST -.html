@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="sk-SK">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="sk-SK">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html class="js js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style="" lang="sk-SK"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="pingback" href="http://test.socialnaekonomika.sk/xmlrpc.php">
+  <!-- scripts for IE8 and less  -->
+  <!--[if lt IE 9]>
+    <script src="http://test.socialnaekonomika.sk/wp-content/themes/customizr/assets/front/js/libs/html5.js"></script>
+  <![endif]-->
+<script type="text/javascript" async="" src="TEST%20-_subory/analytics.js"></script><script id="nb-front-localized">var sekFrontLocalized = {"isDevMode":"","frontNonce":{"id":"SEKFrontNonce","handle":"26e723399d"},"skope_id":"skp__","recaptcha_public_key":"","lazyload_enabled":"1","video_bg_lazyload_enabled":"1","load_front_assets_on_scroll":"","assetVersion":"2.1.12","frontAssetsPath":"http:\/\/test.socialnaekonomika.sk\/wp-content\/plugins\/nimble-builder\/assets\/front\/","contextuallyActiveModules":{"czr_img_slider_module":["__nimble__1f1fdef72fa7"],"czr_heading_module":["__nimble__58bf14a65c58"],"czr_post_grid_module":["__nimble__5d63a7a50ec5"],"czr_button_module":["__nimble__845618bdcae5","__nimble__fde24fe5ae7c"]},"fontAwesomeAlreadyEnqueued":""};</script>            <script id="nimble-app-init">window.nb_={},function(e,n){if(window.nb_={isArray:function(e){return Array.isArray(e)||"[object Array]"===toString.call(e)},inArray:function(e,n){return!(!nb_.isArray(e)||nb_.isUndefined(n))&&e.indexOf(n)>-1},isUndefined:function(e){return void 0===e},isObject:function(e){var n=typeof e;return"function"===n||"object"===n&&!!e},errorLog:function(){nb_.isUndefined(console)||"function"!=typeof window.console.log||console.log.apply(console,arguments)},hasPreloadSupport:function(e){var n=document.createElement("link").relList;return!(!n||!n.supports)&&n.supports("preload")},listenTo:function(e,n){var t={"nb-jquery-loaded":function(){return"undefined"!=typeof jQuery},"nb-app-ready":function(){return void 0!==window.nb_&&nb_.wasListenedTo("nb-jquery-loaded")},"nb-jmp-parsed":function(){return"undefined"!=typeof jQuery&&void 0!==jQuery.fn.magnificPopup},"nb-main-swiper-parsed":function(){return void 0!==window.Swiper}},o=function(o){nb_.isUndefined(t[e])||!1!==t[e]()?(n(),nb_.eventsListenedTo.push(e)):nb_.errorLog("Nimble error => an event callback could not be fired because conditions not met => ",e,nb_.eventsListenedTo)};"function"==typeof n?nb_.wasEmitted(e)?o():document.addEventListener(e,o):nb_.errorLog("Nimble error => listenTo func param is not a function for event => ",e)},eventsEmitted:[],eventsListenedTo:[],emit:function(e,n){if(!(nb_.isUndefined(n)||n.fire_once)||!nb_.wasEmitted(e)){var t=document.createEvent("Event");t.initEvent(e,!0,!0),document.dispatchEvent(t),nb_.eventsEmitted.push(e)}},wasListenedTo:function(e){return"string"==typeof e&&nb_.inArray(nb_.eventsListenedTo,e)},wasEmitted:function(e){return"string"==typeof e&&nb_.inArray(nb_.eventsEmitted,e)},isInScreen:function(e){if(!nb_.isObject(e))return!1;var n=e.getBoundingClientRect(),t=Math.max(document.documentElement.clientHeight,window.innerHeight);return!(n.bottom<0||n.top-t>=0)},isCustomizing:function(){return!1},isLazyLoadEnabled:function(){return!nb_.isCustomizing()&&!1},preloadAsset:function(e){if(e=e||{},nb_.preloadedAssets=nb_.preloadedAssets||[],!nb_.inArray(nb_.preloadedAssets,e.id)){var n=document.getElementsByTagName("head")[0],t=document.createElement("link"),o=(e.as,function(){if("style"===e.as)this.setAttribute("rel","stylesheet");else{var t=document.createElement("script");t.setAttribute("src",e.href),t.setAttribute("id",e.id),nb_.hasPreloadSupport()||"script"!==e.as||t.setAttribute("defer","defer"),n.appendChild(t),this&&this.parentNode&&this.parentNode.removeChild(this)}});nb_.hasPreloadSupport()||"script"!==e.as?(t.setAttribute("href",e.href),t.setAttribute("rel",nb_.hasPreloadSupport()?"preload":"stylesheet"),t.setAttribute("id",e.id),t.setAttribute("as",e.as),t.onload=function(){this.onload=null,e.onEvent?nb_.listenTo(e.onEvent,function(){o.call(t)}):o.call(t)},t.onerror=function(n){nb_.errorLog("Nimble preloadAsset error",n,e)}):e.onEvent?nb_.listenTo(e.onEvent,function(){o.call(t)}):o.call(t),n.appendChild(t),nb_.preloadedAssets.push(e.id),e.scriptEl&&e.scriptEl.parentNode&&e.scriptEl.parentNode.removeChild(e.scriptEl)}},mayBeRevealBG:function(){this.getAttribute("data-sek-src")&&(this.setAttribute("style",'background-image:url("'+this.getAttribute("data-sek-src")+'")'),this.className+=" sek-lazy-loaded",this.querySelectorAll(".sek-css-loader").forEach(function(e){nb_.isObject(e)&&e.parentNode.removeChild(e)}))}},window.NodeList&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=function(e,n){n=n||window;for(var t=0;t<this.length;t++)e.call(n,this[t],t,this)}),nb_.listenTo("nb-docready",function(){var e=document.querySelectorAll("div.sek-has-bg");!nb_.isObject(e)||e.length<1||e.forEach(function(e){nb_.isObject(e)&&(window.sekFrontLocalized&&window.sekFrontLocalized.lazyload_enabled?nb_.isInScreen(e)&&nb_.mayBeRevealBG.call(e):nb_.mayBeRevealBG.call(e))})}),"complete"===document.readyState||"loading"!==document.readyState&&!document.documentElement.doScroll)nb_.emit("nb-docready");else{var t=function(){nb_.wasEmitted("nb-docready")||nb_.emit("nb-docready")};document.addEventListener("DOMContentLoaded",t),window.addEventListener("load",t)}}(window,document);</script>
+            <script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+
+	<!-- This site is optimized with the Yoast SEO plugin v15.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>TEST -</title>
+	<!-- Upozornenie pre správcu: tato stránka nezobrazí meta popis, pretože žiaden neobsahuje, buď ho napíšte pre túto stránku alebo prejdite do ponuky [SEO - Vzhľad vyhľadávania] a vytvorte šablónu. -->
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+	<link rel="canonical" href="https://socialnaekonomika.sk/">
+	<link rel="next" href="https://socialnaekonomika.sk/page/2/">
+	<meta property="og:locale" content="sk_SK">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="TEST -">
+	<meta property="og:url" content="https://socialnaekonomika.sk/">
+	<meta property="og:site_name" content="TEST">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://socialnaekonomika.sk/#website","url":"https://socialnaekonomika.sk/","name":"TEST","description":"","potentialAction":[{"@type":"SearchAction","target":"https://socialnaekonomika.sk/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"sk-SK"},{"@type":"CollectionPage","@id":"https://socialnaekonomika.sk/#webpage","url":"https://socialnaekonomika.sk/","name":"TEST -","isPartOf":{"@id":"https://socialnaekonomika.sk/#website"},"breadcrumb":{"@id":"https://socialnaekonomika.sk/#breadcrumb"},"inLanguage":"sk-SK","potentialAction":[{"@type":"ReadAction","target":["https://socialnaekonomika.sk/"]}]},{"@type":"BreadcrumbList","@id":"https://socialnaekonomika.sk/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://socialnaekonomika.sk/","url":"https://socialnaekonomika.sk/","name":"Home"}}]}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="http://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="RSS kanál: TEST »" href="http://test.socialnaekonomika.sk/feed/">
+<link rel="alternate" type="application/rss+xml" title="RSS kanál komentárov webu TEST »" href="http://test.socialnaekonomika.sk/comments/feed/">
+<link rel="stylesheet" id="dashicons-css" href="TEST%20-_subory/dashicons.css" type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="TEST%20-_subory/admin-bar.css" type="text/css" media="all">
+<link rel="stylesheet" id="czr-gfonts-css" href="TEST%20-_subory/css_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="customizr-fa-css" href="TEST%20-_subory/fontawesome-all.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="TEST%20-_subory/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="coblocks-frontend-css" href="TEST%20-_subory/coblocks-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css" href="TEST%20-_subory/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="dwqa-style-css" href="TEST%20-_subory/style_004.css" type="text/css" media="all">
+<link rel="stylesheet" id="dwqa-rtl-css" href="TEST%20-_subory/rtl.css" type="text/css" media="all">
+<link rel="stylesheet" id="sek-base-css" href="TEST%20-_subory/sek-base.css" type="text/css" media="all">
+<link rel="stylesheet" id="nb-swiper-css" href="TEST%20-_subory/swiper.css" type="text/css" media="all">
+<link rel="stylesheet" id="megamenu-css" href="TEST%20-_subory/style_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="customizr-main-css" href="TEST%20-_subory/style_003.css" type="text/css" media="all">
+<style id="customizr-main-inline-css" type="text/css">
+::-moz-selection{background-color:#f28837}::selection{background-color:#f28837}a,.btn-skin:active,.btn-skin:focus,.btn-skin:hover,.btn-skin.inverted,.grid-container__classic .post-type__icon,.post-type__icon:hover .icn-format,.grid-container__classic .post-type__icon:hover .icn-format,[class*='grid-container__'] .entry-title a.czr-title:hover,input[type=checkbox]:checked::before{color:#f28837}.czr-css-loader > div ,.btn-skin,.btn-skin:active,.btn-skin:focus,.btn-skin:hover,.btn-skin-h-dark,.btn-skin-h-dark.inverted:active,.btn-skin-h-dark.inverted:focus,.btn-skin-h-dark.inverted:hover{border-color:#f28837}.tc-header.border-top{border-top-color:#f28837}[class*='grid-container__'] .entry-title a:hover::after,.grid-container__classic .post-type__icon,.btn-skin,.btn-skin.inverted:active,.btn-skin.inverted:focus,.btn-skin.inverted:hover,.btn-skin-h-dark,.btn-skin-h-dark.inverted:active,.btn-skin-h-dark.inverted:focus,.btn-skin-h-dark.inverted:hover,.sidebar .widget-title::after,input[type=radio]:checked::before{background-color:#f28837}.btn-skin-light:active,.btn-skin-light:focus,.btn-skin-light:hover,.btn-skin-light.inverted{color:#f7b37f}input:not([type='submit']):not([type='button']):not([type='number']):not([type='checkbox']):not([type='radio']):focus,textarea:focus,.btn-skin-light,.btn-skin-light.inverted,.btn-skin-light:active,.btn-skin-light:focus,.btn-skin-light:hover,.btn-skin-light.inverted:active,.btn-skin-light.inverted:focus,.btn-skin-light.inverted:hover{border-color:#f7b37f}.btn-skin-light,.btn-skin-light.inverted:active,.btn-skin-light.inverted:focus,.btn-skin-light.inverted:hover{background-color:#f7b37f}.btn-skin-lightest:active,.btn-skin-lightest:focus,.btn-skin-lightest:hover,.btn-skin-lightest.inverted{color:#f8c197}.btn-skin-lightest,.btn-skin-lightest.inverted,.btn-skin-lightest:active,.btn-skin-lightest:focus,.btn-skin-lightest:hover,.btn-skin-lightest.inverted:active,.btn-skin-lightest.inverted:focus,.btn-skin-lightest.inverted:hover{border-color:#f8c197}.btn-skin-lightest,.btn-skin-lightest.inverted:active,.btn-skin-lightest.inverted:focus,.btn-skin-lightest.inverted:hover{background-color:#f8c197}.pagination,a:hover,a:focus,a:active,.btn-skin-dark:active,.btn-skin-dark:focus,.btn-skin-dark:hover,.btn-skin-dark.inverted,.btn-skin-dark-oh:active,.btn-skin-dark-oh:focus,.btn-skin-dark-oh:hover,.post-info a:not(.btn):hover,.grid-container__classic .post-type__icon .icn-format,[class*='grid-container__'] .hover .entry-title a,.widget-area a:not(.btn):hover,a.czr-format-link:hover,.format-link.hover a.czr-format-link,button[type=submit]:hover,button[type=submit]:active,button[type=submit]:focus,input[type=submit]:hover,input[type=submit]:active,input[type=submit]:focus,.tabs .nav-link:hover,.tabs .nav-link.active,.tabs .nav-link.active:hover,.tabs .nav-link.active:focus{color:#dd680e}.grid-container__classic.tc-grid-border .grid__item,.btn-skin-dark,.btn-skin-dark.inverted,button[type=submit],input[type=submit],.btn-skin-dark:active,.btn-skin-dark:focus,.btn-skin-dark:hover,.btn-skin-dark.inverted:active,.btn-skin-dark.inverted:focus,.btn-skin-dark.inverted:hover,.btn-skin-h-dark:active,.btn-skin-h-dark:focus,.btn-skin-h-dark:hover,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-dark-oh:active,.btn-skin-dark-oh:focus,.btn-skin-dark-oh:hover,.btn-skin-dark-oh.inverted:active,.btn-skin-dark-oh.inverted:focus,.btn-skin-dark-oh.inverted:hover,button[type=submit]:hover,button[type=submit]:active,button[type=submit]:focus,input[type=submit]:hover,input[type=submit]:active,input[type=submit]:focus{border-color:#dd680e}.btn-skin-dark,.btn-skin-dark.inverted:active,.btn-skin-dark.inverted:focus,.btn-skin-dark.inverted:hover,.btn-skin-h-dark:active,.btn-skin-h-dark:focus,.btn-skin-h-dark:hover,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-h-dark.inverted,.btn-skin-dark-oh.inverted:active,.btn-skin-dark-oh.inverted:focus,.btn-skin-dark-oh.inverted:hover,.grid-container__classic .post-type__icon:hover,button[type=submit],input[type=submit],.czr-link-hover-underline .widgets-list-layout-links a:not(.btn)::before,.czr-link-hover-underline .widget_archive a:not(.btn)::before,.czr-link-hover-underline .widget_nav_menu a:not(.btn)::before,.czr-link-hover-underline .widget_rss ul a:not(.btn)::before,.czr-link-hover-underline .widget_recent_entries a:not(.btn)::before,.czr-link-hover-underline .widget_categories a:not(.btn)::before,.czr-link-hover-underline .widget_meta a:not(.btn)::before,.czr-link-hover-underline .widget_recent_comments a:not(.btn)::before,.czr-link-hover-underline .widget_pages a:not(.btn)::before,.czr-link-hover-underline .widget_calendar a:not(.btn)::before,[class*='grid-container__'] .hover .entry-title a::after,a.czr-format-link::before,.comment-author a::before,.comment-link::before,.tabs .nav-link.active::before{background-color:#dd680e}.btn-skin-dark-shaded:active,.btn-skin-dark-shaded:focus,.btn-skin-dark-shaded:hover,.btn-skin-dark-shaded.inverted{background-color:rgba(221,104,14,0.2)}.btn-skin-dark-shaded,.btn-skin-dark-shaded.inverted:active,.btn-skin-dark-shaded.inverted:focus,.btn-skin-dark-shaded.inverted:hover{background-color:rgba(221,104,14,0.8)}@media (min-width: 576px){ .czr-boxed-layout .container{ padding-right: 30px; padding-left:  30px; } }@media (min-width: 576px){ .czr-boxed-layout .container{ width: 570px } }@media (min-width: 768px){ .czr-boxed-layout .container{ width: 750px } }@media (min-width: 992px){ .czr-boxed-layout .container{ width: 990px } }@media (min-width: 1200px){ .czr-boxed-layout .container{ width: 1170px } }.navbar-brand,.header-tagline,h1,h2,h3,.tc-dropcap { font-family : 'Roboto'; }
+body { font-family : 'Roboto'; }
+
+.tc-header.border-top { border-top-width: 5px; border-top-style: solid }
+</style>
+<link rel="stylesheet" id="customizr-front-placholders-css" href="TEST%20-_subory/style-front-placeholders.css" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="TEST%20-_subory/default.css" type="text/css" media="all">
+<link rel="stylesheet" id="yoast-seo-adminbar-css" href="TEST%20-_subory/adminbar-1580.css" type="text/css" media="all">
+<script type="text/javascript" id="nb-jquery" src="TEST%20-_subory/jquery.js"></script>
+<script type="text/javascript" src="TEST%20-_subory/jquery-migrate.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="TEST%20-_subory/ccat-nimble-front.js" id="nb-main-js-js" defer="defer"></script>
+<script type="text/javascript" src="TEST%20-_subory/swiper.js" id="nb-swiper-js" defer="defer"></script>
+<script type="text/javascript" src="TEST%20-_subory/modernizr.js" id="modernizr-js"></script>
+<script type="text/javascript" id="tc-scripts-js-extra">
+/* <![CDATA[ */
+var CZRParams = {"assetsPath":"http:\/\/test.socialnaekonomika.sk\/wp-content\/themes\/customizr\/assets\/front\/","_disabled":[],"centerSliderImg":"1","isLightBoxEnabled":"1","SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"isAnchorScrollEnabled":"","anchorSmoothScrollExclude":{"simple":["[class*=edd]",".carousel-control","[data-toggle=\"modal\"]","[data-toggle=\"dropdown\"]","[data-toggle=\"czr-dropdown\"]","[data-toggle=\"tooltip\"]","[data-toggle=\"popover\"]","[data-toggle=\"collapse\"]","[data-toggle=\"czr-collapse\"]","[data-toggle=\"tab\"]","[data-toggle=\"pill\"]","[data-toggle=\"czr-pill\"]","[class*=upme]","[class*=um-]"],"deep":{"classes":[],"ids":[]}},"timerOnScrollAllBrowsers":"1","centerAllImg":"1","HasComments":"","LoadModernizr":"1","stickyHeader":"","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"dropcapEnabled":"","dropcapWhere":{"post":"","page":""},"dropcapMinWords":"","dropcapSkipSelectors":{"tags":["IMG","IFRAME","H1","H2","H3","H4","H5","H6","BLOCKQUOTE","UL","OL"],"classes":["btn"],"id":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":["[class*=grid-container], .article-container",".__before_main_wrapper",".widget-front",".post-related-articles",".tc-singular-thumbnail-wrapper"],"opts":{"excludeImg":[".tc-holder-img"]}},"imgSmartLoadsForSliders":"1","pluginCompats":[],"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_always"},"adminAjaxUrl":"http:\/\/test.socialnaekonomika.sk\/wp-admin\/admin-ajax.php","ajaxUrl":"http:\/\/test.socialnaekonomika.sk\/?czrajax=1","frontNonce":{"id":"CZRFrontNonce","handle":"7b9cd07251"},"isDevMode":"","isModernStyle":"1","i18n":{"Permanently dismiss":"Permanently dismiss"},"frontNotifications":{"welcome":{"enabled":false,"content":"","dismissAction":"dismiss_welcome_note_front"}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="TEST%20-_subory/tc-scripts.js" id="tc-scripts-js"></script>
+<link rel="https://api.w.org/" href="http://test.socialnaekonomika.sk/wp-json/"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://test.socialnaekonomika.sk/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 5.6.2">
+<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+	<style id="sek-dyn-skp__-css" media="all">[data-sek-id="__nimble__f9ce12bb9839"]{margin-bottom:64px;margin-top:0px;}[data-sek-id="__nimble__5d5655f3f0f5"]{align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;}[data-sek-id="__nimble__1f1fdef72fa7"]{border-radius:20px;}[data-sek-id="__nimble__1f1fdef72fa7"] .sek-module-inner .swiper-container .swiper-wrapper{height:625px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-content *{color:rgba(0,0,0,0.71);font-family:'Roboto';font-size:28px;line-height:1.3em;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-content{text-align:left;padding-bottom:64px;padding-right:32px;padding-left:32px;padding-top:64px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-wrapper{align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"][data-sek-has-overlay="true"] .sek-carousel-img::after{background-color:#ffffff;opacity:0.3;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-content *{color:#000000;font-family:'Roboto';font-size:28px;line-height:1.3em;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-content{text-align:left;padding-bottom:32px;padding-top:64px;padding-right:32px;padding-left:32px;margin-right:0px;margin-left:0px;margin-top:0px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-wrapper{align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-content *{color:#545454;font-family:'Roboto';font-size:28px;line-height:1.3em;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-content{text-align:left;padding-bottom:64px;padding-top:64px;padding-right:32px;padding-left:32px;margin-bottom:0px;margin-left:0px;margin-top:0px;margin-right:0px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-wrapper{align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;}[data-sek-id="__nimble__8d13986b944f"]{background-color:rgba(255,255,255,0);}[data-sek-id="__nimble__58bf14a65c58"] .sek-module-inner > .sek-heading{margin-bottom:0px;margin-top:0px;}[data-sek-id="__nimble__5d63a7a50ec5"]{border-radius:0px;padding-top:0px;padding-left:0px;padding-right:0px;padding-bottom:0px;}[data-sek-id="__nimble__5d63a7a50ec5"] .sek-post-grid-wrapper .sek-grid-items article .sek-pg-content > *:not(:last-child),[data-sek-id="__nimble__5d63a7a50ec5"] .sek-post-grid-wrapper .sek-grid-items.sek-list-layout article > *:not(:last-child):not(.sek-pg-thumbnail),[data-sek-id="__nimble__5d63a7a50ec5"] .sek-post-grid-wrapper .sek-grid-items.sek-grid-layout article > *:not(:last-child){margin-bottom:2px;}[data-sek-id="__nimble__5d63a7a50ec5"] .sek-post-grid-wrapper .sek-grid-layout,[data-sek-id="__nimble__5d63a7a50ec5"] .sek-post-grid-wrapper .sek-list-layout article.sek-has-thumb{grid-column-gap:10px;}[data-sek-id="__nimble__5d63a7a50ec5"] .sek-post-grid-wrapper .sek-grid-items{grid-row-gap:16px;}[data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner .sek-post-grid-wrapper .sek-pg-title a,[data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner .sek-post-grid-wrapper .sek-pg-title{font-family:'Roboto';font-size:21px;line-height:1.4em;color:#3047a3;font-weight:900;}[data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner  .sek-post-grid-wrapper .sek-excerpt,[data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner  .sek-post-grid-wrapper .sek-excerpt *{font-family:'Roboto';font-size:15px;}[data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner .sek-pg-metas span,[data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner .sek-pg-metas a{font-size:10px;}[data-sek-id="__nimble__845618bdcae5"]{margin-top:0px;padding-bottom:0px;}[data-sek-id="__nimble__845618bdcae5"] .sek-module-inner .sek-btn:hover{background-color:#f2936b;color:#f25c19;}[data-sek-id="__nimble__845618bdcae5"] .sek-module-inner .sek-btn{background-color:#ec5f25;border-radius:10px;padding-top:10px;padding-bottom:10px;padding-right:24px;padding-left:24px;font-family:'Roboto';font-size:13px;color:#3047a3;font-weight:500;letter-spacing:2px;}[data-sek-id="__nimble__fde24fe5ae7c"] .sek-module-inner .sek-btn:hover{background-color:#e87575;}[data-sek-id="__nimble__fde24fe5ae7c"] .sek-btn{border:1px solid #000000}[data-sek-id="__nimble__fde24fe5ae7c"] .sek-module-inner .sek-btn{background-color:#dd3333;border-radius:2px;color:#ffffff;}@media(min-width:768px){[data-sek-id="__nimble__f9ce12bb9839"] .sek-sektion-inner > .sek-column[data-sek-id="__nimble__5d5655f3f0f5"]{-ms-flex: 0 0 66.195%;flex: 0 0 66.195%;max-width: 66.195%}[data-sek-id="__nimble__f9ce12bb9839"] .sek-sektion-inner > .sek-column[data-sek-id="__nimble__8d13986b944f"]{-ms-flex: 0 0 33.805%;flex: 0 0 33.805%;max-width: 33.805%}}@media(max-width:767px){[data-sek-id="__nimble__1f1fdef72fa7"] .sek-module-inner .swiper-container .swiper-wrapper{height:600px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-content *{font-size:28px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-content *{font-size:20px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-content *{font-size:20px;}}@media(max-width:575px){[data-sek-id="__nimble__1f1fdef72fa7"]{}[data-sek-id="__nimble__1f1fdef72fa7"] .sek-module-inner .swiper-container .swiper-wrapper{height:400px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-content *{font-size:14px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-content{margin-top:0px;padding-left:16px;padding-top:16px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="4fbe6d9d6fb6"] .sek-slider-text-wrapper{align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-content *{font-size:14px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="37f37c6ad912"] .sek-slider-text-content{padding-right:16px;padding-left:16px;padding-top:32px;margin-right:0px;margin-left:0px;padding-bottom:32px;margin-bottom:0px;margin-top:0px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-content,[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-content *{font-size:16px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-content{padding-bottom:16px;padding-top:32px;margin-top:0px;padding-right:16px;padding-left:16px;margin-right:0px;margin-left:0px;}[data-sek-id="__nimble__1f1fdef72fa7"]  [data-sek-item-id="0e89c2c6195a"] .sek-slider-text-wrapper{align-items:flex-start;-webkit-box-align:start;-ms-flex-align:start;}}</style><link rel="icon" href="http://test.socialnaekonomika.sk/wp-content/uploads/2020/04/cropped-logo-stranky_1-32x32.png" sizes="32x32">
+<link rel="icon" href="http://test.socialnaekonomika.sk/wp-content/uploads/2020/04/cropped-logo-stranky_1-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="http://test.socialnaekonomika.sk/wp-content/uploads/2020/04/cropped-logo-stranky_1-180x180.png">
+<meta name="msapplication-TileImage" content="http://test.socialnaekonomika.sk/wp-content/uploads/2020/04/cropped-logo-stranky_1-270x270.png">
+		<style type="text/css" id="wp-custom-css">
+			body {
+    font-family: 'Roboto';
+}
+
+.su-tabs-nav span {
+	font-size: 1.1em !important;
+}
+.su-tabs-pane{
+	font-size: 1em !important;
+}
+.header-skin-light [class*="nav__menu"] .nav__title::before {
+	background-color:  #3047a3 !important;
+}
+
+.home-top{
+  display:flex;
+  flex-direction:row;
+	flex-flow: row wrap;
+  width:100%;
+  border:0px red solid;
+  padding: 0px 10px 0px 10px; /* this */
+}
+.home-top-col{
+	flex: 24%;
+	border-radius: 20px 0px;
+	justify-content: space-between;
+  border:0px red solid;
+  margin:0px 5px 0px 5px;
+	box-sizing: border-box;
+	color:white;
+}
+
+.home-top-title {
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 20px 20px 15px 20px;
+}
+
+.home-top-box{
+    padding: 0px 14px 0 20px;
+}
+
+.home-top-box a{
+	color: white;
+}
+
+.home-top-box a:hover{
+	color:white !important;
+	text-decoration: underline;
+}
+
+   .sideMenuIndent {
+        margin-left: 15px;
+    }
+
+    .sideMenuTopPad {
+        padding-top: 15px;
+    }
+
+    .sideMenuLevel1 {
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+@media(max-width: 1333px) {
+  .home-top-col {
+    flex: 24%;
+  }
+}
+@media(max-width: 1073px) {
+  .home-top-col {
+    flex: 33.33%;
+  }
+}
+@media(max-width: 815px) {
+  .home-top-col {
+    flex: 50%;
+  }
+}
+@media(max-width: 555px) {
+  .home-top-col {
+    flex: 100%;
+  }
+}
+
+/*FARBY BLOKOV - zac*/
+.color-1{
+	background: #3047a3;
+}
+.color-2{
+	background: #ef5f22;
+}
+.color-3{
+	background: #6f6f6f;
+}
+.color-4{
+	background: #2f80a2;
+}
+/*FARBY BLOKOV - koniec */
+
+.article-container{
+	z-index: 0;
+}
+.archive-header-inner  .header-bottom{
+	display:none;
+}
+.featurette-divider{
+	margin-top: 0px !important;
+}
+.archive-header-inner hr{
+	margin: 0px;
+}
+.n2-ss-widget{
+	height:42px;
+}
+.n2-clear{
+	display:none;
+}
+.su-spoiler br {
+	display: none;
+}
+.grid__item {
+	outline: 0px;
+}
+article {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.nav__title {
+		color: white !important;
+}
+.caret__dropdown-toggler{
+	color: white !important;
+}
+.tc-sidebar.left{
+	margin-top:-23px;
+	padding-right:0px;
+}
+.menu-item{
+	font-size: 12px;
+	padding: 18px 5px 18px !important;
+	margin:0px !important;
+}
+/* BLUE */
+.menu-item-11, 
+.menu-item-15,
+.menu-item-32,
+.menu-item-235,
+.menu-item-236,
+.menu-item-237,
+.menu-item-238,
+.menu-item-2084,
+.menu-item-2089, 
+.menu-item-2098,
+.menu-item-2100,
+.menu-item-2103,
+.menu-item-2104,
+.menu-item-2154,
+.menu-item-2444,
+.menu-item-5171{
+	background: #3047a3 !important;
+}
+
+.primary-navbar__row{
+	margin-right:-30px !important;
+}
+.primary-nav__wrapper {
+	background: #3047a3 !important;
+}
+.nav__utils a {
+	color: white !important;
+}
+/* GREEN */
+.menu-item-9,
+.menu-item-239,
+.menu-item-10,
+.menu-item-300{
+	background: #3047a3 !important;
+}
+/* YELLOW*/
+.menu-item-8{
+	background: #3047a3 !important;
+}
+/* ORANGE */
+.menu-item-240 {
+	background: #3047a3  !important;
+}
+.acc a,
+.su-note-inner a{
+	text-decoration: none !important;
+	color:white;
+}
+.acc a:hover,
+.su-note-inner a:hover
+{
+	text-decoration:underline !important;
+	color:white !important;
+}
+
+.acc-tab{
+	margin-left: 20px;
+}
+
+.acc1 {
+	background: #1f618d;
+	color:white;
+	padding: 1rem;
+}
+.acc2 {
+	margin-top: -30px;
+	background: orangered;
+	color:white;
+	padding: 1rem;
+}
+
+
+.menu-item {
+    font-size: 14px;
+}
+.left{
+	margin-top:1px !important;
+}
+
+.czr-overlay {
+    opacity: 0;
+    visibility: hidden;
+    width: 50%;
+    height: 15%;
+    margin: 0 auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 39.6%;
+    z-index: 90;
+}
+
+.qe-faqs-filters-container li a {
+    display: none;
+}
+
+/*Odtránenie autora článku - zaciatok*/
+.post-info .author-meta,
+.post-info .v-separator{
+	display: none;
+}
+/*Odtránenie autora článku - koniec*/
+
+/*ROZŠÍRENIE STRÁNKY - start*/
+  @media (min-width: 1366px){
+    .czr-boxed-layout .container{
+      width: 1366px;
+      max-width: 1366px;
+    }
+  }
+/*ROZŠÍRENIE STRÁNKY - end*/
+
+/*Úvodná stránka - start*/
+  .sek-post-grid-wrapper .sek-list-layout article{
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 1rem;
+  }
+
+  [data-sek-id="__nimble__8d13986b944f"]{
+    background-color: #FBFBFB;
+  }
+
+  .sp-carousel .sek-column-inner {
+    height: 100%;
+  }
+  .sp-carousel [data-sek-module-type="czr_img_slider_module"]{
+   /* height: 100%;*/
+  }
+
+.sp-carousel .swiper-container .swiper-wrapper{
+	/*height: 100% !important;*/
+}
+	
+	.sp-carousel .sek-module-inner{
+	/*height: 100%*/
+	}
+
+[data-sek-module-type="czr_img_slider_module"] .swiper-slide .sek-carousel-img img.sek-h-centrd{
+	/*height: 100%;*/
+}
+
+	
+  /*Úvodná obrazovka - end*/
+
+/*Sociálne podniky - prepínanie - zac*/
+.sp-switch{
+        display: flex;
+        border-radius: 20px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .sp-switch a.sp-item{
+        width: 50%;
+        text-decoration: none;
+        background-color: #506ad3;
+        color: white;
+        letter-spacing: 12px;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px;
+        text-indent:12px;
+        transition: 0.2s ease-in-out;
+    }
+  
+    .sp-switch a.sp-item:hover p{
+      border-bottom: 4px solid white;
+        /*box-shadow: inset #506ad3 0px 0px 0px 3px, inset #fff 0px 0px 0px 6px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;*/
+    }
+  
+    .sp-switch .sp-item-wrapper p{
+        margin: 0;
+        padding-top: 4px;
+        border-bottom: 4px solid transparent;
+        font-weight: 800;
+    }
+  
+    .right-side-radius{
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+  
+    .left-side-radius{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .sp-switch .sp-item-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+  
+    .sp-switch a.sp-item.active{
+        background-color: #3047a3;
+    }
+    @media screen and (max-width: 450px) {
+    .sp-switch a.sp-item{
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-weight: 500;
+        text-indent:6px;
+    }
+  }
+/*Sociálne podniky - prepínanie - kon*/
+		</style>
+		<style type="text/css">/** Mega Menu CSS: fs **/</style>
+            <script id="nimble-detect-jquery">!function(){var e=function(){var e="nb-jquery-loaded";nb_.wasEmitted(e)||nb_.emit(e)},n=function(t){t=t||0,void 0!==window.jQuery?e():t<30?setTimeout(function(){n(++t)},200):alert("Nimble Builder problem : jQuery.js was not detected on your website")},t=document.getElementById("nb-jquery");t&&t.addEventListener("load",function(){e()}),n()}();</script>
+                      <style id="nb-lazyload-css-loader">@-webkit-keyframes sek-mr-loader{0%{-webkit-transform:scale(.1);transform:scale(.1);opacity:1}70%{-webkit-transform:scale(1);transform:scale(1);opacity:.7}100%{opacity:0}}@keyframes sek-mr-loader{0%{-webkit-transform:scale(.1);transform:scale(.1);opacity:1}70%{-webkit-transform:scale(1);transform:scale(1);opacity:.7}100%{opacity:0}}.sek-css-loader{width:50px;height:50px;position:absolute;-webkit-transform:translate3d(-50%,-50%,0);transform:translate3d(-50%,-50%,0);top:50%;left:50%;z-index: 1000;}.csstransforms3d .sek-css-loader{display:block}.sek-mr-loader>div:nth-child(0){-webkit-animation-delay:-.8s;animation-delay:-.8s}.sek-mr-loader>div:nth-child(1){-webkit-animation-delay:-.6s;animation-delay:-.6s}.sek-mr-loader>div:nth-child(2){-webkit-animation-delay:-.4s;animation-delay:-.4s}.sek-mr-loader>div:nth-child(3){-webkit-animation-delay:-.2s;animation-delay:-.2s}.sek-mr-loader>div{-webkit-animation-fill-mode:both;animation-fill-mode:both;position:absolute;top:0;left:0;width:100%;height:100%;border-radius:100%;border:2px solid #777;-webkit-animation:sek-mr-loader 1.25s 0s infinite cubic-bezier(.21,.53,.56,.8);animation:sek-mr-loader 1.25s 0s infinite cubic-bezier(.21,.53,.56,.8)}.white-loader>.sek-mr-loader>div{border:2px solid #fff}</style>
+          <link href="TEST%20-_subory/css.css" rel="stylesheet" id="sek-gfonts-local-and-global" as="style"><style>input[type=file]:focus,input[type=radio]:focus,input[type=checkbox]:focus,select:focus,span:focus,a:focus,button{outline:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}input[type=file]::-moz-focus-inner,input[type=radio]::-moz-focus-inner,input[type=checkbox]::-moz-focus-inner,select::-moz-focus-inner,a::-moz-focus-inner{border:0;}</style><link rel="stylesheet" id="czr-magnific-popup" type="text/css" href="TEST%20-_subory/magnific-popup.css"></head>
+
+  <body class="blog logged-in admin-bar wp-custom-logo wp-embed-responsive sek-hide-rc-badge mega-menu-max-mega-menu-1 czr-link-hover-underline-off header-skin-light footer-skin-dark czr-no-sidebar tc-center-images czr-boxed-layout customize-support tc-smoothscroll is-scrolled">
+    	<script type="text/javascript">
+		(function() {
+			var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+				request = true;
+	
+			b[c] = b[c].replace( rcs, ' ' );
+			// The customizer requires postMessage and CORS (if the site is cross domain).
+			b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+		}());
+	</script>
+			<div id="wpadminbar" class="nojq">
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Panel nástrojov">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://test.socialnaekonomika.sk/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">O WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu"><li id="wp-admin-bar-about"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/about.php">O WordPress</a></li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://sk.wordpress.org/">WordPress.org</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">Dokumentácia</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="https://wordpress.org/support/">Podpora</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="https://wordpress.org/support/forum/requests-and-feedback">Spätná väzba</a></li></ul></div></li><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://test.socialnaekonomika.sk/wp-admin/">TEST</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu"><li id="wp-admin-bar-dashboard"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/">Nástenka</a></li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu"><li id="wp-admin-bar-themes"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/themes.php">Témy</a></li><li id="wp-admin-bar-widgets"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/widgets.php">Widgety</a></li><li id="wp-admin-bar-menus"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/nav-menus.php">Menu</a></li></ul></div></li><li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/customize.php?url=http%3A%2F%2Ftest.socialnaekonomika.sk%2F">Prispôsobiť</a></li><li id="wp-admin-bar-comments"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/edit-comments.php"><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0 komentárov na moderáciu</span></a></li><li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://test.socialnaekonomika.sk/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">Pridať</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu"><li id="wp-admin-bar-new-post"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/post-new.php">Článok</a></li><li id="wp-admin-bar-new-media"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/media-new.php">Multimediá</a></li><li id="wp-admin-bar-new-page"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/post-new.php?post_type=page">Stránku</a></li><li id="wp-admin-bar-new-dwqa-question"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/post-new.php?post_type=dwqa-question">Question</a></li><li id="wp-admin-bar-new-dwqa-answer"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/post-new.php?post_type=dwqa-answer">Answer</a></li><li id="wp-admin-bar-new-faq"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/post-new.php?post_type=faq">FAQ</a></li><li id="wp-admin-bar-new-user"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/user-new.php">Používateľa</a></li><li id="wp-admin-bar-new_content_smart_slider"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3#createslider">Slider [Smart Slider 3]</a></li></ul></div></li><li id="wp-admin-bar-smart_slider_3" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3">Smart Slider</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-smart_slider_3-default" class="ab-submenu"><li id="wp-admin-bar-smart_slider_3_dashboard"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3">Dashboard</a></li><li id="wp-admin-bar-smart_slider_3_create_slider"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3#createslider">Create slider</a></li><li id="wp-admin-bar-smart_slider_3_edit" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Edit slider</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-smart_slider_3_edit-default" class="ab-submenu"><li id="wp-admin-bar-smart_slider_3_slider_8"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3&amp;nextendcontroller=slider&amp;nextendaction=edit&amp;sliderid=8&amp;groupID=0">#8 - slider_sk - copy</a></li><li id="wp-admin-bar-smart_slider_3_slider_7"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3&amp;nextendcontroller=slider&amp;nextendaction=edit&amp;sliderid=7&amp;groupID=0">#7 - IVETA</a></li><li id="wp-admin-bar-smart_slider_3_slider_6"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3&amp;nextendcontroller=slider&amp;nextendaction=edit&amp;sliderid=6&amp;groupID=0">#6 - APRIL</a></li><li id="wp-admin-bar-smart_slider_3_slider_5"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3&amp;nextendcontroller=slider&amp;nextendaction=edit&amp;sliderid=5&amp;groupID=0">#5 - Slider</a></li><li id="wp-admin-bar-smart_slider_3_slider_2"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=smart-slider3&amp;nextendcontroller=slider&amp;nextendaction=edit&amp;sliderid=2&amp;groupID=0">#2 - slider_sk</a></li></ul></div></li></ul></div></li><li id="wp-admin-bar-wpseo-menu" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=wpseo_dashboard"><div id="yoast-ab-icon" class="ab-item yoast-logo svg"><span class="screen-reader-text">SEO</span></div> <div class="wp-core-ui wp-ui-notification yoast-issue-counter"><span aria-hidden="true">1</span><span class="screen-reader-text">1 oznámenie</span></div></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wpseo-menu-default" class="ab-submenu"><li id="wp-admin-bar-wpseo-notifications"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=wpseo_dashboard">Upozornenia <div class="wp-core-ui wp-ui-notification yoast-issue-counter"><span aria-hidden="true">1</span><span class="screen-reader-text">1 oznámenie</span></div></a></li><li id="wp-admin-bar-wpseo-configuration-wizard"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=wpseo_configurator">Sprievodca konfiguráciou</a></li><li id="wp-admin-bar-wpseo-kwresearch" class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Prieskum kľúčových slov</div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wpseo-kwresearch-default" class="ab-submenu"><li id="wp-admin-bar-wpseo-kwresearchtraining"><a class="ab-item" href="https://yoa.st/wp-admin-bar?php_version=7.4&amp;platform=wordpress&amp;platform_version=5.6.2&amp;software=free&amp;software_version=15.8&amp;days_active=30plus&amp;user_language=sk_SK" target="_blank">Školenie v oblasti prieskumu kľúčových slov</a></li><li id="wp-admin-bar-wpseo-adwordsexternal"><a class="ab-item" href="https://yoa.st/keywordplanner" target="_blank">Google Ads</a></li><li id="wp-admin-bar-wpseo-googleinsights"><a class="ab-item" href="https://yoa.st/google-trends" target="_blank">Google Trends</a></li></ul></div></li><li id="wp-admin-bar-wpseo-analysis" class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Analyzovať túto stránku</div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wpseo-analysis-default" class="ab-submenu"><li id="wp-admin-bar-wpseo-inlinks"><a class="ab-item" href="https://search.google.com/search-console/links/drilldown?resource_id=http%3A%2F%2Ftest.socialnaekonomika.sk&amp;type=EXTERNAL&amp;target=https%3A%2F%2Fsocialnaekonomika.sk%2F&amp;domain=" target="_blank">Skontrolujte odkaz na túto adresu URL</a></li><li id="wp-admin-bar-wpseo-kwdensity"><a class="ab-item" href="http://www.zippy.co.uk/keyworddensity/index.php?url=https%3A%2F%2Fsocialnaekonomika.sk%2F&amp;keyword=" target="_blank">Skontrolovať hustotu kľúčovej frázy</a></li><li id="wp-admin-bar-wpseo-cache"><a class="ab-item" href="http://webcache.googleusercontent.com/search?strip=1&amp;q=cache:https%3A%2F%2Fsocialnaekonomika.sk%2F" target="_blank">Skontrolovať Google Cache</a></li><li id="wp-admin-bar-wpseo-structureddata"><a class="ab-item" href="https://search.google.com/test/rich-results?url=https%3A%2F%2Fsocialnaekonomika.sk%2F" target="_blank">Google Rich Results Test</a></li><li id="wp-admin-bar-wpseo-facebookdebug"><a class="ab-item" href="http://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fsocialnaekonomika.sk%2F" target="_blank">Ladenie chýb Facebook</a></li><li id="wp-admin-bar-wpseo-pinterestvalidator"><a class="ab-item" href="https://developers.pinterest.com/tools/url-debugger/?link=https%3A%2F%2Fsocialnaekonomika.sk%2F" target="_blank">Pinterest Rich Pins validátor</a></li><li id="wp-admin-bar-wpseo-htmlvalidation"><a class="ab-item" href="http://validator.w3.org/check?uri=https%3A%2F%2Fsocialnaekonomika.sk%2F" target="_blank">HTML validátor</a></li><li id="wp-admin-bar-wpseo-cssvalidation"><a class="ab-item" href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsocialnaekonomika.sk%2F" target="_blank">CSS validátor</a></li><li id="wp-admin-bar-wpseo-pagespeed"><a class="ab-item" href="http://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fsocialnaekonomika.sk%2F" target="_blank">Google Page Speed Test</a></li><li id="wp-admin-bar-wpseo-google-mobile-friendly"><a class="ab-item" href="https://www.google.com/webmasters/tools/mobile-friendly/?url=https%3A%2F%2Fsocialnaekonomika.sk%2F" target="_blank">Test použiteľnosti pre mobily</a></li></ul></div></li><li id="wp-admin-bar-wpseo-settings" class="menupop"><div class="ab-item ab-empty-item" tabindex="0" aria-haspopup="true"><span class="wp-admin-bar-arrow" aria-hidden="true"></span>Nastavenia SEO</div><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wpseo-settings-default" class="ab-submenu"><li id="wp-admin-bar-wpseo-general"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=wpseo_dashboard">Všeobecné</a></li><li id="wp-admin-bar-wpseo-titles"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=wpseo_titles">Vzhľad vyhľadávania</a></li><li id="wp-admin-bar-wpseo-social"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=wpseo_social">Sociálne siete</a></li><li id="wp-admin-bar-wpseo-tools"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=wpseo_tools">Nástroje</a></li><li id="wp-admin-bar-wpseo-licenses"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/admin.php?page=wpseo_licenses">Premium</a></li></ul></div></li></ul></div></li><li id="wp-admin-bar-nimble_customize" class="hide-if-no-customize"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/customize.php?url=http%3A%2F%2Ftest.socialnaekonomika.sk%2F&amp;autofocus%5Bsection%5D=__content_picker__"><span class="sek-nimble-icon" title="Add sections in live preview with Nimble Builder"><img src="TEST%20-_subory/nimble_icon.svg" alt="Nimble Builder"><span class="sek-nimble-admin-bar-title">Build with Nimble Builder</span></span></a></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://test.socialnaekonomika.sk/" method="get" id="adminbarsearch" class="czr-focus"><input class="adminbar-input czr-focusable" name="s" id="adminbar-search" type="text" maxlength="150"><label for="adminbar-search" class="screen-reader-text">Hľadať</label><input type="submit" class="adminbar-button" value="Hľadať"></form></div></li><li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://test.socialnaekonomika.sk/wp-admin/profile.php">Zdravím, <span class="display-name">jurcik</span><img alt="" src="TEST%20-_subory/18dd302f186f9b8241cf96351ea82b1f_002.jpg" srcset="TEST%20-_subory/18dd302f186f9b8241cf96351ea82b1f.jpg 2x" class="avatar avatar-26 photo" loading="lazy" width="26" height="26"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu"><li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://test.socialnaekonomika.sk/wp-admin/profile.php"><img alt="" src="TEST%20-_subory/18dd302f186f9b8241cf96351ea82b1f_003.jpg" srcset="TEST%20-_subory/18dd302f186f9b8241cf96351ea82b1f_004.jpg 2x" class="avatar avatar-64 photo" loading="lazy" width="64" height="64"><span class="display-name">jurcik</span></a></li><li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-admin/profile.php">Upraviť profil</a></li><li id="wp-admin-bar-logout"><a class="ab-item" href="http://test.socialnaekonomika.sk/wp-login.php?action=logout&amp;_wpnonce=b663e6c3e8">Odhlásiť sa</a></li></ul></div></li><li id="wp-admin-bar-cs-explain" class="debug-is-off"><a class="ab-item" href="http://test.socialnaekonomika.sk/?cs-explain=on" title="Turn on Custom Sidebars explain mode.">Sidebar Debug</a></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://test.socialnaekonomika.sk/wp-login.php?action=logout&amp;_wpnonce=b663e6c3e8">Odhlásiť sa</a>
+					</div>
+
+		      <a class="screen-reader-text skip-link" href="#content">Zobraziť celý obsah</a>
+    
+    
+    <div id="tc-page-wrap" class="container czr-boxed">
+
+      <header class="tpnav-header__header tc-header sl-logo_left border-top czr-submenu-fade czr-submenu-move czr-highlight-contextual-menu-items" role="banner" data-czr-model_id="header" data-czr-template="templates/parts/header" style="height: 83.3px;">
+        <div class="primary-navbar__wrapper d-none d-lg-block has-horizontal-menu desktop-sticky" data-czr-model_id="navbar_wrapper" data-czr-template="templates/parts/header/navbar_wrapper" style="transform: translate(0px, -77.7px);">
+  <div class="container">
+    <div class="row align-items-center flex-row primary-navbar__row">
+      <div class="branding__container col col-auto" data-czr-model_id="branding_wrapper" data-czr-template="templates/parts/header/parts/branding_wrapper">
+  <div class="branding align-items-center flex-column ">
+    <div class="branding-row d-flex align-self-start flex-row align-items-center">
+      <div class="navbar-brand col-auto " data-czr-model_id="logo_wrapper" data-czr-template="templates/parts/header/parts/logo_wrapper">
+  <a class="navbar-brand-sitelogo" href="http://test.socialnaekonomika.sk/" aria-label="TEST | ">
+    <img src="TEST%20-_subory/cropped-se_sk_logo3.png" alt="Späť na úvod" class="" data-no-retina="" data-czr-model_id="logo" data-czr-template="templates/parts/header/parts/logo" width="251" height="39">  </a>
+</div>
+      </div>
+      </div>
+</div>
+      <div class="primary-nav__container justify-content-lg-around col col-lg-auto flex-lg-column" data-czr-model_id="nav_container" data-czr-template="templates/parts/header/parts/nav_container">
+  <div class="primary-nav__wrapper flex-lg-row align-items-center justify-content-end">
+              <nav class="primary-nav__nav col" id="primary-nav">
+          <div class="nav__menu-wrapper primary-nav__menu-wrapper justify-content-end czr-open-on-hover" data-czr-model_id="navbar_primary_menu" data-czr-template="templates/parts/header/parts/menu">
+<ul id="main-menu" class="primary-nav__menu regular-nav nav__menu nav"><li id="menu-item-2154" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children czr-dropdown menu-item-2154"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" href="http://test.socialnaekonomika.sk/category/socialne-podnikanie/" class="nav__link"><span class="nav__title">Sociálne podnikanie</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-15" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-15"><a href="http://test.socialnaekonomika.sk/co-je-socialna-ekonomika/" class="nav__link"><span class="nav__title">Čo je sociálna ekonomika</span></a></li>
+	<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-32"><a href="http://test.socialnaekonomika.sk/co-je-socialne-podnikanie/" class="nav__link"><span class="nav__title">Čo je sociálne podnikanie</span></a></li>
+	<li id="menu-item-2084" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2084"><a href="http://test.socialnaekonomika.sk/socialne-podnikanie-v-zahranici/" class="nav__link"><span class="nav__title">Sociálne podnikanie v zahraničí</span></a></li>
+	<li id="menu-item-2089" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2089"><a href="http://test.socialnaekonomika.sk/socialne-podnikanie-na-slovensku/" class="nav__link"><span class="nav__title">Sociálne podnikanie na Slovensku</span></a></li>
+	<li id="menu-item-5171" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-5171"><a href="http://test.socialnaekonomika.sk/socialne-polnohospodarstvo/" class="nav__link"><span class="nav__title">Sociálne poľnohospodárstvo</span></a></li>
+	<li id="menu-item-2103" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2103"><a href="http://test.socialnaekonomika.sk/vyklad-zakona-o-se-a-sp-a-suvisiaca-legislativa/" class="nav__link"><span class="nav__title">Výklad Zákona o sociálnej ekonomike a sociálnych podnikoch a súvisiaca legislatíva</span></a></li>
+	<li id="menu-item-2104" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2104"><a href="http://test.socialnaekonomika.sk/register-pojmov/" class="nav__link"><span class="nav__title">Vymedzenie pojmov</span></a></li>
+</ul>
+</li>
+<li id="menu-item-9" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children czr-dropdown menu-item-9"><a data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" href="http://test.socialnaekonomika.sk/category/socialne-podniky/" class="nav__link"><span class="nav__title">Sociálne podniky</span><span class="caret__dropdown-toggler"><i class="icn-down-small"></i></span></a>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li id="menu-item-300" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-300"><a href="http://test.socialnaekonomika.sk/registrovane-sp-mapa/" class="nav__link"><span class="nav__title">Registrované SP – Mapa</span></a></li>
+	<li id="menu-item-2098" class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2098"><a href="http://test.socialnaekonomika.sk/registrovane-socialne-podniky-zoznam/" class="nav__link"><span class="nav__title">Registrované sociálne podniky – zoznam</span></a></li>
+</ul>
+</li>
+<li id="menu-item-2444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2444"><a href="http://test.socialnaekonomika.sk/regionalne-centra-socialnej-ekonomiky/" class="nav__link"><span class="nav__title">Regionálne centrá SE</span></a></li>
+<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8"><a href="http://test.socialnaekonomika.sk/category/aktualne-dianie/" class="nav__link"><span class="nav__title">Aktuálne dianie</span></a></li>
+</ul></div>        </nav>
+    <div class="primary-nav__utils nav__utils col-auto" data-czr-model_id="primary_nav_utils" data-czr-template="templates/parts/header/parts/primary_nav_utils">
+    <ul class="nav utils flex-row flex-nowrap regular-nav">
+          </ul>
+</div>  </div>
+</div>
+    </div>
+  </div>
+</div>    <div class="mobile-navbar__wrapper d-lg-none mobile-sticky" data-czr-model_id="mobile_navbar_wrapper" data-czr-template="templates/parts/header/mobile_navbar_wrapper">
+    <div class="branding__container justify-content-between align-items-center container" data-czr-model_id="mobile_branding_wrapper" data-czr-template="templates/parts/header/parts/mobile_branding_wrapper">
+  <div class="branding flex-column">
+    <div class="branding-row d-flex align-self-start flex-row align-items-center">
+      <div class="navbar-brand col-auto " data-czr-model_id="logo_wrapper" data-czr-template="templates/parts/header/parts/logo_wrapper">
+  <a class="navbar-brand-sitelogo" href="http://test.socialnaekonomika.sk/" aria-label="TEST | ">
+    <img src="TEST%20-_subory/cropped-se_sk_logo3.png" alt="Späť na úvod" class="" data-no-retina="" data-czr-model_id="logo" data-czr-template="templates/parts/header/parts/logo" width="251" height="39">  </a>
+</div>
+    </div>
+      </div>
+  <div class="mobile-utils__wrapper nav__utils regular-nav">
+    <ul class="nav utils row flex-row flex-nowrap">
+      <li class="hamburger-toggler__container " data-czr-model_id="mobile_menu_button" data-czr-template="templates/parts/header/parts/menu_button">
+  <button class="ham-toggler-menu czr-collapsed" data-toggle="czr-collapse" data-target="#mobile-nav"><span class="ham__toggler-span-wrapper"><span class="line line-1"></span><span class="line line-2"></span><span class="line line-3"></span></span><span class="screen-reader-text">Menu</span></button>
+</li>
+    </ul>
+  </div>
+</div>
+<div class="mobile-nav__container " data-czr-model_id="mobile_nav_container" data-czr-template="templates/parts/header/parts/mobile_nav_container">
+   <nav class="mobile-nav__nav flex-column czr-collapse" id="mobile-nav">
+      <div class="mobile-nav__inner container">
+      <div class="nav__menu-wrapper mobile-nav__menu-wrapper czr-open-on-click" data-czr-model_id="mobile_menu" data-czr-template="templates/parts/header/parts/menu">
+<ul id="mobile-nav-menu" class="mobile-nav__menu vertical-nav nav__menu flex-column nav"><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children czr-dropdown menu-item-2154"><span class="display-flex nav__link-wrapper align-items-start"><a href="http://test.socialnaekonomika.sk/category/socialne-podnikanie/" class="nav__link"><span class="nav__title">Sociálne podnikanie</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-15"><a href="http://test.socialnaekonomika.sk/co-je-socialna-ekonomika/" class="nav__link"><span class="nav__title">Čo je sociálna ekonomika</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-32"><a href="http://test.socialnaekonomika.sk/co-je-socialne-podnikanie/" class="nav__link"><span class="nav__title">Čo je sociálne podnikanie</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2084"><a href="http://test.socialnaekonomika.sk/socialne-podnikanie-v-zahranici/" class="nav__link"><span class="nav__title">Sociálne podnikanie v zahraničí</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2089"><a href="http://test.socialnaekonomika.sk/socialne-podnikanie-na-slovensku/" class="nav__link"><span class="nav__title">Sociálne podnikanie na Slovensku</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-5171"><a href="http://test.socialnaekonomika.sk/socialne-polnohospodarstvo/" class="nav__link"><span class="nav__title">Sociálne poľnohospodárstvo</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2103"><a href="http://test.socialnaekonomika.sk/vyklad-zakona-o-se-a-sp-a-suvisiaca-legislativa/" class="nav__link"><span class="nav__title">Výklad Zákona o sociálnej ekonomike a sociálnych podnikoch a súvisiaca legislatíva</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2104"><a href="http://test.socialnaekonomika.sk/register-pojmov/" class="nav__link"><span class="nav__title">Vymedzenie pojmov</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children czr-dropdown menu-item-9"><span class="display-flex nav__link-wrapper align-items-start"><a href="http://test.socialnaekonomika.sk/category/socialne-podniky/" class="nav__link"><span class="nav__title">Sociálne podniky</span></a><button data-toggle="czr-dropdown" aria-haspopup="true" aria-expanded="false" class="caret__dropdown-toggler czr-btn-link"><i class="icn-down-small"></i></button></span>
+<ul class="dropdown-menu czr-dropdown-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-300"><a href="http://test.socialnaekonomika.sk/registrovane-sp-mapa/" class="nav__link"><span class="nav__title">Registrované SP – Mapa</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page dropdown-item menu-item-2098"><a href="http://test.socialnaekonomika.sk/registrovane-socialne-podniky-zoznam/" class="nav__link"><span class="nav__title">Registrované sociálne podniky – zoznam</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2444"><a href="http://test.socialnaekonomika.sk/regionalne-centra-socialnej-ekonomiky/" class="nav__link"><span class="nav__title">Regionálne centrá SE</span></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8"><a href="http://test.socialnaekonomika.sk/category/aktualne-dianie/" class="nav__link"><span class="nav__title">Aktuálne dianie</span></a></li>
+</ul></div>      </div>
+  </nav>
+</div></div></header>
+                                                  <div class="sektion-wrapper " data-sek-level="location" data-sek-id="__after_header" data-sek-is-global-location="false">                            <div data-sek-level="section" data-sek-id="__nimble__f9ce12bb9839" class="sek-section sek-has-modules   " data-sek-lazy-bg="true">
+                          <div class="sek-container-fluid">
+                            <div class="sek-row sek-sektion-inner">
+                                <div data-sek-level="column" data-sek-id="__nimble__5d5655f3f0f5" class="sek-column sek-col-base sek-col-50   sp-carousel" data-sek-lazy-bg="true">                                                <div class="sek-column-inner ">
+                                                                  <div data-sek-level="module" data-sek-id="__nimble__1f1fdef72fa7" data-sek-module-type="czr_img_slider_module" class="sek-module   " data-sek-lazy-bg="true">                        <div class="sek-module-inner">
+                                  <div class="swiper-container sek-swiper__nimble__1f1fdef72fa7 swiper-container-initialized swiper-container-horizontal" data-sek-swiper-id="__nimble__1f1fdef72fa7" data-sek-autoplay="true" data-sek-autoplay-delay="6001" data-sek-pause-on-hover="true" data-sek-loop="true" data-sek-image-layout="nimble-wizard" data-sek-navtype="dots" data-sek-is-multislide="true" data-sek-hide-nav-on-mobile="false" data-sek-lazyload="true" style="cursor: grab;">                      <div class="swiper-wrapper" style="transition-duration: 300ms; transform: translate3d(-1808px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" title="" data-sek-item-id="0e89c2c6195a" data-sek-has-overlay="false" data-swiper-slide-index="2" style="width: 904px;"><figure class="sek-carousel-img" data-img-centered-in-container="2"><img src="TEST%20-_subory/regionalne_centra_.png" class="attachment-large size-large swiper-lazy sek-v-centrd swiper-lazy-loaded" alt="ilustracny obrazok" style="width: 904px; height: auto; top: -4.5px; left: 0px;" data-img-centered="2" sizes="(max-width: 570px) 100vw, 570px" srcset="TEST%20-_subory/regionalne_centra_.png 570w, TEST%20-_subory/regionalne_centra_-300x211.png 300w" width="570" height="400"></figure><div class="sek-slider-text-wrapper"><div class="sek-slider-text-content"><strong><span style="color: #f25c19; font-size: 1.6em;">PREMÝŠLATE NAD ZALOŽENÍM<br></span><span style="color: #3047a3; font-size: 1.6em;">SOCIÁLNEHO PODNIKU </span></strong><strong><span style="color: #f25c19;"><span style="font-size: 1.6em; color: #f25c19;">?</span>&nbsp;</span><br></strong><br><span style="color: #6b6b6b;"><strong>Bezplatnú pomoc</strong> a podporu nájdete v</span>
+<div style="color: #3047a3;">Regionálnych centrách sociálnej ekonomiky</div>
+<br><br><strong><span style="color: #fff; font-size: 0.9em; background: #3047a3; padding: 10px 24px; border-radius: 20px;"><a href="http://test.socialnaekonomika.sk/regionalne-centra-socialnej-ekonomiky/"><span style="color: #ffffff;">➜ Dohodnite si termín</span></a> </span></strong></div></div></div>
+              <div class="swiper-slide swiper-slide-prev" title="" data-sek-item-id="4fbe6d9d6fb6" data-sek-has-overlay="true" data-swiper-slide-index="0" style="width: 904px;"><figure class="sek-carousel-img" data-img-centered-in-container="4"><img src="TEST%20-_subory/socialna_ekonomika.png" class="attachment-large size-large sek-v-centrd sek-lazy-loaded" alt="" loading="lazy" style="width: 904px; height: auto; top: -4.5px; left: 0px;" data-img-centered="4" srcset="TEST%20-_subory/socialna_ekonomika.png 570w, TEST%20-_subory/socialna_ekonomika-300x211.png 300w" sizes="(max-width: 570px) 100vw, 570px" width="570" height="400"></figure><div class="sek-slider-text-wrapper"><div class="sek-slider-text-content"><strong><span style="color: #f25c19; font-size: 1.6em;">SOCIÁLNA EKONOMIKA</span><br></strong><span style="font-size: 1.6em;">PRISPIEVA K</span><strong><br><span style="color: #3047a3; font-size: 1.4em;">› ZAMESTNANOSTI,</span></strong><br><strong><span style="color: #3047a3; font-size: 1.4em;">› SPOLOČENSKEJ SÚDRŽNOSTI,</span></strong><br><strong><span style="color: #3047a3; font-size: 1.4em;">› REGIONÁLNEMU ROZVOJU.</span><br><br></strong><span style="color: #333333;">Cieľom týchto stránok je osloviť všetkých, <br>ktorí majú záujem meniť Slovensko k lepšiemu.</span></div></div></div><div class="swiper-slide swiper-slide-active" title="" data-sek-item-id="37f37c6ad912" data-sek-has-overlay="false" data-swiper-slide-index="1" style="width: 904px;"><figure class="sek-carousel-img" data-img-centered-in-container="2"><img src="TEST%20-_subory/uni_banner_2.png" class="attachment-large size-large swiper-lazy sek-v-centrd swiper-lazy-loaded" alt="Ilustračný obrázok" style="width: 904px; height: auto; top: -139.5px; left: 0px;" data-img-centered="2" sizes="(max-width: 570px) 100vw, 570px" srcset="TEST%20-_subory/uni_banner_2.png 570w, TEST%20-_subory/uni_banner_2-300x247.png 300w" width="570" height="470"></figure><div class="sek-slider-text-wrapper"><div class="sek-slider-text-content"><p><a href="https://www.upsvr.gov.sk/sluzby-zamestnanosti/aktuality/narodny-projekt-investicna-pomoc-pre-socialne-podniky-nenavratna-zlozka.html?page_id=1031144" target="_blank" rel="noopener"><strong><span style="color: #f25c19; font-size: 1.6em;">INVESTIČNÁ POMOC </span></strong><br><span style="color: #333333; font-size: 1.6em;">PRE</span><strong><span style="color: #3047a3; font-size: 1.6em;"> SOCIÁLNE PODNIKY</span> </strong></a><br><br><span style="color: #6b6b6b;">Základné informácie o podmienkach </span><span style="color: #6b6b6b;">poskytovania<br>investičnej pomoci </span><span style="color: #6b6b6b;">Vám bezplatne poskytnú&nbsp;</span><br><br><br><strong><span style="color: #fff; font-size: 0.9em; background: #3047a3; padding: 10px 24px; border-radius: 20px;"><a href="http://test.socialnaekonomika.sk/regionalne-centra-socialnej-ekonomiky/"><span style="color: #ffffff;">➜ Regionálne centrá</span></a> </span></strong><br><br></p>
+<p>&nbsp;</p></div></div></div><div class="swiper-slide swiper-slide-next" title="" data-sek-item-id="0e89c2c6195a" data-sek-has-overlay="false" data-swiper-slide-index="2" style="width: 904px;"><figure class="sek-carousel-img" data-img-centered-in-container="2"><img src="TEST%20-_subory/regionalne_centra_.png" class="attachment-large size-large swiper-lazy sek-v-centrd swiper-lazy-loaded" alt="ilustracny obrazok" style="width: 904px; height: auto; top: -4.5px; left: 0px;" data-img-centered="2" sizes="(max-width: 570px) 100vw, 570px" srcset="TEST%20-_subory/regionalne_centra_.png 570w, TEST%20-_subory/regionalne_centra_-300x211.png 300w" width="570" height="400"></figure><div class="sek-slider-text-wrapper"><div class="sek-slider-text-content"><strong><span style="color: #f25c19; font-size: 1.6em;">PREMÝŠLATE NAD ZALOŽENÍM<br></span><span style="color: #3047a3; font-size: 1.6em;">SOCIÁLNEHO PODNIKU </span></strong><strong><span style="color: #f25c19;"><span style="font-size: 1.6em; color: #f25c19;">?</span>&nbsp;</span><br></strong><br><span style="color: #6b6b6b;"><strong>Bezplatnú pomoc</strong> a podporu nájdete v</span>
+<div style="color: #3047a3;">Regionálnych centrách sociálnej ekonomiky</div>
+<br><br><strong><span style="color: #fff; font-size: 0.9em; background: #3047a3; padding: 10px 24px; border-radius: 20px;"><a href="http://test.socialnaekonomika.sk/regionalne-centra-socialnej-ekonomiky/"><span style="color: #ffffff;">➜ Dohodnite si termín</span></a> </span></strong></div></div></div>            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" title="" data-sek-item-id="4fbe6d9d6fb6" data-sek-has-overlay="true" data-swiper-slide-index="0" style="width: 904px;"><figure class="sek-carousel-img" data-img-centered-in-container="3"><img src="TEST%20-_subory/socialna_ekonomika.png" class="attachment-large size-large sek-v-centrd sek-lazy-loaded" alt="" loading="lazy" style="width: 904px; height: auto; top: -4.5px; left: 0px;" data-img-centered="3" srcset="TEST%20-_subory/socialna_ekonomika.png 570w, TEST%20-_subory/socialna_ekonomika-300x211.png 300w" sizes="(max-width: 570px) 100vw, 570px" width="570" height="400"></figure><div class="sek-slider-text-wrapper"><div class="sek-slider-text-content"><strong><span style="color: #f25c19; font-size: 1.6em;">SOCIÁLNA EKONOMIKA</span><br></strong><span style="font-size: 1.6em;">PRISPIEVA K</span><strong><br><span style="color: #3047a3; font-size: 1.4em;">› ZAMESTNANOSTI,</span></strong><br><strong><span style="color: #3047a3; font-size: 1.4em;">› SPOLOČENSKEJ SÚDRŽNOSTI,</span></strong><br><strong><span style="color: #3047a3; font-size: 1.4em;">› REGIONÁLNEMU ROZVOJU.</span><br><br></strong><span style="color: #333333;">Cieľom týchto stránok je osloviť všetkých, <br>ktorí majú záujem meniť Slovensko k lepšiemu.</span></div></div></div></div>                                <div class="swiper-pagination swiper-pagination__nimble__1f1fdef72fa7 swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span></div>
+          
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          <script>nb_.emit('nb-needs-swiper');</script>
+                            </div>
+                    </div>                                                                              </div>
+                      </div>                    <div data-sek-level="column" data-sek-id="__nimble__8d13986b944f" class="sek-column sek-col-base sek-col-50   " data-sek-lazy-bg="true">                                                <div class="sek-column-inner ">
+                                                                  <div data-sek-level="module" data-sek-id="__nimble__58bf14a65c58" data-sek-module-type="czr_heading_module" class="sek-module   " data-sek-lazy-bg="true">                        <div class="sek-module-inner">
+                          <h4 class="sek-heading"><span style="color: #ec5f25;"><strong>AKTUALITY</strong></span></h4>                        </div>
+                    </div>                                                          <div data-sek-level="module" data-sek-id="__nimble__5d63a7a50ec5" data-sek-module-type="czr_post_grid_module" class="sek-module   " data-sek-lazy-bg="true">                        <div class="sek-module-inner">
+                            <div class="sek-post-grid-wrapper  sek-has-mobile-breakpoint" id="__nimble__5d63a7a50ec5">
+    <div class="sek-grid-items sek-list-layout  ">
+            <article id="sek-pg-7644" class="">
+                          <div class="sek-pg-content">
+                                      <h2 class="sek-pg-title">
+                <a href="http://test.socialnaekonomika.sk/novela-zakona-o-podpore-regionalneho-rozvoja-prinesie-vyhody-aj-pre-socialne-podniky/" rel="bookmark">Novela zákona o podpore regionálneho rozvoja prinesie výhody aj pre sociálne podniky</a>
+              </h2><!--/.pg-title-->
+                                      <aside class="sek-pg-metas">
+                                                  <span class="published updated">17. júna 2021</span>
+                                              </aside><!--/.pg-meta-->
+                                      <div class="sek-excerpt">
+                                <p>Nové pravidlá pre regióny má v&nbsp;pláne novela zákona č.&nbsp;539/2008 o&nbsp;podpore regionálneho rozvoja z dielne […]</p>
+              </div>
+                      </div>              </article><!--/#sek-pg-->
+          <article id="sek-pg-7627" class="">
+                          <div class="sek-pg-content">
+                                      <h2 class="sek-pg-title">
+                <a href="http://test.socialnaekonomika.sk/uvo-pozyva-na-skolenie-socialne-verejne-obstaravanie/" rel="bookmark">ÚVO pozýva na školenie Sociálne verejné obstarávanie</a>
+              </h2><!--/.pg-title-->
+                                      <aside class="sek-pg-metas">
+                                                  <span class="published updated">15. júna 2021</span>
+                                              </aside><!--/.pg-meta-->
+                                      <div class="sek-excerpt">
+                                <p>Určené je verejným obstarávateľom a obstarávateľom a uskutoční sa online 22.6.2021 o 9:00 hod. […]</p>
+              </div>
+                      </div>              </article><!--/#sek-pg-->
+          <article id="sek-pg-7562" class="">
+                          <div class="sek-pg-content">
+                                      <h2 class="sek-pg-title">
+                <a href="http://test.socialnaekonomika.sk/blizi-sa-termin-predkladania-vyrocnych-sprav-2/" rel="bookmark">Blíži sa termín predkladania výročných správ</a>
+              </h2><!--/.pg-title-->
+                                      <aside class="sek-pg-metas">
+                                                  <span class="published updated">14. júna 2021</span>
+                                              </aside><!--/.pg-meta-->
+                                      <div class="sek-excerpt">
+                                <p>Vážení sociálni podnikatelia, dovoľujeme si vás upozorniť na blížiaci sa termín predkladania výročných správ […]</p>
+              </div>
+                      </div>              </article><!--/#sek-pg-->
+        </div>
+          </div>                          </div>
+                    </div>                                                          <div data-sek-level="module" data-sek-id="__nimble__845618bdcae5" data-sek-module-type="czr_button_module" class="sek-module   " data-sek-lazy-bg="true">                        <div class="sek-module-inner">
+                          <a class="sek-btn" href="http://test.socialnaekonomika.sk/category/aktualne-dianie/"><span class="sek-btn-inner"><span class="sek-btn-text"><span style="color: #ffffff;"><!--(figmeta)eyJmaWxlS2V5IjoidkxnU0dVQjRjUldqWThUTThhVExFUCIsInBhc3RlSUQiOjE5NTkxMjE1NzgsImRhdGFUeXBlIjoic2NlbmUifQo=(/figmeta)--><!--(figma)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(/figma)--><strong>ĎALŠIE AKTUALI</strong>TY</span></span></span></a>                        </div>
+                    </div>                                                                              </div>
+                      </div>                                                </div>
+                          </div>
+                      </div>                                                                                                      </div>                                          
+
+                                                <div id="main-wrapper" class="section">
+
+                		<!-- <div class="container"> -->
+				<!-- </div> -->
+	        
+		                <div>			<div class="textwidget"><div class="home-top">
+<div class="home-top-col color-1">
+<div class="home-top-title">Ako založiť sociálny podnik</div>
+<div class="home-top-box">
+<div class="sideMenuLevel1">Pre vás, ak ste</div>
+<div class="sideMenuIndent"><a href="http://test.socialnaekonomika.sk/pre-vas-ak-ste-obec/">Obec</a><br>
+<a href="http://test.socialnaekonomika.sk/pre-vas-ak-ste-podnikatel/">Podnikateľ</a><br>
+<a href="http://test.socialnaekonomika.sk/pre-vas-ak-ste-mimovladna-organizacia/">Mimovládna organizácia</a><br>
+<a href="http://test.socialnaekonomika.sk/pre-vas-ak-ste-chranena-dielna/">Chránená dielňa</a><br>
+<a href="http://test.socialnaekonomika.sk/cirkevne-organizacie-a-socialna-ekonomika/">Cirkevná organizácia</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/druhy-registrovanych-socialnych-podnikov/">Druhy registrovaných sociálnych podnikov</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/postup-zalozenia-socialneho-podniku/">Postup založenia sociálneho podniku</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/socializacia-zisku/">Socializácia zisku</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/zapajanie-zainteresovanych-osob/">Zapájanie zainteresovaných osôb</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/znevyhodnene-a-zranitelne-osoby/">Znevýhodnené a zraniteľné osoby</a></div>
+</div>
+</div>
+<div class="home-top-col color-2">
+<div class="home-top-title">Formy podpory</div>
+<div class="home-top-box">
+<div><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/formy-podpory-priama/">Priama</a></div>
+<div class="sideMenuIndent"><a href="http://test.socialnaekonomika.sk/investicna-pomoc/">Investičná pomoc</a><br>
+<a href="http://test.socialnaekonomika.sk/kompenzacna-pomoc/">Kompenzačná pomoc</a><br>
+<a href="http://test.socialnaekonomika.sk/vyrovnavaci-a-umiestnovaci-prispevok-ip/">Vyrovnávací a umiestňovací príspevok IP</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/formy-podpory-nepriama/">Nepriama</a></div>
+<div class="sideMenuIndent"><a href="http://test.socialnaekonomika.sk/znizena-sadzba-dph/">Znížená sadzba DPH</a><br>
+<a href="http://test.socialnaekonomika.sk/ulava-na-dani-z-prijmov/"> Úľava na dani z príjmov</a><br>
+<a href="http://test.socialnaekonomika.sk/predaj-prenajom-nehnutelnosti-za-nizsiu-cenu-ako-je-znalecky-odhad/">Predaj/prenájom nehnuteľnosti</a><br>
+<a href="http://test.socialnaekonomika.sk/pomoc-na-podporu-dopytu-servisne-poukazky/">Servisné poukážky</a><br>
+<a href="http://test.socialnaekonomika.sk/verejne-obstaravanie-so-socialnym-aspektom/">Verejné obstarávanie so sociálnym aspektom</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/granty-a-dotacie/">Granty a dotácie</a></div>
+<div></div>
+</div>
+</div>
+<div class="home-top-col color-3">
+<div class="home-top-title">Poradenstvo a informácie</div>
+<div class="home-top-box">
+<div><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/napiste-nam/">Napíšte nám</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/najcastejsie-otazky/">Najčastejšie otázky</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/kde-najst-dalsiu-podporu/">Kde nájsť ďalšiu podporu</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/materialy-na-stiahnutie/">Materiály na stiahnutie</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/institut-socialnej-ekonomiky/">Inštitút sociálnej ekonomiky</a></div>
+</div>
+</div>
+<div class="home-top-col color-4">
+<div class="home-top-title">Príklady dobrej praxe</div>
+<div class="home-top-box">
+<div><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/category/priklady-dobrej-praxe/slovensko-priklady-dobrej-praxe/">Slovensko</a></div>
+<div class="sideMenuTopPad"><a class="sideMenuLevel1" href="http://test.socialnaekonomika.sk/category/priklady-dobrej-praxe/zahranicie-priklady-dobrej-praxe/">Zahraničie</a></div>
+</div>
+</div>
+</div>
+</div>
+		</div>		
+                      
+
+          
+          <div class="container" role="main">
+            
+            <div class="flex-row row column-content-wrapper">
+
+                                
+                <div id="content" class="col-12 article-container">
+				
+                                  </div>
+
+                
+            </div><!-- .column-content-wrapper -->
+
+            
+
+          </div><!-- .container -->
+
+          
+    </div><!-- #main-wrapper -->
+
+    
+    
+                                                  <div class="sektion-wrapper " data-sek-level="location" data-sek-id="__before_footer" data-sek-is-global-location="false">                            <div data-sek-level="section" data-sek-id="__nimble__c21f8000c121" class="sek-section sek-has-modules   " data-sek-lazy-bg="true">
+                          <div class="sek-container-fluid">
+                            <div class="sek-row sek-sektion-inner">
+                                <div data-sek-level="column" data-sek-id="__nimble__881fe526a757" class="sek-column sek-col-base sek-col-100   " data-sek-lazy-bg="true">                                                <div class="sek-column-inner ">
+                                                                  <div data-sek-level="module" data-sek-id="__nimble__fde24fe5ae7c" data-sek-module-type="czr_button_module" class="sek-module   " data-sek-lazy-bg="true">                        <div class="sek-module-inner">
+                          <button class="sek-btn box-shadow push-effect"><span class="sek-btn-inner"><span class="sek-btn-text">Kalendár sociálneho&nbsp; podnikania</span></span></button>                        </div>
+                    </div>                                                                              </div>
+                      </div>                                                </div>
+                          </div>
+                      </div>                                                                                                      </div>                                          <footer id="footer" class="footer__wrapper" data-czr-model_id="footer" data-czr-template="templates/parts/footer">
+  <div id="footer-widget-area" class="widget__wrapper" role="complementary" data-czr-model_id="footer_widgets" data-czr-template="templates/parts/footer/footer_widgets">
+  <div class="container widget__container">
+    <div class="row">
+                      <div id="footer_one" class="col-md-4 col-12">
+            <aside id="text-4" class="widget widget_text">			<div class="textwidget"><p><img loading="lazy" class="alignnone size-medium wp-image-218" src="TEST%20-_subory/logo_all_dark2-300x80.png" alt="" srcset="TEST%20-_subory/logo_all_dark2-300x80.png 300w, TEST%20-_subory/logo_all_dark2-768x205.png 768w, TEST%20-_subory/logo_all_dark2.png 892w" sizes="(max-width: 300px) 100vw, 300px" width="300" height="80"></p>
+</div>
+		</aside>          </div>
+                  <div id="footer_two" class="col-md-4 col-12">
+            <aside id="text-5" class="widget widget_text">			<div class="textwidget"><p>Tento
+ projekt sa realizuje vďaka podpore z&nbsp;Európskeho sociálneho fondu 
+a&nbsp;Európskeho fondu regionálneho rozvoja v&nbsp;rámci Operačného 
+programu Ľudské zdroje.</p>
+</div>
+		</aside>          </div>
+                  <div id="footer_three" class="col-md-4 col-12">
+            <aside id="text-6" class="widget widget_text">			<div class="textwidget"><div style="text-align: right;"><a href="http://www.esf.gov.sk/" target="_blank" rel="noopener">www.esf.gov.sk</a><br>
+<a href="http://www.employment.gov.sk/" target="_blank" rel="noopener">www.employment.gov.sk</a><br>
+<a href="http://www.ia.gov.sk/" target="_blank" rel="noopener">www.ia.gov.sk</a></div>
+</div>
+		</aside><aside id="text-19" class="widget widget_text">			<div class="textwidget"><div style="text-align: right;">
+<p><a href="http://test.socialnaekonomika.sk/vyhlasenie-o-pristupnosti/" target="_blank" rel="noopener">Vyhlásenie o prístupnosti</a></p>
+</div>
+</div>
+		</aside>          </div>
+                  </div>
+  </div>
+</div>
+<div id="colophon" class="colophon " data-czr-model_id="footer_colophon" data-czr-template="templates/parts/footer/footer_colophon">
+  <div class="container">
+    <div class="colophon__row row flex-row justify-content-between">
+      <div class="col-12 col-sm-auto">
+        <div id="footer__credits" class="footer__credits" data-czr-model_id="footer_credits" data-czr-template="templates/parts/footer/footer_credits">
+  <p class="czr-copyright">
+    <span class="czr-copyright-text">©&nbsp;2021&nbsp;</span><a class="czr-copyright-link" href="http://test.socialnaekonomika.sk/" title="TEST">TEST</a><span class="czr-rights-text">&nbsp;–&nbsp;All rights reserved</span>
+  </p>
+</div>
+
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="TEST%20-_subory/js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-31366621-11');
+</script>
+      </div>
+            <div class="col-12 col-sm-auto">
+        <div class="social-links">
+          <ul class="socials " data-czr-model_id="social_block" data-czr-template="templates/parts/modules/common/social_block">
+  <li><a rel="nofollow" class="social-icon icon-feed" title="Prihlásiť sa k RSS odberom " aria-label="Prihlásiť sa k RSS odberom " href="http://npise.couldera.tech/feed/rss/" target="_blank"><i class="fas fa-rss"></i></a></li> <li><a rel="nofollow" class="social-icon icon-facebook" title="Follow us on Facebook" aria-label="Follow us on Facebook" href="https://www.facebook.com/socialnaekonomika.sk/" target="_blank"><i class="fab fa-facebook"></i></a></li> <li><a rel="nofollow" class="social-icon icon-youtube" title="Follow us on Youtube" aria-label="Follow us on Youtube" href="javascript:void(0)" target="_blank"><i class="fab fa-youtube"></i></a></li> <li><a rel="nofollow" class="social-icon icon-twitter" title="Follow us on Twitter" aria-label="Follow us on Twitter" href="javascript:void(0)" target="_blank"><i class="fab fa-twitter"></i></a></li></ul>
+        </div>
+      </div>
+          </div>
+  </div>
+</div>
+</footer>
+    </div><!-- end #tc-page-wrap -->
+
+    <section class="czr-overlay search_o">
+  <a href="#" class="search-close_btn search-toggle_btn czr-overlay-toggle_btn"><i class="icn-close"></i></a>
+  <div class="overlay-content">
+    <div class="search__wrapper">
+        </div>
+  </div>
+</section><button class="btn czr-btt czr-btta right" data-czr-model_id="btt_arrow" data-czr-template="templates/parts/footer/btt_arrow"><i class="icn-up-small"></i></button>
+                
+                <script type="text/javascript" src="TEST%20-_subory/hoverintent-js.js" id="hoverintent-js-js"></script>
+<script type="text/javascript" src="TEST%20-_subory/admin-bar.js" id="admin-bar-js"></script>
+<script type="text/javascript" src="TEST%20-_subory/coblocks-animation.js" id="coblocks-animation-js"></script>
+<script type="text/javascript" id="coblocks-lightbox-js-extra">
+/* <![CDATA[ */
+var coblocksLigthboxData = {"closeLabel":"Close Gallery","leftLabel":"Previous","rightLabel":"Next"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="TEST%20-_subory/coblocks-lightbox.js" id="coblocks-lightbox-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/test.socialnaekonomika.sk\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="TEST%20-_subory/scripts.js" id="contact-form-7-js"></script>
+<script type="text/javascript" src="TEST%20-_subory/core.js" id="jquery-ui-core-js"></script>
+<script type="text/javascript" src="TEST%20-_subory/customizr-placeholders.js" id="customizr-front-placholders-js"></script>
+<script type="text/javascript" src="TEST%20-_subory/hoverIntent.js" id="hoverIntent-js"></script>
+<script type="text/javascript" id="megamenu-js-extra">
+/* <![CDATA[ */
+var megamenu = {"timeout":"300","interval":"100"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="TEST%20-_subory/maxmegamenu.js" id="megamenu-js"></script>
+  
+  
+</body></html>

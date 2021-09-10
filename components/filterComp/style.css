@@ -1,0 +1,46 @@
+.awt-vis-controls-csvFilter .awt-csvFilter-button{
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.controlers-filters{
+    padding-bottom: 0 !important;
+    
+}
+
+.controlers-filters:last-child{
+    border-right: 1px solid transparent;
+}
+
+.at-layout-vertical>.at-action-panel{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 20px;
+    padding: 4px;
+    margin: 8px;
+}
+
+.awt-vis-controls-SearchFilter .awt-searchFilter-input{
+    border: 1px solid transparent !important;
+}
+
+.awt-vis-controls-csvFilter .awt-csvFilter{
+    border-right: 2px solid #d2d2d2;
+}
+
+.at-layout-container .at-filter-panel{
+    justify-content: stretch;
+    width: 100%;
+}
+
+.controlers-filters:last-child{
+    flex-grow: 1;
+}
+
+.awt-vis-controls-csvFilter .awt-csvFilter-selected li{
+    border: transparent 0px solid !important;
+    background: #3047a3 !important;
+}
+
+.awt-vis-controls-csvFilter .awt-csvFilter-selected li > div{
+    color: white;
+}

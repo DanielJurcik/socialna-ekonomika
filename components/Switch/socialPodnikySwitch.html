@@ -8,19 +8,19 @@
 </style>
 
 <div class="sp-switch">
-    <a class="sp-item left-side-radius active" href="https://socialnaekonomika.sk/registrovane-sp-mapa/">
+    <a class="sp-item left-side-radius active">
         <div class="sp-item-wrapper">
-            <p>MAPA</p>
+            <p style="color: #fff">MAPA</p>
         </div>
     </a>
-    <a class="sp-item right-side-radius" href="https://socialnaekonomika.sk/registrovane-socialne-podniky-zoznam/">
+    <a class="sp-item right-side-radius" href="/registrovane-socialne-podniky-zoznam/">
         <div class="sp-item-wrapper">
             <p>ZOZNAM</p>
         </div>
     </a>
 </div>
-
-<style>
+  
+  <style>
     .sp-switch{
         display: flex;
         border-radius: 20px;
@@ -39,22 +39,27 @@
         text-indent:12px;
         transition: 0.2s ease-in-out;
     }
-
-    .sp-switch a.sp-item:hover{
-        box-shadow: inset #506ad3 0px 0px 0px 3px, inset #fff 0px 0px 0px 6px;
-        /*box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;*/
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  
+    .sp-switch a.sp-item:hover p{
+        color: #fff;
+        border-bottom: 4px solid white;
+        /*box-shadow: inset #506ad3 0px 0px 0px 3px, inset #fff 0px 0px 0px 6px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;*/
     }
-
+  
     .sp-switch .sp-item-wrapper p{
         margin: 0;
+        padding-top: 4px;
+        border-bottom: 4px solid transparent;
+        font-weight: 800;
     }
-
+  
     .right-side-radius{
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
     }
-
+  
     .left-side-radius{
         border-bottom-left-radius: 20px;
         border-top-left-radius: 20px;
@@ -63,8 +68,16 @@
         display: flex;
         justify-content: center;
     }
-
+  
     .sp-switch a.sp-item.active{
         background-color: #3047a3;
     }
-</style>
+    @media screen and (max-width: 450px) {
+    .sp-switch a.sp-item{
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-weight: 500;
+        text-indent:6px;
+    }
+  }
+  </style>

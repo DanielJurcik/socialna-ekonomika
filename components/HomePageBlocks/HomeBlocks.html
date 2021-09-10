@@ -1,0 +1,201 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<style>
+
+    /*HOMEPAGE - Farebne bloky - zac*/
+    .home-top {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        width: 100%;
+        border: 0px red solid;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .home-top-col {
+        flex: 24%;
+        border-radius: 20px 0px;
+        justify-content: space-between;
+        margin: 0px 5px 8px 5px;
+        box-sizing: border-box;
+        color: white;
+        padding: 16px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+        transition: transform,border-radius 0.3s ease-in-out;
+    }
+
+    .home-top-col:nth-child(1),.home-top-col:nth-child(3){
+        transform: translateY(-40px);
+    }
+
+    .home-top-col:hover{
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        border-radius: 0px 20px;
+    }
+
+
+    .home-top-title {
+        font-weight: bold;
+        font-size: 1.8em;
+        margin-bottom: 32px;
+        position: relative;
+    }
+
+    .home-top-title::after{
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        height: 2px;
+        background-color: #fff;
+        width: 30%;
+    }
+
+    .home-top-box {
+
+    }
+
+    .home-top-box a {
+        color: white;
+    }
+
+    .home-top-box a:hover {
+        color: white !important;
+        text-decoration: underline;
+    }
+
+    .sideMenuIndent {
+        margin-left: 8px;
+		padding-left: 8px;
+		border-left: 2px solid #fff;
+    }
+
+    .sideMenuTopPad {
+        padding-top: 15px;
+    }
+
+    .sideMenuLevel1 {
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    @media(max-width: 1333px) {
+        .home-top-col {
+            flex: 24%;
+        }
+    }
+
+    @media(max-width: 1073px) {
+        .home-top-col {
+            flex: 33.33%;
+        }
+    }
+
+    @media(max-width: 815px) {
+        .home-top-col {
+            flex: 50%;
+        }
+    }
+
+    @media(max-width: 555px) {
+        .home-top-col {
+            flex: 100%;
+        }
+    }
+
+    /*HOMEPAGE - Farebne bloky - kon*/
+
+    /*FARBY BLOKOV - zac*/
+.color-1{
+	background: #3047a3;
+}
+.color-2{
+	background: #ef5f22;
+}
+.color-3{
+	background: #6f6f6f;
+}
+.color-4{
+	background: #2f80a2;
+}
+/*FARBY BLOKOV - koniec */
+</style>
+
+<div class="home-top" style="max-width: 1300px;">
+    <div class="home-top-col color-1">
+        <div class="home-top-title">Ako založiť sociálny podnik</div>
+        <div class="home-top-box">
+            <div class="sideMenuLevel1">Pre vás, ak ste</div>
+            <div class="sideMenuIndent"><a href="/pre-vas-ak-ste-obec/">Obec</a>
+                <a href="/pre-vas-ak-ste-podnikatel/">Podnikateľ</a>
+                <a href="/pre-vas-ak-ste-mimovladna-organizacia/">Mimovládna organizácia</a>
+                <a href="/pre-vas-ak-ste-chranena-dielna/">Chránená dielňa</a>
+                <a href="/cirkevne-organizacie-a-socialna-ekonomika/">Cirkevná organizácia</a>
+            </div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1"
+                    href="/druhy-registrovanych-socialnych-podnikov/">Druhy registrovaných sociálnych podnikov</a></div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/postup-zalozenia-socialneho-podniku/">Postup
+                    založenia sociálneho podniku</a></div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/socializacia-zisku/">Socializácia zisku</a>
+            </div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/zapajanie-zainteresovanych-osob/">Zapájanie
+                    zainteresovaných osôb</a></div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/znevyhodnene-a-zranitelne-osoby/">Znevýhodnené
+                    a zraniteľné osoby</a></div>
+        </div>
+    </div>
+    <div class="home-top-col color-2">
+        <div class="home-top-title">Formy podpory</div>
+        <div class="home-top-box">
+            <div><a class="sideMenuLevel1" href="/formy-podpory-priama/">Priama</a></div>
+            <div class="sideMenuIndent"><a href="/investicna-pomoc/">Investičná pomoc</a>
+                <a href="/kompenzacna-pomoc/">Kompenzačná pomoc</a>
+                <a href="/vyrovnavaci-a-umiestnovaci-prispevok-ip/">Vyrovnávací a umiestňovací príspevok IP</a>
+            </div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/formy-podpory-nepriama/">Nepriama</a></div>
+            <div class="sideMenuIndent"><a href="/znizena-sadzba-dph/">Znížená sadzba DPH</a>
+                <a href="/ulava-na-dani-z-prijmov/"> Úľava na dani z príjmov</a>
+                <a href="/predaj-prenajom-nehnutelnosti-za-nizsiu-cenu-ako-je-znalecky-odhad/">Predaj/prenájom
+                    nehnuteľnosti</a>
+                <a href="/pomoc-na-podporu-dopytu-servisne-poukazky/">Servisné poukážky</a>
+                <a href="/verejne-obstaravanie-so-socialnym-aspektom/">Verejné obstarávanie so sociálnym aspektom</a>
+            </div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/granty-a-dotacie/">Granty a dotácie</a></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="home-top-col color-3">
+        <div class="home-top-title">Poradenstvo a informácie</div>
+        <div class="home-top-box">
+            <div><a class="sideMenuLevel1" href="/napiste-nam/">Napíšte nám</a></div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/najcastejsie-otazky/">Najčastejšie otázky</a>
+            </div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/kde-najst-dalsiu-podporu/">Kde nájsť ďalšiu
+                    podporu</a></div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/materialy-na-stiahnutie/">Materiály na
+                    stiahnutie</a></div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1" href="/institut-socialnej-ekonomiky/">Inštitút
+                    sociálnej ekonomiky</a></div>
+        </div>
+    </div>
+    <div class="home-top-col color-4">
+        <div class="home-top-title">Príklady dobrej praxe</div>
+        <div class="home-top-box">
+            <div><a class="sideMenuLevel1"
+                    href="/category/priklady-dobrej-praxe/slovensko-priklady-dobrej-praxe/">Slovensko</a></div>
+            <div class="sideMenuTopPad"><a class="sideMenuLevel1"
+                    href="/category/priklady-dobrej-praxe/zahranicie-priklady-dobrej-praxe/">Zahraničie</a></div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        margin-top: 200px;
+        margin-left: 200px;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>

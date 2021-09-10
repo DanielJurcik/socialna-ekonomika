@@ -1,0 +1,108 @@
+
+<div class="sp-zoznam-component">
+    <div class="sp-info-overlay">
+        <p>Lorem imsum</p>
+        <p>Lorem imsum</p>
+        <p>Lorem imsum</p>
+        <p>Lorem imsum</p>
+        <p>Lorem imsum</p>
+    </div>
+
+    <div class="sp-zoznam-item-wrapper">
+        <div class="sp-image-side">
+            <img src="">
+        </div>
+        <div class="sp-text-side">
+            <h1>Hrnovské služby s.r.o.</h1>
+            <span>
+                <p>Lorem imsum</p>
+            </span>
+            <span>
+                <p>Lorem imsum</p>
+            </span>
+            <span>
+                <p class="sp-web-page">Webová stránka</p>
+            </span>
+        </div>
+    </div>
+</div>
+
+<style>
+    .sp-zoznam-component{
+        max-width: 1170px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .sp-zoznam-item-wrapper{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-flow: wrap;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        padding: 16px;
+        border: 5px solid red;
+        padding-right: 50px;
+    }
+
+    .sp-zoznam-item-wrapper .sp-image-side{
+        border: 5px solid blue;
+        display: flex;
+        flex-basis: 250px;
+        height: 250px;
+        border-radius: 20px;
+        margin-right: 8px;
+    }
+    .sp-zoznam-item-wrapper .sp-text-side img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .sp-zoznam-item-wrapper .sp-text-side{
+        border: 5px solid green;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 8px;
+        position: relative;
+    }
+
+    .sp-zoznam-component .sp-info-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        background: royalblue;
+        padding: 16px;
+        padding-left: 60px;
+        box-sizing: border-box;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        right: calc(-100% + 50px);
+        transition: 0.8s ease-in-out;
+    }
+
+    .sp-zoznam-component .sp-info-overlay:hover, .sp-zoznam-component .sp-info-overlay.active{
+        right: 0%;
+    }
+
+    .sp-zoznam-item-wrapper .sp-text-side p{
+        margin: 0;
+        padding: 8px;
+    }
+    .sp-zoznam-item-wrapper .sp-text-side span{
+        margin: 4px;
+    }
+
+    .sp-zoznam-item-wrapper .sp-text-side .sp-web-page{
+
+    }
+    .sp-zoznam-item-wrapper .sp-text-side h1{
+        margin-top: 8;
+        margin-bottom: 24px;
+    }
+</style>
