@@ -579,7 +579,7 @@ article {
                       </div>                    <div data-sek-level="column" data-sek-id="__nimble__8d13986b944f" class="sek-column sek-col-base sek-col-50   " data-sek-lazy-bg="true">                                                <div class="sek-column-inner ">
                                                                   <div data-sek-level="module" data-sek-id="__nimble__58bf14a65c58" data-sek-module-type="czr_heading_module" class="sek-module   " data-sek-lazy-bg="true">                        <div class="sek-module-inner">
                           <h4 class="sek-heading"><span style="color: #ec5f25;"><strong>AKTUALITY</strong></span></h4>                        </div>
-                    </div>                                                          <div data-sek-level="module" data-sek-id="__nimble__5d63a7a50ec5" data-sek-module-type="czr_post_grid_module" class="sek-module   " data-sek-lazy-bg="true">                        <div class="sek-module-inner">
+                    </div>                                                          <div id="se-news-section" data-sek-level="module" data-sek-id="__nimble__5d63a7a50ec5" data-sek-module-type="czr_post_grid_module" class="sek-module   " data-sek-lazy-bg="true">                        <div class="sek-module-inner">
                             <div class="sek-post-grid-wrapper  sek-has-mobile-breakpoint" id="__nimble__5d63a7a50ec5">
     <div class="sek-grid-items sek-list-layout  ">
             <article id="sek-pg-7644" class="">
@@ -812,6 +812,34 @@ var megamenu = {"timeout":"300","interval":"100"};
 /* ]]> */
 </script>
 <script type="text/javascript" src="TEST%20-_subory/maxmegamenu.js" id="megamenu-js"></script>
-  
+
+
+<script type="text/javascript">
+addLinkToEntireCard();
+
+function addLinkToEntireCard(){
+  let news_section = document.querySelector('#se-news-section');
+  if (!news_section) return;
+  let news_elements = news_section.querySelectorAll(".sek-pg-title a");
+  news_elements.forEach(element => {
+    element.innerHTML= element.innerHTML + " <span class='news-card-link'></span>";
+  });
+} 
+</script>
+
+<style>
+  #se-news-section .sek-pg-title a .news-card-link{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #se-news-section article{
+    position: relative;
+  }
+</style>
   
 </body></html>
