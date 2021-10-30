@@ -82,9 +82,13 @@ body {
     }
 
     .sideMenuLevel1 {
-        font-size: 15px;
+        font-size: 18px;
         font-weight: bold;
         letter-spacing: 1px;
+    }
+
+    .sideMenuIndent a {
+        font-size: 16px;
     }
 
     @media(max-width: 1333px) {
