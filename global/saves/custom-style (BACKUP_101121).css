@@ -199,6 +199,8 @@ article {
 	margin:0px !important;
 }
 
+
+
 .primary-navbar__row{
 	margin-right:-30px !important;
 }
@@ -228,6 +230,22 @@ article {
 	border-bottom: 4px solid #fff;
 }
 
+
+/* GREEN */
+.menu-item-9,
+.menu-item-239,
+.menu-item-10,
+.menu-item-300{
+	background: #3047a3 !important;
+}
+/* YELLOW*/
+.menu-item-8{
+	background: #3047a3 !important;
+}
+/* ORANGE */
+.menu-item-240 {
+	background: #3047a3  !important;
+}
 .acc a,
 .su-note-inner a{
 	text-decoration: none !important;
@@ -605,9 +623,3 @@ background: linear-gradient(157deg, rgba(83,108,212,1) 44%, rgba(246,194,155,1) 
 #tc-page-wrap.czr-boxed{
 	box-shadow: 0 0 20px rgba(0,0,0,.03)
 }
-
-
-header .primary-navbar__wrapper, .primary-nav__wrapper{
-    background-color: red !important;
-}
-
