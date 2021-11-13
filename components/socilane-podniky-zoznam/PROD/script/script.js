@@ -17,19 +17,29 @@ function moveSearch(){
    //    searchBarWrapper.value = this.value;
    // });
    
-   console.log(searchBarWrapper);
-   const dashboardElem = document.querySelector('#dashboard');
-   console.log(dashboardElem);
+   //console.log(searchBarWrapper);
+   //const dashboardElem = document.querySelector('#dashboard');
 
-   const newDiv = document.createElement("div");
+   const searchInit = document.querySelector('.sp-catalog-search-init');
+   //console.log(dashboardElem);
 
-   newDiv.innerHTML = '<hr><h1 id="nadpis">TOTOT JE TEST</h1><hr>';
+   //const newDiv = document.createElement("div");
+
+
+
+   //newDiv.innerHTML = '<hr><h1 id="nadpis">TOTOT JE TEST</h1><hr>';
    
    //dashboardElem.insertBefore(searchBarWrapperCopy,dashboardElem.firstChild);
-   dashboardElem.insertBefore(newDiv,dashboardElem.firstChild);
+   searchInit.appendChild(searchBarWrapper)
+   //dashboardElem.insertBefore(newDiv,dashboardElem.firstChild);
 
-   const nadpis = document.querySelector('#nadpis');
-   nadpis.appendChild(searchBarWrapper);
+
+   //const nadpis = document.querySelector('#nadpis');
+   //nadpis.appendChild(searchBarWrapper);
+}
+
+function moveCatogory(){
+   
 }
 
 setTimeout(function() {

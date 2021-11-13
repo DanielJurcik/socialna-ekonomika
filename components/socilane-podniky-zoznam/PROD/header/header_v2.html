@@ -1,0 +1,162 @@
+<div class="sp-catalog-hero-section">
+    <div class="sp-catalog-content-section">
+        <h1 class="sp-catalog-headline">Katalóg registrovaných sociálnych podnikov</h1>
+        <p>prehľad služieb a výrobkov registrovaných sociálnych podnikov</p>
+        <div class="sp-catalog-search-wrapper">
+            <div class="sp-catalog-search-init"></div>
+            <a class="sp-catalog-search-btn">Vyhľadať</a>
+        </div>
+        <!--COMPONENT: NUMBERS START -->
+        <div class="sp-numbers white-style">
+            <div class="sp-numbers-item">
+                <p class="sp-numbers-text">420</p>
+                <p class="sp-numbers-sub-text">Registrovaných sociálnych podnikov</p>
+            </div>
+            <div class="sp-numbers-item">
+                <p class="sp-numbers-text">437</p>
+                <p class="sp-numbers-sub-text">Pobočiek RSP</p>
+            </div>
+            <div class="sp-numbers-item">
+                <p class="sp-numbers-text">25</p>
+                <p class="sp-numbers-sub-text">kategórii</p>
+            </div>
+            <div class="sp-numbers-item">
+                <p class="sp-numbers-text">120+</p>
+                <p class="sp-numbers-sub-text">Lokalít na Slovensku</p>
+            </div>
+
+        </div>
+        <!--COMPONENT: NUMBERS END -->
+        <p>Hľadáte niečo konkrétne ? Použite vyhľadávanie pre sociálne podniky</p>
+    </div>
+</div>
+<div class="filter-wrapper"></div>
+<div class="filter-icons-source">
+    <img class="icon-kraj" src="https://danieljurcik.com/wp-content/uploads/2021/11/icon-pin-27.png">
+</div>
+
+<!--STYLE NUMBERS-->    
+<style>
+.sp-numbers{
+    box-sizing: border-box;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background: rgb(48,71,163);
+    background: linear-gradient(155deg, rgba(48,71,163,1) 0%, rgba(60,92,218,1) 100%);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-basis: 150px;
+    justify-content: space-around;
+    color: #fff;
+    padding: 8px;
+    align-items: flex-start;
+}
+
+.sp-numbers .sp-numbers-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+    text-align: center;
+    max-width: 160px;
+
+}
+
+.sp-numbers .sp-numbers-item .sp-numbers-text{
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.sp-numbers .sp-numbers-item .sp-numbers-sub-text{
+    font-size: 1rem;
+    color: rgb(240, 240, 240);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.sp-numbers.white-style{
+    color: white;
+    background: #f07c10b4;
+}
+.sp-numbers.white-style .sp-numbers-item .sp-numbers-sub-text{
+    font-size: 1rem;
+    color: rgb(226, 226, 226);
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+</style>
+<!--STYLE END -->   
+
+
+<style>
+    .sp-catalog-hero-section{
+        padding-top: 96px;
+        padding-bottom: 96px;
+        color: white;
+        background-image: url('https://socialnaekonomika.sk/wp-content/uploads/manualne/annie-gray-WEWTGkPUVT0-unsplash.jpg');
+        background-size: cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+    }
+
+    .sp-catalog-hero-section:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#3047a3,#f28837);
+        opacity: .6; 
+    }
+
+    .sp-catalog-hero-section .sp-catalog-content-section{
+        z-index: 2;
+        text-align: center;
+    }
+
+    .sp-catalog-hero-section .sp-catalog-content-section .sp-catalog-headline{
+        margin-bottom: 4px;
+    }
+
+    .sp-catalog-hero-section .sp-catalog-search-wrapper{
+        background: rgba(255, 255, 255, 0.65);
+        display: flex;
+        padding: 10px;
+        margin-bottom: 48px;
+        margin-top: 32px;
+        border-radius: 5px;
+    }
+
+    .sp-catalog-search-wrapper .sp-catalog-search-init{
+        flex-grow: 1;
+        padding-right: 16px;
+        position: relative;
+    }
+
+    .sp-catalog-search-wrapper .sp-catalog-search-init .searchFilter{
+        width: 100%;
+    }
+
+    .sp-catalog-hero-section .sp-catalog-search-wrapper a{
+        padding: 0px 24px;
+        border-radius: 5px;
+        align-items: center;
+        display: flex;
+        background-color: #f07d10;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        height: 39px;
+    }
+
+    .filter-icons-source{
+        display: none;
+    }
+</style>
