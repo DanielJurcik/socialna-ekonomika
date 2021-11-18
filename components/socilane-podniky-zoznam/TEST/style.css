@@ -41,13 +41,14 @@
     margin-top: 1rem;
     padding-right: 16px;
     padding-left: 16px;
+    padding-bottom: 72px;
   }
   
   .card .card-content .sp-card-content .detailed-info h1{
     margin: 0;
     color: #303133;
     color: #016a66;
-    color: #506ad3;
+    color: #5b8300;
     font-size: 19px;
   }
   
@@ -57,19 +58,14 @@
     margin-top: 2px;
     color: #7f7f7f;
   }
-  
-  .card .card-content .sp-card-content .sp-data-wrapper{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-  }
+
   
   .card .detailed-info .more-info{
     padding: 10px;
     text-align: center;
     background-color: #f28837;
     background-color: #016a66;
-    background-color: #506ad3;
+    background-color: #f28837;
     color: white;
     border-radius: 10px;
     margin-bottom: 16px;
@@ -95,15 +91,8 @@
     vertical-align: middle;
   }
   
-  .card .card-content .sp-card-content .data-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
   .card .sp-card-content .data-container .sp-zoznam-desc-item{
     display: inline-flex;
-    flex-wrap: wrap;
     gap: 10px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -112,6 +101,11 @@
     font-weight: 500;
     text-decoration: none;
     color: #222222;
+  }
+
+  .card .sp-card-content .sp-show-more-wrapper{
+      position: absolute;
+      bottom: 28px;
   }
   
   .card .sp-card-content .data-container .sp-zoznam-desc-item a{
@@ -167,7 +161,7 @@
   .cards-page .cards-page-button .at-pagination-button .at-svg-icon{
     height: 40px;
     width: 40px;
-    background-color: #506ad3;
+    background-color: #5b8300;
     fill: white;
     margin-left: 16px;
     border-radius: 50%;
@@ -203,12 +197,17 @@
   
   .awt-vis-controls-csvFilter .awt-csvFilter-button{
     border: 1px solid transparent;
-    background: #3047a3;
+    background: #f07d10;
     color: white;
-    height: 80px;
+    height: 72px;
     border-radius: 10px;
     align-items: center;
     display: flex;
+    box-shadow: (0 0 0 / 24%) 0px 3px 8px;
+  }
+
+  .at-action-menu .at-action-menu-icon{
+    display: none;
   }
   
   .awt-vis-controls-csvFilter .awt-csvFilter-button--active{
@@ -276,19 +275,19 @@
   /* Track */
   .awt-csvFilter-dropdown-menu::-webkit-scrollbar-track {
     border-radius: 10px;
-    background-color: #dce1f8;
+    background-color: #f8efdc;
   }
    
   /* Handle */
   .awt-csvFilter-dropdown-menu::-webkit-scrollbar-thumb {
-    background: #3047a3;
+    background: #f07d10;
     padding: 5px; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   .awt-csvFilter-dropdown-menu::-webkit-scrollbar-thumb:hover {
-    background: #506ad3; 
+    background: #fc881c; 
   }
   /*DROPDOWN FILTER END*/
   
@@ -348,7 +347,7 @@
   
   .awt-vis-controls-csvFilter .awt-csvFilter-selected li{
     border: transparent 0px solid !important;
-    background: #f07d10 !important;
+    background: #5b8300 !important;
     padding: 10px;
   }
   
@@ -402,4 +401,8 @@
       width: 100%;
       padding: 0;
     }
+    .awt-vis-controls-csvFilter .awt-csvFilter-dropdown-menu{
+      position: relative;
+    }
   }
+
