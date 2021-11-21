@@ -7,6 +7,7 @@ function init(){
       moveSearch();
       replaceNoResultText();
       addListenerToSearchButton();
+      renameFilterOptions();
       //moveSearchFilter();
       //moveClearFilter();
     }, 150);
@@ -47,4 +48,15 @@ function addListenerToSearchButton(){
 function scrollToElement(){
    const searchResults = document.querySelector('.at-filter-panel');
    searchResults.scrollIntoView();
+}
+
+function renameFilterOptions(){
+   let clearFilterText = document.querySelector('.at-action-menu-dropdown [title="Clear filters"] span');
+   clearFilterText.innerHTML = 'Vymazať filtrovanie';
+
+   let copyLinkText = document.querySelector('.at-action-menu-dropdown [title="Copy filtered URL"] span');
+   copyLinkText.innerHTML = 'Kopírovať link filtru';
+
+   let printText = document.querySelector('.at-action-menu-dropdown [title="Print"] span');
+   printText.innerHTML = 'Tlačiť';
 }
