@@ -7,6 +7,10 @@
   /******************/
   /** CARD - start **/
   /******************/
+  .cards-container{
+    margin-right: 16px;
+    margin-left: 16px;
+  }
   
   .cards-container .card .card-content{
     border-radius: 10px;
@@ -101,6 +105,11 @@
     font-weight: 500;
     text-decoration: none;
     color: #222222;
+    width: 100%;
+  }
+
+  .card .sp-card-content .data-container .sp-zoznam-desc-item p{
+    margin: 4px;
   }
 
   .card .sp-card-content .sp-show-more-wrapper{
@@ -177,9 +186,9 @@
   }
   
   .cards-page .cards-pageNumber{
-    font-size: 12pt;
+    font-size: 13pt;
     position: absolute;
-    left: 10px;
+    left: 16px;
   }
   
   .at-table-fix .cards-page{
@@ -207,7 +216,9 @@
   }
 
   .at-action-menu .at-action-menu-icon{
-    display: none;
+    /* display: none; */
+    position: absolute;
+    right: 16px;
   }
   
   .awt-vis-controls-csvFilter .awt-csvFilter-button--active{
@@ -338,6 +349,7 @@
   .at-layout-container .at-filter-panel{
     margin-right: 0;
     margin-top: -60px;
+    padding: 16px;
   }
   
   .awt-vis-controls-csvFilter ul.awt-csvFilter-selected{
