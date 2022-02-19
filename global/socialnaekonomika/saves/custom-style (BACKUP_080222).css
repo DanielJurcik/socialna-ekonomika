@@ -1,0 +1,737 @@
+body {
+    font-family: 'Roboto';
+}
+
+.su-tabs-nav span {
+	font-size: 1.1em !important;
+}
+.su-tabs-pane{
+	font-size: 1em !important;
+}
+.header-skin-light [class*="nav__menu"] .nav__title::before {
+	background-color:  #3047a3 !important;
+}
+
+    /*HOMEPAGE - Farebne bloky - zac*/
+    .home-top {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .home-top-col {
+        flex: 24%;
+        border-radius: 40px 0px;
+        justify-content: space-between;
+        margin: 0px 5px 8px 5px;
+        box-sizing: border-box;
+        color: white;
+        padding: 16px;
+        padding-bottom: 32px;
+        padding-top: 32px;
+        transition: transform,border-radius 0.3s ease-in-out;
+    }
+
+    @media(min-width: 1073px) {
+        .home-top .home-top-col:nth-child(1),.home-top  .home-top-col:nth-child(3){
+            transform: translateY(-40px);
+        }
+    }
+
+    .home-top  .home-top-col:hover{
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+        border-radius: 0px 40px;
+    }
+
+    .home-top-title {
+        font-weight: bold;
+        font-size: 1.8em;
+        margin-bottom: 32px;
+        position: relative;
+    }
+
+    .home-top-title::after{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        height: 4px;
+        background-color: #fff;
+        width: 30%;
+    }
+
+    .home-top-box a {
+        color: white;
+    }
+
+    .home-top-box a:hover {
+        color: white !important;
+        text-decoration: underline;
+    }
+
+    .sideMenuIndent {
+        margin-left: 8px;
+		padding-left: 8px;
+		border-left: 2px solid #fff;
+    }
+
+    .sideMenuTopPad {
+        padding-top: 15px;
+    }
+
+    .sideMenuLevel1 {
+        font-size: 15px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    @media(max-width: 1333px) {
+        .home-top-col {
+            flex: 24%;
+        }
+    }
+
+    @media(max-width: 1073px) {
+        .home-top-col {
+            flex: 33.33%;
+        }
+    }
+
+    @media(max-width: 815px) {
+        .home-top-col {
+            flex: 50%;
+        }
+        .home-top-col:nth-child(1),.home-top-col:nth-child(3){
+            transform: translateY(0px);
+        }
+    }
+
+    @media(max-width: 555px) {
+        .home-top-col {
+            flex: 100%;
+        }
+    }
+
+/*HOMEPAGE - Farebne bloky - kon*/
+
+
+/*FARBY BLOKOV - zac*/
+.color-1{
+	background: #3047a3;
+}
+.color-2{
+	background: #ef5f22;
+}
+.color-3{
+	background: #6f6f6f;
+}
+.color-4{
+	background: #2f80a2;
+}
+/*FARBY BLOKOV - koniec */
+
+.article-container{
+	z-index: 0;
+}
+.archive-header-inner  .header-bottom{
+	display:none;
+}
+.featurette-divider{
+	margin-top: 0px !important;
+}
+.archive-header-inner hr{
+	margin: 0px;
+}
+.n2-ss-widget{
+	height:42px;
+}
+.n2-clear{
+	display:none;
+}
+.su-spoiler br {
+	display: none;
+}
+.grid__item {
+	outline: 0px;
+}
+article {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.nav__title {
+		color: white !important;
+}
+.caret__dropdown-toggler{
+	color: white !important;
+}
+.tc-sidebar.left{
+	margin-top:-23px;
+	padding-right:0px;
+}
+
+/*SEARCH BAR - zac */
+.is-form-id-7938{
+	border-bottom: 4px solid transparent;
+	padding: 18px 8px 18px !important;
+	margin-left:32px
+}
+
+.is-form-style input.is-search-input{
+	border-radius: 20px 0 0 20px;
+}
+
+.is-form-id-7938 .is-search-icon,
+.is-form-id-7938 .is-search-submit{
+	border-radius: 0 20px 20px 0;
+}
+
+/*SEARCH BAR - kon */
+
+.menu-item{
+	padding: 14px 8px 14px !important;
+	font-size: 12px;
+	margin:0px !important;
+}
+
+.primary-navbar__row{
+	margin-right:-30px !important;
+}
+.primary-nav__wrapper {
+	background: #3047a3 !important;
+}
+.nav__utils a {
+	color: white !important;
+}
+.primary-navbar__wrapper .primary-nav__menu-wrapper{
+	display: flex;
+	justify-content: center !important;
+	width: calc(100% - 281px);
+}
+.primary-navbar__wrapper .col {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav__menu .menu-item .nav__link .nav__title{
+	border-bottom: 4px solid transparent;
+	transition: border 0.3s ease-in-out
+}
+.nav__menu .menu-item .nav__link .nav__title:hover,
+.nav__menu .menu-item .nav__link .nav__title:focus
+{
+	border-bottom: 4px solid #fff;
+}
+
+
+/* GREEN */
+.menu-item-9,
+.menu-item-239,
+.menu-item-10,
+.menu-item-300{
+	background: #3047a3 !important;
+}
+
+/* ORANGE */
+.menu-item-240 {
+	background: #3047a3  !important;
+}
+.acc a,
+.su-note-inner a{
+	text-decoration: none !important;
+	color:white;
+}
+.acc a:hover,
+.su-note-inner a:hover
+{
+	text-decoration:underline !important;
+	color:white !important;
+}
+
+.acc-tab{
+	margin-left: 20px;
+}
+
+.acc1 {
+	background: #1f618d;
+	color:white;
+	padding: 1rem;
+}
+.acc2 {
+	margin-top: -30px;
+	background: orangered;
+	color:white;
+	padding: 1rem;
+}
+
+
+.menu-item {
+    font-size: 14px;
+}
+.left{
+	margin-top:1px !important;
+}
+
+.czr-overlay {
+    opacity: 0;
+    visibility: hidden;
+    width: 50%;
+    height: 15%;
+    margin: 0 auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 39.6%;
+    z-index: 90;
+}
+
+.qe-faqs-filters-container li a {
+    display: none;
+}
+
+/*ROZŠÍRENIE STRÁNKY - start*/
+  @media (min-width: 1366px){
+    .czr-boxed-layout .container{
+      width: 1366px;
+      max-width: 1366px;
+    }
+  }
+/*ROZŠÍRENIE STRÁNKY - end*/
+
+/*Úvodná stránka - start*/
+  .sek-post-grid-wrapper .sek-list-layout article{
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 1rem;
+  }
+
+/*Carousel - zac */
+.sp-carousel .sek-column-inner {
+    height: 100%;
+}
+
+.sp-carousel .sek-swiper-nav .sek-swiper-arrows{
+	width: 32px;
+}
+
+.sp-carousel .sek-swiper-nav .sek-swiper-arrows:hover{
+	width: 40px;
+}
+
+.sp-carousel .sek-swiper-nav .sek-swiper-arrows[title="next"]{
+	border-radius: 20px 0px 0px 20px;
+}
+
+.sp-carousel .sek-swiper-nav .sek-swiper-arrows[title="previous"]{
+	border-radius: 0px 20px 20px 0px;
+}
+
+[data-sek-module-type="czr_img_slider_module"] .swiper-container[data-sek-image-layout="cover"] .sek-carousel-img img{
+	border-radius: 20px;
+}
+/*Carousel - zac */
+
+#se-news-section .sek-post-grid-wrapper{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+#se-news-section .sek-pg-content .sek-excerpt p{
+	margin-bottom:0;
+}
+#se-news-section .sek-grid-items article .sek-pg-metas{
+	line-height: normal;
+	margin-bottom: 4px
+}
+#se-news-section .sek-grid-items article .sek-pg-title{
+	margin-bottom: 0px
+}
+
+[data-sek-module-type="czr_img_slider_module"] .sek-swiper-nav .sek-swiper-next, [data-sek-module-type="czr_img_slider_module"] .sek-swiper-nav .sek-swiper-prev{
+	background: white;
+}
+
+[data-sek-module-type="czr_img_slider_module"] .sek-swiper-nav .sek-swiper-next:hover, [data-sek-module-type="czr_img_slider_module"] .sek-swiper-nav .sek-swiper-prev:hover{
+	background: white;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+
+[data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner .sek-post-grid-wrapper .sek-pg-title a, [data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner .sek-post-grid-wrapper .sek-pg-title{
+	line-height:1.1em;
+}
+/*Úvodná obrazovka - end*/
+
+/*Sociálne podniky - prepínanie - zac*/
+.sp-switch{
+        display: flex;
+        border-radius: 20px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .sp-switch a.sp-item{
+        width: 50%;
+        text-decoration: none;
+        background-color: #506ad3;
+        color: white;
+        letter-spacing: 12px;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px;
+        text-indent:12px;
+        transition: 0.2s ease-in-out;
+    }
+  
+    .sp-switch a.sp-item:hover p{
+      border-bottom: 4px solid white;
+        /*box-shadow: inset #506ad3 0px 0px 0px 3px, inset #fff 0px 0px 0px 6px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;*/
+    }
+  
+    .sp-switch .sp-item-wrapper p{
+        margin: 0;
+        padding-top: 4px;
+        border-bottom: 4px solid transparent;
+        font-weight: 800;
+    }
+  
+    .right-side-radius{
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+  
+    .left-side-radius{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .sp-switch .sp-item-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+  
+    .sp-switch a.sp-item.active{
+        background-color: #3047a3;
+    }
+    @media screen and (max-width: 450px) {
+    .sp-switch a.sp-item{
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-weight: 500;
+        text-indent:6px;
+    }
+  }
+/*Sociálne podniky - prepínanie - kon*/
+
+/*NAVBAR CSS - zac */
+    header .primary-navbar__wrapper{
+        background: #3047a3
+    }
+    .sp-switch a.sp-item{
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-weight: 500;
+        text-indent:6px;
+    }
+
+    header .primary-navbar__wrapper .branding__container{
+        background: #fff;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    }
+
+    @media screen and (min-width: 960px) {
+        header .primary-navbar__wrapper .branding__container{
+            border-radius: 0px 0px 20px 20px;
+        }
+    }
+
+
+/*NAVBAR CSS - kon */
+
+/*Odtránenie autora článku "by admin"- zaciatok*/
+.post-info .author-meta,
+.post-info .v-separator{
+display: none;
+}
+.post-info .row [class*="col"]{
+	padding-left: 2px;
+}
+/*Odtránenie autora článku - koniec*/
+
+/*Nastavenia tlačidiel - zac */
+     .se-btn.se-btn-full-width button,.se-btn.se-btn-full-width a{
+        width: 100%;
+        font-weight: 6%;
+    }
+
+    .se-btn.se-btn-full-width-center button,.se-btn.se-btn-full-width-center a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/*Nastavenia tlačidiel - kon */
+
+/*FAREBNÉ BLOKY - TEXT - zac */
+.home-top-col .home-top-box, .home-top-col .home-top-box .sideMenuLevel1 {
+    font-size: 17px;
+}
+.home-top-col .home-top-box a.acc-tab, .home-top-col .home-top-box .sideMenuIndent a{
+    font-size: 16px;
+}
+/*FAREBNÉ BLOKY - TEXT - kon */
+
+
+/*NAVIGAČNÉ MENU - zac */
+#main-menu .dropdown-menu .menu-item{
+	background-color: #3047a3;
+}
+
+header .dropdown-menu .dropdown-item {
+    background-color: #3047a3 !important;
+}
+/*NAVIGAČNÉ MENU - kon */
+
+.no-sides-gap{
+	margin-right: -32px;
+	margin-left: -32px;
+}
+
+/*CESTY ISTOTY CARDS - zac */
+.custom-cs-acc-card{
+	position:relative;
+}
+
+.custom-cs-acc-card .custom-cs-numbers{
+	position: absolute;
+	z-index: 2;
+}
+/*CESTY ISTOTY CARDS - kon */
+
+/*e-katalóg karty - zac*/
+.rsp-section-prevadzka .sek-module-inner img, .rsp-section-introduction .sek-module-inner img {
+	margin: 4px !important;
+	padding:0 ;
+}
+
+.rsp-section-introduction  .sek-module-inner p{
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+.rsp-karta-button a{
+	width: 140px;
+}
+
+@media(min-width: 768px) {
+	.mobile-only{
+		/*display: none;*/
+	}
+}
+
+.rsp-category-text  p{
+	margin: 0!important;
+	line-height: 1.6em
+}
+
+/*Carousel - zac */
+.rsp-carousel .sek-column-inner {
+    height: 100%;
+}
+
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows{
+	width: 32px;
+}
+
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows:hover{
+	width: 40px;
+}
+
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows[title="next"]{
+	border-radius: 20px 0px 0px 20px;
+}
+
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows[title="previous"]{
+	border-radius: 0px 20px 20px 0px;
+}
+
+.rsp-carousel [data-sek-module-type="czr_img_slider_module"] .swiper-container[data-sek-image-layout="cover"] .sek-carousel-img img{
+	border-radius: 0px;
+    margin: 0 !important;
+}
+/*Carousel - zac */
+
+.se-gradient-style-2{
+ background: rgb(91,131,0);
+background: linear-gradient(157deg, rgba(91,131,0,05) 0%, rgba(240,125,16,0.5) 58%); 
+}
+/*e-katalóg karty - kon */
+
+.sp-cisla-section .rsp-cisla-headline span{
+	background: #efe5d4;
+	position: relative;
+	z-index:999;
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+/* POZADIE STRANKY - zac */
+body{
+	background-color: fefefe;
+background-image: url('/wp-content/uploads/2021/12/se_pozadie_4.png');
+	background-size: ;
+  background-position: top;
+	background-repeat: no-repeat;
+}
+
+#tc-page-wrap{
+	background: white;
+}
+/* POZADIE STRANKY - zac */
+
+.custom-section-full-width{
+	margin-left: -30px;
+	margin-right: -30px;
+}
+
+@media screen and (max-width: 450px) {
+    .custom-section-full-width{
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+  }
+
+/************************/
+/* NAVIGACNE MENU - zac */
+/************************/
+
+nav#primary-nav, header .primary-navbar__wrapper,header .dropdown-menu .dropdown-item{
+	/*TU ZMENIT FARBU NAVIGACNE MENU*/
+	background-color: white!important;
+}
+
+#primary-nav .nav__title,.caret__dropdown-toggler,.mobile-nav__container .nav__title {
+	/*TU ZMENIT FARBU TEXTU V NAVIGACNOM MENU*/
+	color: #3047a3!important;
+}
+
+.nav__menu .menu-item .nav__link .nav__title:hover, .nav__menu .menu-item .nav__link .nav__title:focus{
+	/*TU ZMENIT FARBU PODCIARKNUTIA TEXTU V NAVIGACNOM MENU*/
+	border-bottom: 4px solid #3047a3;
+}
+
+.header-skin-light [class*="nav__menu"] .nav__title::before{
+	background: transparent !important;
+}
+
+#primary-nav .nav__title [aria-current="true"]{
+	border-bottom: 4px solid #5a5a5a;
+}
+
+
+header .dropdown-menu .menu-item{
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-item:last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/*NEW*/
+.nav__menu .menu-item .nav__link::after {
+	content: '';
+	background: #3047a3;
+	width: 3px;
+	height: 18px;
+	position: absolute;
+	right: -14px;
+	z-index: 10;
+	top: 11px;
+}
+.nav__menu .menu-item .dropdown-menu .nav__link::after, .mobile-nav__container #mobile-nav-menu .nav__link:after{
+	content: none;
+}
+
+
+.nav__menu .menu-item:last-child .nav__link::after {
+	content: none;
+}
+
+.nav__menu .menu-item .nav__link{
+	overflow: visible;
+	position: relative;
+	margin-right: 10px
+}
+
+.mobile-navbar__wrapper .mobile-nav__inner{
+	margin-bottom:0;
+}
+
+/************************/
+/* NAVIGACNE MENU - kon */
+/************************/
+
+.button_full-width button{
+	width: 100% ;
+	border-radius: 10px !important;
+}
+
+.to-front{
+	z-index: 1;
+}
+
+.w-break span, .w-break p, .w-break a{
+	word-break: break-word;
+}
+
+.custom-white-border{
+	box-shadow: 0 0 0 10px white;
+}
+
+.custom-button-bordered .sek-module-inner{
+	height: 100%;
+}
+
+.custom-button-bordered .sek-module-inner .sek-btn{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.divider-orange{
+	background-color: transparent;
+	height: 3px;
+	margin-right: 50px;
+background: linear-gradient(157deg, rgba(242,136,55,1) 2%, rgba(255,255,255,0) 100%); 
+	width: 40%;
+	position: relative;
+	margin-bottom: 16px;
+	margin-top: 8px;
+}
+
+.divider-blue{
+	background-color: transparent;
+	height: 3px;
+	margin-right: 50px;
+ background: rgb(48,71,163);
+background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 100%); 
+	width: 40%;
+	position: relative;
+}

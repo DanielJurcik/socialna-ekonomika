@@ -1,98 +1,91 @@
-/** FONT SETTINGS - start **/
-.h1,h1{
-    font-size:28px;
-    line-height:40px
-}
-@media (min-width:768px){
-    .h1,h1{
-        font-size:34px;
-        line-height:48px
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+    
+    h1,h2,h3,h4,h5{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
     }
-}
-@media (min-width:992px){
+    
+    /** FONT SETTINGS - start **/
     .h1,h1{
-        font-size:40px;
-        line-height:56px
-    }
-}
-.h2,h2{
-    font-size:24px;
-    line-height:32px
-}
-@media (min-width:768px){
-    .h2,h2{
         font-size:28px;
         line-height:40px
     }
-}
-@media (min-width:992px){
-    .h2,h2{
-        font-size:34px;
-        line-height:48px
+    @media (min-width:768px){
+        .h1,h1{
+            font-size:34px;
+            line-height:48px;
+        }
     }
-}
-.h3,h3{
-    font-size:20px;
-    line-height:32px
-}
-@media (min-width:768px){
-    .h3,h3{
+    @media (min-width:992px){
+        .h1,h1{
+            font-size:40px;
+            line-height:56px;
+        }
+    }
+    .h2,h2{
         font-size:24px;
-        line-height:32px
+        line-height:32px;
     }
-}
-@media (min-width:992px){
+    @media (min-width:768px){
+        .h2,h2{
+            font-size:28px;
+            line-height:40px;
+        }
+    }
+    @media (min-width:992px){
+        .h2,h2{
+            font-size:34px;
+            line-height:48px;
+        }
+    }
     .h3,h3{
-        font-size:28px;
-        line-height:40px
-    }
-}
-.h4,h4{
-    font-size:16px;
-    line-height:24px
-}
-@media (min-width:768px){
-    .h4,h4{
         font-size:20px;
-        line-height:32px
+        line-height:32px;
     }
-}
-@media (min-width:992px){
+    @media (min-width:768px){
+        .h3,h3{
+            font-size:24px;
+            line-height:32px;
+        }
+    }
+    @media (min-width:992px){
+        .h3,h3{
+            font-size:28px;
+            line-height:40px;
+        }
+    }
     .h4,h4{
-        font-size:24px;
-        line-height:32px
-    }
-}
-.h5,h5{
-    font-size:14px;
-    line-height:24px
-}
-@media (min-width:768px){
-    .h5,h5{
         font-size:16px;
-        line-height:24px
+        line-height:24px;
     }
-}
-@media (min-width:992px){
+    @media (min-width:768px){
+        .h4,h4{
+            font-size:20px;
+            line-height:32px;
+        }
+    }
+    @media (min-width:992px){
+        .h4,h4{
+            font-size:24px;
+            line-height:32px;
+        }
+    }
     .h5,h5{
-        font-size:20px;
-        line-height:32px
-    }
-}
-.h6,h6{
-    font-size:12px;
-    line-height:16px
-}
-@media (min-width:768px){
-    .h6,h6{
         font-size:14px;
-        line-height:24px
+        line-height:24px;
     }
-}
-@media (min-width:992px){
-    .h6,h6{
-        font-size:16px;
-        line-height:24px
+    @media (min-width:768px){
+        .h5,h5{
+            font-size:16px;
+            line-height:24px;
+        }
     }
-}
-/** FONT SETTINGS - end **/
+    @media (min-width:992px){
+        .h5,h5{
+            font-size:20px;
+            line-height:32px;
+        }
+    }
+    /** FONT SETTINGS - end **/
+    </style>
