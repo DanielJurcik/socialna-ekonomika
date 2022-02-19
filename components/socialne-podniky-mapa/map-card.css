@@ -1,0 +1,156 @@
+
+
+
+/*DROPDOWN FILTER START*/
+.awt-vis-controls-csvFilter .awt-csvFilter-dropdown-menu{
+  border: none;
+  background-color: #fff;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: rgb(53, 53, 53);
+  z-index: 99999;
+  border: solid 15px #fff !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* width */
+.awt-csvFilter-dropdown-menu::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.awt-csvFilter-dropdown-menu::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f8efdc;
+}
+ 
+/* Handle */
+.awt-csvFilter-dropdown-menu::-webkit-scrollbar-thumb {
+  background: #f07d10;
+  padding: 5px; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.awt-csvFilter-dropdown-menu::-webkit-scrollbar-thumb:hover {
+  background: #fc881c; 
+}
+/*DROPDOWN FILTER END*/
+
+
+.at-filter-panel .awt-vis-controls-csvFilter .awt-csvFilter-button input{
+  background-color: transparent;
+  outline: 0;
+  color: #ffffff;
+}
+
+.awt-vis-controls-csvFilter .awt-csvFilter-button input::placeholder{
+  color: #eeeeee;
+}
+
+.at-filter-panel .awt-input-placeholder{
+  position: static;
+}
+
+.awt-vis-controls-csvFilter .csvFilter-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 14px;
+  margin-right: 15px;
+}
+
+
+.awt-input-placeholder svg{
+  fill: #fff;
+}
+
+.at-filter-panel .awt-input-placeholder{
+  position: static;
+  display: flex;
+  align-items: center;
+}
+
+.awt-vis-controls-csvFilter .awt-csvFilter-selected li{
+  border: transparent 0px solid !important;
+  background: #5b8300 !important;
+  padding: 10px;
+}
+
+.awt-vis-controls-csvFilter .awt-csvFilter-downArrow{
+  display: none;
+}
+
+
+
+
+/*SHOW MORE INFO - start */
+
+.sp-map-content .sp-show-more-wrapper{
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  justify-content: flex-end;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.sp-map-content .sp-show-more-wrapper .more-info{
+  padding: 10px;
+  text-align: center;
+  background-color: #f28837;
+  background-color: #016a66;
+  background-color: #f28837;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  text-decoration: none;
+  place-self: flex-end;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/*SHOW MORE INFO - end */
+
+
+.sp-map-content .sp-zoznam-desc-item .sp-icon{
+  width: 16px;
+  height: 16px;
+  z-index: 2;
+}
+
+.sp-map-content .sp-zoznam-desc-item{
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #222222;
+  width: 100%;
+}
+
+
+ .sp-map-content .detailed-info .category{
+  opacity: 0.8;
+  font-size: 14px;
+  margin-top: 2px;
+  color: #7f7f7f;
+}
+
+.sp-map-content .detailed-info h2{
+  margin: 0;
+  color: #5b8300;
+  font-size: 24px;
+}
+
+.sp-map-content .sp-zoznam-desc-item p{
+  margin: 0;
+}

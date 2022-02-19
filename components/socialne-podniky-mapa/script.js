@@ -3,7 +3,7 @@ init();
 function init(){
    setTimeout(function() {
       moveSearch();
-      replaceNoResultText();
+      //replaceNoResultText();
       addListenerToSearchButton();
       renameFilterOptions();
       //moveSearchFilter();
