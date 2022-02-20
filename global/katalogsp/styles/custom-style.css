@@ -1,5 +1,10 @@
 body {
     font-family: 'Roboto';
+    background-color: #fefefe;
+    /*POZADIE STRÁNKY :*/
+    background-image: url('/wp-content/uploads/2021/12/se_pozadie_4.png');
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 .su-tabs-nav span {
@@ -12,112 +17,9 @@ body {
 	background-color:  #3047a3 !important;
 }
 
-    /*HOMEPAGE - Farebne bloky - zac*/
-    .home-top {
-        display: flex;
-        flex-direction: row;
-        flex-flow: row wrap;
-        width: 100%;
-        padding: 0px 10px 0px 10px;
-    }
-
-    .home-top-col {
-        flex: 24%;
-        border-radius: 40px 0px;
-        justify-content: space-between;
-        margin: 0px 5px 8px 5px;
-        box-sizing: border-box;
-        color: white;
-        padding: 16px;
-        padding-bottom: 32px;
-        padding-top: 32px;
-        transition: transform,border-radius 0.3s ease-in-out;
-    }
-
-    @media(min-width: 1073px) {
-        .home-top .home-top-col:nth-child(1),.home-top  .home-top-col:nth-child(3){
-            transform: translateY(-40px);
-        }
-    }
-
-    .home-top  .home-top-col:hover{
-        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-        border-radius: 0px 40px;
-    }
-
-    .home-top-title {
-        font-weight: bold;
-        font-size: 1.8em;
-        margin-bottom: 32px;
-        position: relative;
-    }
-
-    .home-top-title::after{
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        height: 4px;
-        background-color: #fff;
-        width: 30%;
-    }
-
-    .home-top-box a {
-        color: white;
-    }
-
-    .home-top-box a:hover {
-        color: white !important;
-        text-decoration: underline;
-    }
-
-    .sideMenuIndent {
-        margin-left: 8px;
-		padding-left: 8px;
-		border-left: 2px solid #fff;
-    }
-
-    .sideMenuTopPad {
-        padding-top: 15px;
-    }
-
-    .sideMenuLevel1 {
-        font-size: 15px;
-        font-weight: bold;
-        letter-spacing: 1px;
-    }
-
-    @media(max-width: 1333px) {
-        .home-top-col {
-            flex: 24%;
-        }
-    }
-
-    @media(max-width: 1073px) {
-        .home-top-col {
-            flex: 33.33%;
-        }
-    }
-
-    @media(max-width: 815px) {
-        .home-top-col {
-            flex: 50%;
-        }
-        .home-top-col:nth-child(1),.home-top-col:nth-child(3){
-            transform: translateY(0px);
-        }
-    }
-
-    @media(max-width: 555px) {
-        .home-top-col {
-            flex: 100%;
-        }
-    }
-
-/*HOMEPAGE - Farebne bloky - kon*/
 
 
-/*FARBY BLOKOV - zac*/
+/*FARBY - zac*/
 .color-1{
 	background: #3047a3;
 }
@@ -130,7 +32,7 @@ body {
 .color-4{
 	background: #2f80a2;
 }
-/*FARBY BLOKOV - koniec */
+/*FARBY - koniec */
 
 .article-container{
 	z-index: 0;
@@ -171,24 +73,6 @@ article {
 	padding-right:0px;
 }
 
-/*SEARCH BAR - zac */
-.is-form-id-7938{
-	border-bottom: 4px solid transparent;
-	padding: 18px 8px 18px !important;
-	margin-left:32px
-}
-
-.is-form-style input.is-search-input{
-	border-radius: 20px 0 0 20px;
-}
-
-.is-form-id-7938 .is-search-icon,
-.is-form-id-7938 .is-search-submit{
-	border-radius: 0 20px 20px 0;
-}
-
-/*SEARCH BAR - kon */
-
 .menu-item{
 	padding: 14px 8px 14px !important;
 	font-size: 12px;
@@ -225,19 +109,6 @@ article {
 	border-bottom: 4px solid #fff;
 }
 
-
-/* GREEN */
-.menu-item-9,
-.menu-item-239,
-.menu-item-10,
-.menu-item-300{
-	background: #3047a3 !important;
-}
-
-/* ORANGE */
-.menu-item-240 {
-	background: #3047a3  !important;
-}
 .acc a,
 .su-note-inner a{
 	text-decoration: none !important;
@@ -310,28 +181,29 @@ article {
   }
 
 /*Carousel - zac */
-.sp-carousel .sek-column-inner {
+.rsp-carousel .sek-column-inner {
     height: 100%;
 }
 
-.sp-carousel .sek-swiper-nav .sek-swiper-arrows{
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows{
 	width: 32px;
 }
 
-.sp-carousel .sek-swiper-nav .sek-swiper-arrows:hover{
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows:hover{
 	width: 40px;
 }
 
-.sp-carousel .sek-swiper-nav .sek-swiper-arrows[title="next"]{
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows[title="next"]{
 	border-radius: 20px 0px 0px 20px;
 }
 
-.sp-carousel .sek-swiper-nav .sek-swiper-arrows[title="previous"]{
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows[title="previous"]{
 	border-radius: 0px 20px 20px 0px;
 }
 
-[data-sek-module-type="czr_img_slider_module"] .swiper-container[data-sek-image-layout="cover"] .sek-carousel-img img{
-	border-radius: 20px;
+.rsp-carousel [data-sek-module-type="czr_img_slider_module"] .swiper-container[data-sek-image-layout="cover"] .sek-carousel-img img{
+	border-radius: 0px;
+    margin: 0 !important;
 }
 /*Carousel - zac */
 
@@ -370,82 +242,6 @@ article {
 }
 /*Úvodná obrazovka - end*/
 
-/*Sociálne podniky - prepínanie - zac*/
-.sp-switch{
-        display: flex;
-        border-radius: 20px;
-        margin-top: 32px;
-        margin-bottom: 32px;
-    }
-    .sp-switch a.sp-item{
-        width: 50%;
-        text-decoration: none;
-        background-color: #506ad3;
-        color: white;
-        letter-spacing: 12px;
-        font-size: 20px;
-        font-weight: 500;
-        padding: 10px;
-        text-indent:12px;
-        transition: 0.2s ease-in-out;
-    }
-  
-    .sp-switch a.sp-item:hover p{
-      border-bottom: 4px solid white;
-        /*box-shadow: inset #506ad3 0px 0px 0px 3px, inset #fff 0px 0px 0px 6px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;*/
-    }
-  
-    .sp-switch .sp-item-wrapper p{
-        margin: 0;
-        padding-top: 4px;
-        border-bottom: 4px solid transparent;
-        font-weight: 800;
-    }
-  
-    .right-side-radius{
-        border-bottom-right-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-  
-    .left-side-radius{
-        border-bottom-left-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-    .sp-switch .sp-item-wrapper{
-        display: flex;
-        justify-content: center;
-    }
-  
-    .sp-switch a.sp-item.active{
-        background-color: #3047a3;
-    }
-    @media screen and (max-width: 450px) {
-    .sp-switch a.sp-item{
-        letter-spacing: 6px;
-        font-size: 18px;
-        font-weight: 500;
-        text-indent:6px;
-    }
-  }
-/*Sociálne podniky - prepínanie - kon*/
-
-/*NAVBAR CSS - zac */
-    header .primary-navbar__wrapper{
-        background: #3047a3
-    }
-    .sp-switch a.sp-item{
-        letter-spacing: 6px;
-        font-size: 18px;
-        font-weight: 500;
-        text-indent:6px;
-    }
-
-
-
-
-/*NAVBAR CSS - kon */
 
 /*Odtránenie autora článku "by admin"- zaciatok*/
 .post-info .author-meta,
@@ -470,31 +266,6 @@ display: none;
         align-items: center;
     }
 /*Nastavenia tlačidiel - kon */
-
-/*FAREBNÉ BLOKY - TEXT - zac */
-.home-top-col .home-top-box, .home-top-col .home-top-box .sideMenuLevel1 {
-    font-size: 17px;
-}
-.home-top-col .home-top-box a.acc-tab, .home-top-col .home-top-box .sideMenuIndent a{
-    font-size: 16px;
-}
-/*FAREBNÉ BLOKY - TEXT - kon */
-
-
-/*NAVIGAČNÉ MENU - zac */
-#main-menu .dropdown-menu .menu-item{
-	background-color: #3047a3;
-}
-
-header .dropdown-menu .dropdown-item {
-    background-color: #3047a3 !important;
-}
-/*NAVIGAČNÉ MENU - kon */
-
-.no-sides-gap{
-	margin-right: -32px;
-	margin-left: -32px;
-}
 
 /*CESTY ISTOTY CARDS - zac */
 .custom-cs-acc-card{
@@ -522,43 +293,10 @@ header .dropdown-menu .dropdown-item {
 	width: 140px;
 }
 
-@media(min-width: 768px) {
-	.mobile-only{
-		/*display: none;*/
-	}
-}
-
 .rsp-category-text  p{
 	margin: 0!important;
 	line-height: 1.6em
 }
-
-/*Carousel - zac */
-.rsp-carousel .sek-column-inner {
-    height: 100%;
-}
-
-.rsp-carousel .sek-swiper-nav .sek-swiper-arrows{
-	width: 32px;
-}
-
-.rsp-carousel .sek-swiper-nav .sek-swiper-arrows:hover{
-	width: 40px;
-}
-
-.rsp-carousel .sek-swiper-nav .sek-swiper-arrows[title="next"]{
-	border-radius: 20px 0px 0px 20px;
-}
-
-.rsp-carousel .sek-swiper-nav .sek-swiper-arrows[title="previous"]{
-	border-radius: 0px 20px 20px 0px;
-}
-
-.rsp-carousel [data-sek-module-type="czr_img_slider_module"] .swiper-container[data-sek-image-layout="cover"] .sek-carousel-img img{
-	border-radius: 0px;
-    margin: 0 !important;
-}
-/*Carousel - zac */
 
 .se-gradient-style-2{
  background: rgb(91,131,0);
@@ -574,14 +312,7 @@ background: linear-gradient(157deg, rgba(91,131,0,05) 0%, rgba(240,125,16,0.5) 5
 	padding-left: 16px;
 }
 
-/* POZADIE STRANKY - zac */
-body{
-	background-color: fefefe;
-background-image: url('/wp-content/uploads/2021/12/se_pozadie_4.png');
-	background-size: ;
-  background-position: top;
-	background-repeat: no-repeat;
-}
+
 
 #tc-page-wrap{
 	background: white;
@@ -621,6 +352,25 @@ nav#primary-nav, header .primary-navbar__wrapper,header .dropdown-menu .dropdown
 .nav__menu .menu-item .nav__link .nav__title:hover, .nav__menu .menu-item .nav__link .nav__title:focus{
 	/*TU ZMENIT FARBU PODCIARKNUTIA TEXTU V NAVIGACNOM MENU*/
 	border-bottom: 4px solid #5b8300;
+}
+
+
+header .branding .navbar-brand span{
+    /*LOGO TEXT */
+	font-size: 26px;
+	color: #f25c19;
+}
+
+header .primary-navbar__wrapper .branding__container{
+    /*FARBA POD LOGOM*/
+    background: white;
+        
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
 
 .header-skin-light [class*="nav__menu"] .nav__title::before{
@@ -671,24 +421,6 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 .mobile-navbar__wrapper .mobile-nav__inner{
 	margin-bottom:0;
 }
-
-/*LOGO TEXT */
-header .branding .navbar-brand span{
-	font-size: 26px;
-	color: #f25c19;
-}
-
-    header .primary-navbar__wrapper .branding__container{
-			/*FARBA POD LOGOM*/
-        background: white;
-			
-        position: absolute;
-        top: 0;
-        z-index: 1;
-        padding-top: 4px;
-        padding-bottom: 4px;
-        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-    }
 
     @media screen and (min-width: 960px) {
         header .primary-navbar__wrapper .branding__container{
