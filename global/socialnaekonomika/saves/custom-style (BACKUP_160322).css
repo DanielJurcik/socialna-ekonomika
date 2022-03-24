@@ -1,22 +1,11 @@
 body {
     font-family: 'Roboto';
-    /* POZADIE STRANKY - zac */
-    background-color: #fefefe;
-    background-image: url('../wp-content/uploads/2021/12/se_pozadie_4.png');
-    background-position: top;
-	background-repeat: no-repeat;
 }
-
-/* TIEŇ NA OKRAJI STRÁNKY */
-#tc-page-wrap.czr-boxed{
-	box-shadow: 0 0 10px rgba(0,0,0,.05);
-}
-/* TIEŇ NA OKRAJI STRÁNKY */
 
 /**********************************/
 /******* F O N T - settings *******/
 /**********************************/
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
     
     h1,h2,h3,h4,h5{
         font-family: 'Montserrat', sans-serif;
@@ -36,8 +25,8 @@ body {
     }
     @media (min-width:992px){
         .h1,h1{
-            font-size:36px;
-            line-height:48px;
+            font-size:40px;
+            line-height:56px;
         }
     }
     .h2,h2{
@@ -108,15 +97,14 @@ body {
 /**** SUBPAGE - BLOCKS - start ****/
 /**********************************/
 div.su-note{
-	border: 1px solid #3047a3 !important;
-	border-top: 5px solid #3047a3 !important;
+	border: 1px solid #223273 !important;
+	border-top: 5px solid #223273 !important;
 	border-radius: 10px !important;
 	margin-bottom: 16px;
 	position: relative;
   overflow: hidden;
 }
 
-/* CUSTOM HOVER EFFECT 
 .su-note:before{
   position: absolute;
   content: "";
@@ -130,7 +118,7 @@ div.su-note{
 }
 .su-note:hover:before{
   top: 0;
-}*/
+}
 
 .su-note .su-note-inner{
 	padding: 0px;
@@ -144,34 +132,20 @@ div.su-note{
   font-weight: 600;
 	font-size: 20px;
 	padding: 22px;
-	display: block;
-	position: relative;
-	transition: padding 0.3s ease-in-out;
-}
-
-.su-note .su-note-inner a:hover:before{
-	width: 20%;
+	display: block
 }
 
 .su-note .su-note-inner a:hover{
-	padding-left: 26px;
+	/*border-bottom: 3px solid #2e2e2e;*/
 }
 
 .su-note .su-note-inner a:before{
-	content: '';
-	position: absolute;
-	bottom: 14px;
-	height: 3px;
-	background: red;
-	width: 40%;
-	height: 3px;
-    background: rgb(48,71,163);
-    background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 100%); 
-	width: 0;
-	transition: 0.3s ease-in-out
+	content: 'Ahoj '
 }
 
 /**********************************/
+
+
 
 /*NEW */
 .btn-subpage-right button:hover,
@@ -188,6 +162,7 @@ div.su-note{
 	color: white !important;
 }
 
+
 .featurette-divider::before {
 	/* content: ; */
 	content: '';
@@ -202,7 +177,10 @@ div.su-note{
 .featurette-divider{
 	position: relative;
 	background: #eceeef;
+	height: +px;
 }
+
+/* ODKAZY PRE PODSTRANKY - end */
 
 .su-tabs-nav span {
 	font-size: 1.1em !important;
@@ -233,6 +211,13 @@ box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
 
 /*Farebne bloky - widgety - zac*/
 
+.home-top-title {
+	font-weight: bold;
+	font-size: 1.8em;
+	margin-bottom: 32px;
+	position: relative;
+}
+
 /*CUSTOM IMAGE OVERLAY*/
 .custom-image-overlay {
 	position: absolute;
@@ -259,64 +244,25 @@ box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
 /**********************************/
 /***** S I D E B A R - start ******/
 /**********************************/
-.sidebar.tc-sidebar.left{
-	background-color: #fafbfe;
-	margin-left: -16px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: -37px;
+/*Fixed sidebar
+.home-top-col{
+	position: fixed;
+	top: 200px;
+	width: 12.5%;
+	z-index: 0;
 }
 
-.home-top-col .sidebar-link{
-	border-bottom: 1px solid rgba(49,49,49,.09);
-	padding-bottom: 10px;
-	margin-top: 12px;
-	margin-bottom: 12px;
+#main-wrapper{
+	min-height:660px;
 }
-
-.sidebar-link.have-top-border{
-	border-top: 1px solid rgba(49,49,49,.09);
-	padding-top: 10px;
-}
-
-.home-top-col a{
-	color: #3047a3;
-}
-
-.home-top-col a:hover{
-    color: #3047a3 !important;
-	/*border-bottom: 3px solid #3047a3 !important;*/
-    text-decoration: none;
-}
-
-.home-top-col .sidebar-link,
-.home-top-col .sidebar-link-sec{
-	transition: padding 0.3s ease-in-out;
-}
-.home-top-col .sidebar-link:hover,
-.home-top-col .sidebar-link-sec:hover{
-	padding-left: 6px;
-}
-
-.home-top-col .sideMenuIndent{
-	border-left: 3px solid #b1bff6;
-}
+*/
 
 .home-top-col .home-top-box, .home-top-col .home-top-box .sideMenuLevel1 {
     font-size: 17px;
-		color: #3047a3;
 }
 .home-top-col .home-top-box a.acc-tab, .home-top-col .home-top-box .sideMenuIndent a{
     font-size: 16px;
-	font-weight: normal;
-}
-
-.home-top-title {
-	padding-top: 8px;
-	font-weight: bold;
-	font-size: 1.8em;
-	margin-bottom: 32px;
-	position: relative;
+		font-weight: normal;
 }
 
 .home-top-title::after{
@@ -325,8 +271,17 @@ box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
 	bottom: -10px;
 	left: 0;
 	height: 4px;
-	background-color: #3047a3;
+	background-color: #303133;
 	width: 30%;
+}
+
+.home-top-box a {
+	border-bottom: 2px solid transparent;
+	font-weight: bold;
+}
+
+.home-top-box a:hover{
+	text-decoration: none;
 }
 .sideMenuTopPad {
 	padding-top: 15px;
@@ -339,43 +294,32 @@ box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
 }
 
 .home-top-box .sideMenuIndent{
-	padding-left: 11px;
+	padding-left: 8px;
 	margin-left: 8px;
 }
 /**********************************/
 /************ M O D R A ***********/
 /**********************************/
-.sidebar.color-1.tc-sidebar.left{
-	background: #fafbfe;
-}
-
 .color-1 .home-top-box a:hover{
-	/*border-bottom: 2px solid #3047a3;*/
+	border-bottom: 2px solid #3047a3;
 }
 .home-top-col.color-1,.home-top-col.color-1 .home-top-box a{
-	/*color: #3047a3;*/
+	color: #3047a3;
 }
 .home-top-col.color-1 .home-top-title::after{
 	background: #3047a3;
 }
-.home-top-col.color-1 .home-top-title{
-	color: #3047a3;
-}
 .color-1 .sideMenuIndent{
-	/*border-left: 2px solid #3047a3;*/
+	border-left: 2px solid #3047a3;
 }
 /**********************************/
 /********* O R A N Z O V A ********/
 /**********************************/
-.sidebar.color-2.tc-sidebar.left{
-	background: #fffaf0;
-}
-
 .color-2 .home-top-box a:hover{
-	/*border-bottom: 3px solid #f25c19;*/
+	border-bottom: 3px solid #223273;
 }
 .home-top-col.color-2,.home-top-col.color-2 .home-top-box a{
-	/*color: #f25c19;*/
+	color: #223273;
 }
 .home-top-col.color-2 .home-top-title::after{
 	background: #f25c19;
@@ -384,29 +328,22 @@ box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
 	color: #f25c19;
 }
 .color-2 .sideMenuIndent{
-	/*border-left: 3px solid #f25c19;*/
+	border-left: 3px solid #223273;
 }
 /**********************************/
 /************* S E D A ************/
 /**********************************/
-.sidebar.color-3.tc-sidebar.left{
-	background: #f6f6f6;
-}
-
 .color-3 .home-top-box a:hover{
-	/*border-bottom: 2px solid #6f6f6f;*/
+	border-bottom: 2px solid #6f6f6f;
 }
 .home-top-col.color-3,.home-top-col.color-3 .home-top-box a{
-	/*color: #6f6f6f;*/
+	color: #6f6f6f;
 }
 .home-top-col.color-3 .home-top-title::after{
 	background: #6f6f6f;
 }
-.home-top-col.color-3 .home-top-title{
-	color: #6f6f6f;
-}
 .color-3 .sideMenuIndent{
-	/*border-left: 2px solid #6f6f6f;*/
+	border-left: 2px solid #6f6f6f;
 }
 /**********************************/
 /****** S I D E B A R - end *******/
@@ -453,13 +390,79 @@ article {
 	padding-right:0px;
 }
 
+/*SEARCH BAR - zac */
+.is-form-id-7938{
+	border-bottom: 4px solid transparent;
+	padding: 18px 8px 18px !important;
+	margin-left:32px
+}
 
+.is-form-style input.is-search-input{
+	border-radius: 20px 0 0 20px;
+}
+
+.is-form-id-7938 .is-search-icon,
+.is-form-id-7938 .is-search-submit{
+	border-radius: 0 20px 20px 0;
+}
+
+/*SEARCH BAR - kon */
+
+.menu-item{
+	padding: 14px 8px 14px !important;
+	font-size: 12px;
+	margin:0px !important;
+}
+
+.primary-navbar__row{
+	margin-right:-30px !important;
+}
+.primary-nav__wrapper {
+	background: #3047a3 !important;
+}
+.nav__utils a {
+	color: white !important;
+}
+.primary-navbar__wrapper .primary-nav__menu-wrapper{
+	display: flex;
+	justify-content: center !important;
+	width: calc(100% - 281px);
+}
+.primary-navbar__wrapper .col {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav__menu .menu-item .nav__link .nav__title{
+	border-bottom: 4px solid transparent;
+	transition: border 0.3s ease-in-out
+}
+.nav__menu .menu-item .nav__link .nav__title:hover,
+.nav__menu .menu-item .nav__link .nav__title:focus
+{
+	border-bottom: 4px solid #fff;
+}
+
+
+/* GREEN */
+.menu-item-9,
+.menu-item-239,
+.menu-item-10,
+.menu-item-300{
+	background: #3047a3 !important;
+}
+
+/* ORANGE */
+.menu-item-240 {
+	background: #3047a3  !important;
+}
 .acc a,
 .su-note-inner a{
 	text-decoration: none !important;
 	color:white;
 }
-.acc a:hover{
+.acc a:hover
+{
 	text-decoration: underline !important;
 	color: white !important;
 }
@@ -580,6 +583,97 @@ article {
 }
 /*Úvodná obrazovka - end*/
 
+/*Sociálne podniky - prepínanie - zac*/
+.sp-switch{
+        display: flex;
+        border-radius: 20px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    .sp-switch a.sp-item{
+        width: 50%;
+        text-decoration: none;
+        background-color: #506ad3;
+        color: white;
+        letter-spacing: 12px;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 10px;
+        text-indent:12px;
+        transition: 0.2s ease-in-out;
+    }
+  
+    .sp-switch a.sp-item:hover p{
+      border-bottom: 4px solid white;
+        /*box-shadow: inset #506ad3 0px 0px 0px 3px, inset #fff 0px 0px 0px 6px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;*/
+    }
+  
+    .sp-switch .sp-item-wrapper p{
+        margin: 0;
+        padding-top: 4px;
+        border-bottom: 4px solid transparent;
+        font-weight: 800;
+    }
+  
+    .right-side-radius{
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+  
+    .left-side-radius{
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+    .sp-switch .sp-item-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+  
+    .sp-switch a.sp-item.active{
+        background-color: #3047a3;
+    }
+    @media screen and (max-width: 450px) {
+    .sp-switch a.sp-item{
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-weight: 500;
+        text-indent:6px;
+    }
+  }
+/*Sociálne podniky - prepínanie - kon*/
+
+/*NAVBAR CSS - zac */
+    header .primary-navbar__wrapper{
+        background: #3047a3
+    }
+    .sp-switch a.sp-item{
+        letter-spacing: 6px;
+        font-size: 18px;
+        font-weight: 500;
+        text-indent:6px;
+    }
+
+    header .primary-navbar__wrapper .branding__container{
+        background: #fff;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    }
+
+    @media screen and (min-width: 960px) {
+        header .primary-navbar__wrapper .branding__container{
+            border-radius: 0px 0px 20px 20px;
+        }
+    }
+
+
+/*NAVBAR CSS - kon */
+
 /*Odtránenie autora článku "by admin"- zaciatok*/
 .post-info .author-meta,
 .post-info .v-separator{
@@ -602,6 +696,17 @@ display: none;
         align-items: center;
     }
 /*Nastavenia tlačidiel - kon */
+
+
+/*NAVIGAČNÉ MENU - zac */
+#main-menu .dropdown-menu .menu-item{
+	background-color: #3047a3;
+}
+
+header .dropdown-menu .dropdown-item {
+    background-color: #3047a3 !important;
+}
+/*NAVIGAČNÉ MENU - kon */
 
 .no-sides-gap{
 	margin-right: -32px;
@@ -634,14 +739,18 @@ display: none;
 	width: 140px;
 }
 
+@media(min-width: 768px) {
+	.mobile-only{
+		/*display: none;*/
+	}
+}
+
 .rsp-category-text  p{
 	margin: 0!important;
 	line-height: 1.6em
 }
 
-/**********************************/
-/* - Carousel - zac */
-/**********************************/
+/*Carousel - zac */
 .rsp-carousel .sek-column-inner {
     height: 100%;
 }
@@ -674,9 +783,26 @@ background: linear-gradient(157deg, rgba(91,131,0,05) 0%, rgba(240,125,16,0.5) 5
 }
 /*e-katalóg karty - kon */
 
+.sp-cisla-section .rsp-cisla-headline span{
+	background: #efe5d4;
+	position: relative;
+	z-index:999;
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+/* POZADIE STRANKY - zac */
+body{
+	background-color: fefefe;
+    background-image: url('../wp-content/uploads/2021/12/se_pozadie_4.png');
+    background-position: top;
+	background-repeat: no-repeat;
+}
+
 #tc-page-wrap{
 	background: white;
 }
+/* POZADIE STRANKY - zac */
 
 .custom-section-full-width{
 	margin-left: -30px;
@@ -693,70 +819,20 @@ background: linear-gradient(157deg, rgba(91,131,0,05) 0%, rgba(240,125,16,0.5) 5
 /************************/
 /* NAVIGACNE MENU - zac */
 /************************/
-.menu-item{
-	padding: 14px 8px 14px !important;
-	font-size: 12px;
-	margin:0px !important;
-}
 
-.primary-navbar__row{
-	margin-right:-30px !important;
-}
-
-.nav__utils a {
-	color: white !important;
-}
-.primary-navbar__wrapper .primary-nav__menu-wrapper{
-	display: flex;
-	justify-content: center !important;
-	width: calc(100% - 281px);
-}
-.primary-navbar__wrapper .col {
-    max-width: 100%;
-    display: flex;
-    justify-content: flex-end;
-}
-.nav__menu .menu-item .nav__link .nav__title{
-	border-bottom: 4px solid transparent;
-	transition: border 0.3s ease-in-out
-}
-
-.sp-switch a.sp-item{
-    letter-spacing: 6px;
-    font-size: 18px;
-    font-weight: 500;
-    text-indent:6px;
-}
-
-header .primary-navbar__wrapper .branding__container{
-    background: #fff;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-}
-
-@media screen and (min-width: 960px) {
-    header .primary-navbar__wrapper .branding__container{
-        border-radius: 0px 0px 20px 20px;
-    }
-}
-
-nav#primary-nav, header .primary-navbar__wrapper{
+nav#primary-nav, header .primary-navbar__wrapper,header .dropdown-menu .dropdown-item{
 	/*TU ZMENIT FARBU NAVIGACNE MENU*/
-	background-color: white;
+	background-color: white!important;
 }
 
 #primary-nav .nav__title,.caret__dropdown-toggler,.mobile-nav__container .nav__title {
 	/*TU ZMENIT FARBU TEXTU V NAVIGACNOM MENU*/
-	color: #3047a3!important;
+	color: #223273!important;
 }
 
 .nav__menu .menu-item .nav__link .nav__title:hover, .nav__menu .menu-item .nav__link .nav__title:focus{
 	/*TU ZMENIT FARBU PODCIARKNUTIA TEXTU V NAVIGACNOM MENU*/
-	border-bottom: 4px solid #3047a3;
+	border-bottom: 4px solid #223273;
 }
 
 .header-skin-light [class*="nav__menu"] .nav__title::before{
@@ -808,14 +884,6 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 	margin-bottom:0;
 }
 
-#mobile-nav-menu .czr-dropdown-menu{
-	background-color: #fafbfe;
-}
-
-#mobile-nav-menu .dropdown-menu .menu-item:hover{
-	background: transparent;
-}
-
 /************************/
 /* NAVIGACNE MENU - kon */
 /************************/
@@ -857,7 +925,7 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 	background-color: transparent;
 	height: 3px;
 	margin-right: 50px;
-    background: linear-gradient(157deg, rgba(242,136,55,1) 2%, rgba(255,255,255,0) 100%); 
+background: linear-gradient(157deg, rgba(242,136,55,1) 2%, rgba(255,255,255,0) 100%); 
 	width: 40%;
 	position: relative;
 	margin-bottom: 16px;
@@ -868,8 +936,8 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 	background-color: transparent;
 	height: 3px;
 	margin-right: 50px;
-    background: rgb(48,71,163);
-    background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 100%); 
+ background: rgb(48,71,163);
+background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 100%); 
 	width: 40%;
 	position: relative;
 }
@@ -889,50 +957,50 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(48,71,163,1) 40%
 /*****************************/
 /* TIMELINE COMPONENT - stat */
 /*****************************/
-.timeline-wrapper {
-    padding-top: 1px;
-    margin-left: 1.5rem;
-    border-left: 3px solid #ddd;
-}
+	.timeline-wrapper {
+					padding-top: 1px;
+					margin-left: 1.5rem;
+					border-left: 3px solid #ddd;
+				}
 .timeline-wrapper.small {
-    margin-left: 0.4rem;
+	margin-left: 0.4rem;
 }
-.timeline-wrapper .node {
-    padding-left: .5rem;
-    padding-bottom: 0.2rem;
-    position: relative;
-}
-.timeline-wrapper .node h4,.timeline-wrapper .node p {
-    margin-left: 25px;
-}
+				.timeline-wrapper .node {
+					padding-left: .5rem;
+					padding-bottom: 0.2rem;
+					position: relative;
+				}
+				.timeline-wrapper .node h4,.timeline-wrapper .node p {
+					margin-left: 25px;
+				}
 
-.timeline-wrapper .node p{
-    margin-bottom: 4px;
-    margin-top: 4px;
-}
+				.timeline-wrapper .node p{
+					margin-bottom: 4px;
+					margin-top: 4px;
+				}
+				
+				.timeline-wrapper .node h4{
+					color: #f28837;
+				}
 
-.timeline-wrapper .node h4{
-    color: #f28837;
-}
-
-.node::before {
-    content: "";
-    width: 2rem;
-    height: 2rem;
-    opacity: 0.9;
-    background: #f28837;
-    border: 4px solid #f2f2f2;
-    border-radius: 50%;
-    position: absolute;
-    top: 0rem;
-    left: -1.1rem;
-}
+				.node::before {
+					content: "";
+					width: 2rem;
+					height: 2rem;
+					opacity: 0.9;
+					background: #f28837;
+					border: 4px solid #f2f2f2;
+					border-radius: 50%;
+					position: absolute;
+					top: 0rem;
+					left: -1.1rem;
+				}
 
 .timeline-wrapper.small .node::before{
 	width: 1.7rem;
-	height: 1.7rem;
-	opacity: 0.9;
-	left: -0.9rem;
+					height: 1.7rem;
+					opacity: 0.9;
+					left: -0.9rem;
 }
 .timeline-wrapper.small.blue .node::before{
 	background: #68d0e5;
@@ -945,6 +1013,12 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(48,71,163,1) 40%
 /* TIMELINE COMPONENT - end */
 /*****************************/
 
+/* TIEŇ NA OKRAJI STRÁNKY */
+#tc-page-wrap.czr-boxed{
+	box-shadow: 0 0 10px rgba(0,0,0,.05);
+}
+/* TIEŇ NA OKRAJI STRÁNKY */
+
 .se-btn-one-line-wrapper .sek-column-inner{
 	display: initial;
 }
@@ -952,37 +1026,4 @@ background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(48,71,163,1) 40%
 .se-btn-one-line{
 	display: inline-block;
 	width: auto;
-}
-
-/*****************************/
-/*MOZNO BY VAS ZAUJALO CLANKY*/
-/*****************************/
-.flickity-slider .entry-title{
-	font-size:16px;
-	font-weight:400;
-	line-height:24px
-}
-@media (min-width:768px){
-	.flickity-slider .entry-title{
-		font-size:16px;
-		line-height:24px;
-	}
-}
-@media (min-width:992px){
-	.flickity-slider .entry-title{
-		font-size:18px;
-		font-weight:600;
-		line-height:24px;
-	}
-}
-
-/*****************************/
-/**********KALENDÁR***********/
-/*****************************/
-.section-calendar-realized .sek-column-inner,.section-calendar-realized .sek-section,.calendar-realized .sek-container-fluid,.calendar-realized .sek-row{
-	height: 100%;
-}
-
-.calendar-realized .cal-date-col .sek-column-inner{
-	justify-content: center
 }
