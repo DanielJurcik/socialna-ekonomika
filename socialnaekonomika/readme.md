@@ -1,0 +1,2 @@
+Stránka :
+www.socialnaekonomika.sk
