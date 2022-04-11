@@ -1,43 +1,15 @@
-
 :root {
-	/* Basic colors*/
-	--color-primary: var(--color-royal-blue);
-	--color-secondary: var(--color-sunrise-orange);
-	
-	/* Color blocks colors */
-	--color-block1: var(--color-primary);
-	--color-block2: var(--color-secondary);
-	--color-block3: #5e5e5e;
-	--color-block4: #cc554b;
-
-	/* Nav menu colors */
-	--color-nav-text: var(--color-primary);
-	--color-nav-underline: var(--color-primary);
-	--color-nav-bcg: white;
-
-	/* All colors */
-	--color-sunrise-orange : #f25c19; 
-	--color-royal-blue: #3047a3;
+	--royal-blue: #3047a3;
 }
 
 body {
     font-family: 'Roboto';
-
     /* POZADIE STRANKY - zac */
     background-color: #fefefe;
     background-image: url('../wp-content/uploads/2021/12/se_pozadie_4.png');
     background-position: top;
 	background-repeat: no-repeat;
 }
-
-/*ROZŠÍRENIE STRÁNKY - start*/
-@media (min-width: 1366px){
-    .czr-boxed-layout .container{
-      width: 1366px;
-      max-width: 1366px;
-    }
-  }
-/*ROZŠÍRENIE STRÁNKY - end*/
 
 /* TIEŇ NA OKRAJI STRÁNKY */
 #tc-page-wrap.czr-boxed{
@@ -53,8 +25,8 @@ body {
     h1,h2,h3,h4,h5{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
-		/*Medzera medzi pismenami v %*/
-		letter-spacing: -0.015em;
+			/*Medzera medzi pismenami v %*/
+			letter-spacing: -0.015em;
     }
     
     /** FONT SETTINGS - start **/
@@ -145,26 +117,26 @@ div.su-note{
 	/*Farba oramovania*/
 	border: 1px solid #acacac !important;
 	/*Farba horneho oramovania*/
-	border-top: 5px solid var(--color-primary) !important;
+	border-top: 5px solid var(--royal-blue) !important;
 	border-radius: 10px !important;
 	/*ROZOSTUP BLOKOV*/
 	margin-bottom: 22px !important;
 	position: relative;
-  	overflow: hidden;
+  overflow: hidden;
 }
 
 /*Farby blokov podstranky podla classy*/
-.su-note.bp-color1{
-	border-top-color: var(--color-block1) !important;
+.bp-color1 .su-note{
+	border-top-color: #3047a3 !important;
 }
-.su-note.bp-color2{
-	border-top-color: var(--color-block2) !important;
+.bp-color2 .su-note{
+	border-top-color: #f25c19 !important;
 }
-.su-note.bp-color3{
-	border-top-color: var(--color-block3) !important;
+.bp-color3 .su-note{
+	border-top-color: #3047a3 !important;
 }
-.su-note.bp-color4{
-	border-top-color: var(--color-block4) !important;
+.bp-color4 .su-note{
+	border-top-color: #cc554b !important;
 }
 
 .su-note .su-note-inner{
@@ -176,7 +148,7 @@ div.su-note{
 .su-note .su-note-inner a{
 	color: #223273;
 	font-family: 'Montserrat', sans-serif;
-  	font-weight: 600;
+  font-weight: 600;
 	font-size: 20px;
 	padding: 22px;
 	display: block;
@@ -200,8 +172,8 @@ div.su-note{
 	background: red;
 	width: 40%;
 	height: 3px;
-    background: var(--color-primary);
-    background: linear-gradient(157deg, var(--color-primary) 2%, rgba(255,255,255,0) 100%); 
+    background: rgb(48,71,163);
+    background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 100%); 
 	width: 0;
 	transition: 0.3s ease-in-out
 }
@@ -219,11 +191,12 @@ div.su-note{
 .btn-subpage-right-orange button:hover,
 .btn-subpage-right-orange button:focus,
 .btn-subpage-right-orange button:active{
-	box-shadow: inset 1400px 0 0 0 var(--color-secondary) !important;
+	box-shadow: inset 1400px 0 0 0 #f25c19 !important;
 	color: white !important;
 }
 
 .featurette-divider::before {
+	/* content: ; */
 	content: '';
 	width: 20%;
 	height: 3px;
@@ -245,26 +218,36 @@ div.su-note{
 	font-size: 1em !important;
 }
 .header-skin-light [class*="nav__menu"] .nav__title::before {
-	background-color:  var(--color-primary) !important;
+	background-color:  #3047a3 !important;
 }
 
 /*********************************/
 /* CUSTOM GRADIENT POZADIA - start */
 .custom-gradient-1{
-	background: rgb(90,90,90);
-	background: linear-gradient(350deg, rgba(90,90,90,1) 0%, rgba(218,82,71,1) 33%); 
+	 background: rgb(90,90,90);
+background: linear-gradient(350deg, rgba(90,90,90,1) 0%, rgba(218,82,71,1) 33%); 
 }
 .custom-gradient-2{
- 	background: rgb(252,175,169);
-	background: linear-gradient(350deg, rgba(252,175,169,1) 0%, rgba(218,82,71,1) 73%); 
+ background: rgb(252,175,169);
+background: linear-gradient(350deg, rgba(252,175,169,1) 0%, rgba(218,82,71,1) 73%); 
 }
 /* CUSTOM GRADIENT POZADIA - end */
 /*********************************/
 .custom-shadow-overlay-1{
-	box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
-	-webkit-box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
-	-moz-box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
+box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
+-webkit-box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
+-moz-box-shadow: 0px -93px 65px -23px rgba(9,9,9,0.66) inset;
 }
+
+/*CUSTOM IMAGE OVERLAY*/
+.custom-image-overlay {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	top: 250px;
+}
+
 
 /* BTN SETTINGS */
 .btn-picture .sek-module-inner{
@@ -291,9 +274,11 @@ div.su-note{
 	padding-bottom: 32px;
 	margin-bottom: 32px;
 	border-radius: 10px;
+	/*
 	max-width: calc(100vw - 32px);
 	margin-right: auto;
 	margin-left: auto;
+	*/
 }
 
 @media screen and (min-width: 768px) {
@@ -322,11 +307,11 @@ div.su-note{
 }
 
 .home-top-col a{
-	color: var(--color-primary);
+	color: #3047a3;
 }
 
 .home-top-col a:hover{
-    color: var(--color-primary) !important;
+    color: #3047a3 !important;
     text-decoration: none;
 }
 
@@ -345,7 +330,7 @@ div.su-note{
 
 .home-top-col .home-top-box, .home-top-col .home-top-box .sideMenuLevel1 {
     font-size: 17px;
-		color: var(--color-primary);
+		color: #3047a3;
 }
 .home-top-col .home-top-box a.acc-tab, .home-top-col .home-top-box .sideMenuIndent a{
     font-size: 16px;
@@ -366,7 +351,7 @@ div.su-note{
 	bottom: -10px;
 	left: 0;
 	height: 4px;
-	background-color: var(--color-primary);
+	background-color: #3047a3;
 	width: 30%;
 }
 .sideMenuTopPad {
@@ -388,7 +373,7 @@ div.su-note{
 /**********************************/
 .sidebar.color-1.tc-sidebar.left{
 	background: #fafbfe;
-	border: 8px solid var(--color-primary);
+	border: 8px solid #3047a3;
 }
 
 @media screen and (min-width: 768px) {
@@ -398,26 +383,26 @@ div.su-note{
 }
 
 .color-1 .home-top-box a:hover{
-	/*border-bottom: 2px solid var(--color-primary);*/
+	/*border-bottom: 2px solid #3047a3;*/
 }
 .home-top-col.color-1,.home-top-col.color-1 .home-top-box a{
-	/*color: var(--color-primary);*/
+	/*color: #3047a3;*/
 }
 .home-top-col.color-1 .home-top-title::after{
-	background: var(--color-primary);
+	background: #3047a3;
 }
 .home-top-col.color-1 .home-top-title{
-	color: var(--color-primary);
+	color: #3047a3;
 }
 .color-1 .sideMenuIndent{
-	/*border-left: 2px solid var(--color-primary);*/
+	/*border-left: 2px solid #3047a3;*/
 }
 /**********************************/
 /********* O R A N Z O V A ********/
 /**********************************/
 .sidebar.color-2.tc-sidebar.left{
 	background: #fffaf0;
-	border: solid 8px var(--color-block2);
+	border: solid 8px #f25c19;
 }
 
 @media screen and (min-width: 768px) {
@@ -427,26 +412,26 @@ div.su-note{
 }
 
 .color-2 .home-top-box a:hover{
-	/*border-bottom: 3px solid var(----color-block2);*/
+	/*border-bottom: 3px solid #f25c19;*/
 }
 .home-top-col.color-2,.home-top-col.color-2 .home-top-box a{
-	/*color: var(----color-block2);*/
+	/*color: #f25c19;*/
 }
 .home-top-col.color-2 .home-top-title::after{
-	background: var(--color-block2);
+	background: #f25c19;
 }
 .home-top-col.color-2 .home-top-title{
-	color: var(--color-block2);
+	color: #f25c19;
 }
 .color-2 .sideMenuIndent{
-	/*border-left: 3px solid var(----color-block2);*/
+	/*border-left: 3px solid #f25c19;*/
 }
 /**********************************/
 /************* S E D A ************/
 /**********************************/
 .sidebar.color-3.tc-sidebar.left{
 	background: #f6f6f6;
-	border: 8px solid var(--color-block3);
+	border: 8px solid #6f6f6f;
 }
 
 @media screen and (min-width: 768px) {
@@ -456,19 +441,19 @@ div.su-note{
 }
 
 .color-3 .home-top-box a:hover{
-	/*border-bottom: 2px solid var(--color-block3);*/
+	/*border-bottom: 2px solid #6f6f6f;*/
 }
 .home-top-col.color-3,.home-top-col.color-3 .home-top-box a{
-	/*color: var(--color-block3);*/
+	/*color: #6f6f6f;*/
 }
 .home-top-col.color-3 .home-top-title::after{
-	background: var(--color-block3);
+	background: #6f6f6f;
 }
 .home-top-col.color-3 .home-top-title{
-	color: var(--color-block3);
+	color: #6f6f6f;
 }
 .color-3 .sideMenuIndent{
-	/*border-left: 2px solid var(--color-block3);*/
+	/*border-left: 2px solid #6f6f6f;*/
 }
 /**********************************/
 /****** S I D E B A R - end *******/
@@ -538,6 +523,7 @@ article {
 	padding: 1rem;
 }
 
+
 .menu-item {
     font-size: 14px;
 }
@@ -561,6 +547,15 @@ article {
 .qe-faqs-filters-container li a {
     display: none;
 }
+
+/*ROZŠÍRENIE STRÁNKY - start*/
+  @media (min-width: 1366px){
+    .czr-boxed-layout .container{
+      width: 1366px;
+      max-width: 1366px;
+    }
+  }
+/*ROZŠÍRENIE STRÁNKY - end*/
 
 /*Úvodná stránka - start*/
   .sek-post-grid-wrapper .sek-list-layout article{
@@ -798,17 +793,17 @@ header .primary-navbar__wrapper .branding__container{
 
 nav#primary-nav, header .primary-navbar__wrapper{
 	/*TU ZMENIT FARBU NAVIGACNE MENU*/
-	background-color: var(--color-nav-bcg);
+	background-color: white;
 }
 
 #primary-nav .nav__title,.caret__dropdown-toggler,.mobile-nav__container .nav__title {
 	/*TU ZMENIT FARBU TEXTU V NAVIGACNOM MENU*/
-	color: var(--color-nav-text)!important;
+	color: #3047a3!important;
 }
 
 .nav__menu .menu-item .nav__link .nav__title:hover, .nav__menu .menu-item .nav__link .nav__title:focus{
 	/*TU ZMENIT FARBU PODCIARKNUTIA TEXTU V NAVIGACNOM MENU*/
-	border-bottom: 4px solid var(--color-nav-underline);
+	border-bottom: 4px solid #3047a3;
 }
 
 .header-skin-light [class*="nav__menu"] .nav__title::before{
@@ -833,7 +828,7 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 /*NEW*/
 .nav__menu .menu-item .nav__link::after {
 	content: '';
-	background: var(--color-primary);
+	background: #3047a3;
 	width: 3px;
 	height: 18px;
 	position: absolute;
@@ -844,6 +839,7 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 .nav__menu .menu-item .dropdown-menu .nav__link::after, .mobile-nav__container #mobile-nav-menu .nav__link:after{
 	content: none;
 }
+
 
 .nav__menu .menu-item:last-child .nav__link::after {
 	content: none;
@@ -862,7 +858,7 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 #mobile-nav-menu .czr-dropdown-menu{
 	background-color: #f7f7f7;
 	border-radius: 0;
-	border-left: 2px solid var(--color-primary);
+	border-left: 2px solid #3047a3;
 }
 
 #mobile-nav-menu .czr-dropdown-menu .dropdown-menu{
@@ -911,34 +907,13 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 /*****************************/
 /* CUSTOM DIVIDERS - start   */
 /*****************************/
-/*Default divider settings*/
-.se-divider{
-	height: 3px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	width: 40%;
-	background: var(--color-block1);
-	background: linear-gradient(157deg, var(--color-block1) 2%, rgba(0,0,0,0) 100%); 
-}
-
-.se-divider.right{
-	transform: rotatey(180deg);
-	float: right;
-}
-
-.se-divider.middle{
-	margin-left: auto;
-	margin-right: auto;
-}
-
-/* Color divider settings*/
-
-/* PO ZMENE DIVIDEROV VYMAZAT - start */
 .divider-orange{
+	background-color: transparent;
 	height: 3px;
 	margin-right: 50px;
-	background: linear-gradient(157deg, var(--color-block1) 2%, rgba(255,255,255,0) 100%); 
+background: linear-gradient(157deg, rgba(242,136,55,1) 2%, rgba(255,255,255,0) 100%); 
 	width: 40%;
+	position: relative;
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
@@ -947,11 +922,12 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 	background-color: transparent;
 	height: 3px;
 	margin-right: 50px;
-    background: var(--color-block1);
-    background: linear-gradient(157deg, var(--color-block1) 2%, rgba(255,255,255,0) 100%); 
+    background: rgb(48,71,163);
+    background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 100%); 
 	width: 40%;
 	margin-top: 8px;
 	margin-bottom: 8px;
+	position: relative;
 }
 
 .divider-blue.right, .divider-orange.right{
@@ -960,7 +936,8 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 }
 
 .divider-blue.midle{
-	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(48,71,163,1) 40%, rgba(48,71,163,1) 61%, rgba(255,255,255,0) 100%); 
+	 background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(48,71,163,1) 40%, rgba(48,71,163,1) 61%, rgba(255,255,255,0) 100%); 
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
@@ -968,54 +945,13 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 }
 
 .divider-orange.midle{
-	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--color-block2) 40%, var(--color-block2) 61%, rgba(255,255,255,0) 100%); 
+	 background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(242,136,55,1) 40%, rgba(242,136,55,1) 61%, rgba(255,255,255,0) 100%); 
 	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
 	height: 3px;
 }
-/* PO ZMENE DIVIDEROV VYMAZAT - end */
-
-/* BLUE */
-.se-divider.blue{
-	background: var(--color-block1);
-	background: linear-gradient(157deg, var(--color-block1) 2%, rgba(0,0,0,0) 100%); 
-}
-
-.se-divider.middle.blue{
-	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--color-block1) 40%, var(--color-block1) 60%, rgba(255,255,255,0) 100%); 
-}
-
-/* ORANGE */
-.se-divider.orange{
-	background: var(--color-block2);
-	background: linear-gradient(157deg, var(--color-block2) 2%, rgba(0,0,0,0) 100%); 
-}
-
-.se-divider.middle.orange{
-	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--color-block2) 40%, var(--color-block2) 60%, rgba(255,255,255,0) 100%); 
-}
-
-/* GREY */
-.se-divider.grey{
-	background: var(--color-block3);
-	background: linear-gradient(157deg, var(--color-block3) 2%, rgba(0,0,0,0) 100%); 
-}
-
-.se-divider.middle.grey{
-	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--color-block3) 40%, var(--color-block3) 60%, rgba(255,255,255,0) 100%); 
-}
-
-/* GRANATE */
-.se-divider.granate{
-	background: var(--color-block4);
-	background: linear-gradient(157deg, var(--color-block4) 2%, rgba(0,0,0,0) 100%); 
-}
-
-.se-divider.middle.granate{
-	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--color-block4) 40%, var(--color-block4) 60%, rgba(255,255,255,0) 100%); 
-}	
-
 /*****************************/
 /* TIMELINE COMPONENT - stat */
 /*****************************/
@@ -1141,9 +1077,4 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 
 .hp-color-blocks h5 strong{
 	font-weight: 600;
-}
-@media (max-width:768px){
-	.hp-color-blocks .sek-module-inner a{
-		line-height: 1.4em;
-	}
 }
