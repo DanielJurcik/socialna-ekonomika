@@ -345,7 +345,6 @@ div.su-note{
 
 .home-top-col .home-top-box, .home-top-col .home-top-box .sideMenuLevel1 {
     font-size: 17px;
-		color: var(--color-primary);
 }
 .home-top-col .home-top-box a.acc-tab, .home-top-col .home-top-box .sideMenuIndent a{
     font-size: 16px;
@@ -388,29 +387,29 @@ div.su-note{
 /**********************************/
 .sidebar.color-1.tc-sidebar.left{
 	background: #fafbfe;
-	border: 8px solid var(--color-primary);
+	border: 8px solid var(--color-block1);
 }
 
 @media screen and (min-width: 768px) {
     .sidebar.color-1.tc-sidebar.left{
-		border: 8px solid #eff3ff;
+		border: 0px solid #eff3ff;
 	}
 }
 
 .color-1 .home-top-box a:hover{
-	/*border-bottom: 2px solid var(--color-primary);*/
+	/*border-bottom: 2px solid var(--color-block1);*/
 }
 .home-top-col.color-1,.home-top-col.color-1 .home-top-box a{
-	/*color: var(--color-primary);*/
+	color: var(--color-block1);
 }
 .home-top-col.color-1 .home-top-title::after{
-	background: var(--color-primary);
+	background: var(--color-block1);
 }
 .home-top-col.color-1 .home-top-title{
-	color: var(--color-primary);
+	color: var(--color-block1);
 }
 .color-1 .sideMenuIndent{
-	/*border-left: 2px solid var(--color-primary);*/
+	border-left: 2px solid var(--color-block1);
 }
 /**********************************/
 /********* O R A N Z O V A ********/
@@ -422,7 +421,7 @@ div.su-note{
 
 @media screen and (min-width: 768px) {
     .sidebar.color-2.tc-sidebar.left{
-		border: 8px solid #fff6e5;
+		border: 0px solid #fff6e5;
 	}
 }
 
@@ -430,7 +429,7 @@ div.su-note{
 	/*border-bottom: 3px solid var(----color-block2);*/
 }
 .home-top-col.color-2,.home-top-col.color-2 .home-top-box a{
-	/*color: var(----color-block2);*/
+	color: var(--color-block2);
 }
 .home-top-col.color-2 .home-top-title::after{
 	background: var(--color-block2);
@@ -439,7 +438,7 @@ div.su-note{
 	color: var(--color-block2);
 }
 .color-2 .sideMenuIndent{
-	/*border-left: 3px solid var(----color-block2);*/
+	border-left: 3px solid var(--color-block2);
 }
 /**********************************/
 /************* S E D A ************/
@@ -451,7 +450,7 @@ div.su-note{
 
 @media screen and (min-width: 768px) {
     .sidebar.color-3.tc-sidebar.left{
-		border: 8px solid #d5d5d5;
+		border: 0px solid #d5d5d5;
 	}
 }
 
@@ -459,7 +458,7 @@ div.su-note{
 	/*border-bottom: 2px solid var(--color-block3);*/
 }
 .home-top-col.color-3,.home-top-col.color-3 .home-top-box a{
-	/*color: var(--color-block3);*/
+	color: var(--color-block3);
 }
 .home-top-col.color-3 .home-top-title::after{
 	background: var(--color-block3);
@@ -468,7 +467,7 @@ div.su-note{
 	color: var(--color-block3);
 }
 .color-3 .sideMenuIndent{
-	/*border-left: 2px solid var(--color-block3);*/
+	border-left: 2px solid var(--color-block3);
 }
 /**********************************/
 /****** S I D E B A R - end *******/
@@ -937,7 +936,7 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 .divider-orange{
 	height: 3px;
 	margin-right: 50px;
-	background: linear-gradient(157deg, var(--color-block1) 2%, rgba(255,255,255,0) 100%); 
+	background: linear-gradient(157deg, var(--color-block2) 2%, rgba(255,255,255,0) 100%); 
 	width: 40%;
 	margin-top: 8px;
 	margin-bottom: 8px;
