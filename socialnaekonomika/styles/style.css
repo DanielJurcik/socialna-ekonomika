@@ -1,4 +1,3 @@
-
 :root {
 	/* Basic colors*/
 	--color-primary: var(--color-royal-blue);
@@ -10,13 +9,17 @@
 	--color-block3: #5e5e5e;
 	--color-block4: #cc554b;
 
+	/* Sidebar colors */
+	--color-sidebar-bcg: #fcfcfc;
+
 	/* Nav menu colors */
 	--color-nav-text: var(--color-primary);
 	--color-nav-underline: var(--color-primary);
 	--color-nav-bcg: white;
 
 	/* All colors */
-	--color-sunrise-orange : #f25c19; 
+	--color-sunrise-orange : #f25c19;
+	--color-sunrise-orange-faded : #f37940;  
 	--color-royal-blue: #3047a3;
 }
 
@@ -154,17 +157,49 @@ div.su-note{
 }
 
 /*Farby blokov podstranky podla classy*/
+/* BP Block 1 */
 .su-note.bp-color1{
 	border-top-color: var(--color-block1) !important;
 }
+.su-note.bp-color1 .su-note-inner a{
+	color: var(--color-block1);
+}
+.su-note.bp-color1 .su-note-inner a:before{
+    background: var(--color-block1);
+    background: linear-gradient(157deg, var(--color-block1) 2%, rgba(255,255,255,0) 100%); 
+}
+/* BP Block 2 */
 .su-note.bp-color2{
 	border-top-color: var(--color-block2) !important;
 }
+.su-note.bp-color2 .su-note-inner a{
+	color: var(--color-block2);
+}
+.su-note.bp-color2 .su-note-inner a:before{
+    background: var(--color-block2);
+    background: linear-gradient(157deg, var(--color-block2) 2%, rgba(255,255,255,0) 100%); 
+}
+/* BP Block 3 */
 .su-note.bp-color3{
 	border-top-color: var(--color-block3) !important;
 }
+.su-note.bp-color3 .su-note-inner a{
+	color: var(--color-block3);
+}
+.su-note.bp-color3 .su-note-inner a:before{
+    background: var(--color-block3);
+    background: linear-gradient(157deg, var(--color-block3) 2%, rgba(255,255,255,0) 100%); 
+}
+/* BP Block 4 */
 .su-note.bp-color4{
 	border-top-color: var(--color-block4) !important;
+}
+.su-note.bp-color4 .su-note-inner a{
+	color: var(--color-block4);
+}
+.su-note.bp-color4 .su-note-inner a:before{
+    background: var(--color-block4);
+    background: linear-gradient(157deg, var(--color-block4) 2%, rgba(255,255,255,0) 100%); 
 }
 
 .su-note .su-note-inner{
@@ -197,7 +232,6 @@ div.su-note{
 	position: absolute;
 	bottom: 14px;
 	height: 3px;
-	background: red;
 	width: 40%;
 	height: 3px;
     background: var(--color-primary);
@@ -283,8 +317,8 @@ div.su-note{
 /***** S I D E B A R - start ******/
 /**********************************/
 .sidebar.tc-sidebar.left{
-	background-color: #fafbfe;
 	margin: 0;
+	background-color: var(--color-sidebar-bcg);
 	padding-left: 16px;
 	padding-right: 16px;
 	padding-top: 32px;
@@ -326,13 +360,14 @@ div.su-note{
 }
 
 .home-top-col a:hover{
-    color: var(--color-primary) !important;
+    color: var(--color-primary);
     text-decoration: none;
 }
 
 .home-top-col .sidebar-link,
 .home-top-col .sidebar-link-sec{
 	transition: padding 0.3s ease-in-out;
+	list-style: none;
 }
 .home-top-col .sidebar-link:hover,
 .home-top-col .sidebar-link-sec:hover{
@@ -386,13 +421,12 @@ div.su-note{
 /************ M O D R A ***********/
 /**********************************/
 .sidebar.color-1.tc-sidebar.left{
-	background: #fafbfe;
-	border: 8px solid var(--color-block1);
+	background: var(--color-sidebar-bcg);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .sidebar.color-1.tc-sidebar.left{
-		border: 0px solid #eff3ff;
+		background: var(--color-block1);
 	}
 }
 
@@ -411,22 +445,22 @@ div.su-note{
 .color-1 .sideMenuIndent{
 	border-left: 2px solid var(--color-block1);
 }
+
 /**********************************/
 /********* O R A N Z O V A ********/
 /**********************************/
 .sidebar.color-2.tc-sidebar.left{
-	background: #fffaf0;
-	border: solid 8px var(--color-block2);
+	background: var(--color-sidebar-bcg);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .sidebar.color-2.tc-sidebar.left{
-		border: 0px solid #fff6e5;
+		background: var(--color-block2);
 	}
 }
 
 .color-2 .home-top-box a:hover{
-	/*border-bottom: 3px solid var(----color-block2);*/
+	/*border-bottom: 3px solid var(--color-block2);*/
 }
 .home-top-col.color-2,.home-top-col.color-2 .home-top-box a{
 	color: var(--color-block2);
@@ -444,13 +478,12 @@ div.su-note{
 /************* S E D A ************/
 /**********************************/
 .sidebar.color-3.tc-sidebar.left{
-	background: #f6f6f6;
-	border: 8px solid var(--color-block3);
+	background: var(--color-sidebar-bcg);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .sidebar.color-3.tc-sidebar.left{
-		border: 0px solid #d5d5d5;
+		background: var(--color-block3);
 	}
 }
 
@@ -468,6 +501,22 @@ div.su-note{
 }
 .color-3 .sideMenuIndent{
 	border-left: 2px solid var(--color-block3);
+}
+
+/* Mobile settings */
+@media screen and (max-width: 768px) {
+	.sidebar.left .home-top-col,.sidebar.left .home-top-col .home-top-box a{
+		color: white;
+	}
+	.sidebar.left .home-top-col .home-top-title::after{
+		background: white;
+	}
+	.sidebar.left .home-top-col .home-top-title{
+		color: white;
+	}
+	.sidebar.left .sideMenuIndent{
+		border-left: 2px solid white;
+	}
 }
 /**********************************/
 /****** S I D E B A R - end *******/
@@ -596,9 +645,30 @@ article {
 }
 /*Carousel - zac */
 
+/************************/
+/* Homepage - clanky    */
+/************************/
 #se-news-section .sek-post-grid-wrapper{
 	margin-bottom: 8px;
 	margin-top: 8px;
+}
+
+#se-news-section article{
+	height: 180px;
+	overflow: hidden;
+}
+
+#se-news-section article .sek-pg-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media (min-width:768px){
+	#se-news-section article{
+		height: 180px;
+		overflow: hidden;
+	}
 }
 
 #se-news-section .sek-pg-content .sek-excerpt p{
@@ -1135,9 +1205,6 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 	margin-bottom: 16px;
 }
 
-
-/**/
-
 .hp-color-blocks h5 strong{
 	font-weight: 600;
 }
@@ -1145,4 +1212,119 @@ header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-it
 	.hp-color-blocks .sek-module-inner a{
 		line-height: 1.4em;
 	}
+}
+
+/* Embeded video - start */
+.se-embeded-video{
+	max-height: 730px;
+}
+
+@media (max-width:768px){
+	.se-embeded-video{
+		max-height: 240px;
+	}
+}
+/* Embeded video - end */
+
+/* IMAGE SCROLL EFFECT  - start */
+.sek-module.se-custom-scroll-img{
+	overflow-y: scroll;
+	max-height: 800px;
+}
+/* width */
+.sek-module.se-custom-scroll-img::-webkit-scrollbar {
+	width: 15px;
+  }
+
+/* Track */
+.sek-module.se-custom-scroll-img::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+	border-radius: 10px;
+}
+
+/* Handle */
+.sek-module.se-custom-scroll-img::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 10px; 
+}
+
+/* Handle on hover */
+.sek-module.se-custom-scroll-img::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
+/* IMAGE SCROLL EFFECT  - end */
+
+/*Materialy na stiahnutie*/
+.se-custom-materialy-stiahnutie p{
+margin-bottom:6px;
+}
+
+/*Rozdelovanie slov pri NB tlacidlach*/
+.sek-btn .sek-btn-text{
+	word-break: break-word;
+}
+
+/****************************/
+/**** LINKY NA HOMEPAGE ****/
+/***************************/
+.hp-color-blocks .sek-section ul{
+	border-left: 2px solid white;
+	margin-left: 16px;
+	list-style: none;
+}
+
+.hp-color-blocks a{
+	text-decoration: none !important;
+	border-bottom: 2px solid transparent;
+}
+
+.hp-color-blocks a:hover,.hp-color-blocks a:active{
+	border-bottom: 2px solid white;
+	transition: border 0.3s ease-in-out;
+}
+
+.se-hp-links-btn .sek-btn-text{
+	font-weight: 500;
+	text-align: left;
+	word-break: break-word;
+}
+
+.se-hp-links-btn .sek-btn-text:hover{
+	text-decoration: underline;
+	text-decoration-thickness: 2px;
+}
+
+.se-hp-links-btn .sek-module-inner a{
+	border: none;
+}
+
+.se-hp-links-btn .sek-module-inner a:hover{
+	border: none;
+}
+/** LINKY NA HOMEPAGE - end **/
+
+/*Nastavenie max vysky sekcie*/
+.se-col-full-content .sek-column-inner,
+.se-col-full-content .sek-module{
+	height: 100%;
+}
+
+/* CUSTOM STYLE LINKS */
+.sektion-wrapper a,
+.post-entry a{
+	color: #444;
+	text-decoration: none !important;
+	position: relative;
+	background-image: linear-gradient(0deg, var(--color-sunrise-orange-faded), var(--color-sunrise-orange-faded) 100%);
+	background-position-y: 298%;
+	background-size: 100% 70%;
+	background-repeat: no-repeat;
+	transition: background-position-y 0.3s ease-in-out;
+}
+
+.sektion-wrapper a:focus,
+.sektion-wrapper a:hover,
+.post-entry a:focus,
+.post-entry a:hover{
+	background-position-y: 180%;
 }
