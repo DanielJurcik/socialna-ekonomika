@@ -7,15 +7,20 @@ const rcLink = '/regionalne-centra-socialnej-ekonomiky/'
 
 const socPodCategoryName = 'Sociálne podnikanie';
 const socPodLink = '/socialne-podnikanie/';
-//Nazov kategorie
-//const ekatalogCategory = 'Katalóg SP';
-//Link na ekatalog 
-//const ekatalogLink = '/katalogsp/'
 
-redirectCategory(rcCategoryName, rcLink);
-redirectCategory(socPodCategoryName, socPodLink);
-addColorClassToParent();	
-//redirectCategory(ekatalogCategory, ekatalogLink);	
+
+function init(){
+    redirectCategory(rcCategoryName, rcLink);
+    redirectCategory(socPodCategoryName, socPodLink);
+    addColorClassToParent();	
+    replaceDefaultTooltip();
+}
+
+init();
+
+///////////////////////
+// Custom functions
+///////////////////////
 
 function redirectCategory(categoryName,newPageLink){
 	let breadcrumbsElem = document.querySelector(`.breadcrumbs a[title="${categoryName}"]`);
@@ -38,3 +43,17 @@ function addClassToParentElem(childElem,parentSelector,classSelector){
     const parentElem = childElem.closest(`.${parentSelector}`);
     parentElem.classList.add(classSelector);
 }
+	
+
+function replaceDefaultTooltip(){
+    const nimbleBuilderButtons = document.querySelectorAll('.sek-btn[title]');
+    nimbleBuilderButtons.forEach(builderButton => {
+        addCustomTooltipToElem(builderButton,'title');
+    });
+}
+
+function addCustomTooltipToElem(newElem,newAtt){
+    const tooltipValue = newElem.getAttribute(newAtt);
+    newElem.setAttribute('data-tooltip',tooltipValue);
+    newElem.removeAttribute(newAtt);
+}  

@@ -12,14 +12,17 @@
 	/* Sidebar colors */
 	--color-sidebar-bcg: #fcfcfc;
 
+	/* Farby pre defaultne linky*/
+	--color-link: #e48d1b;
+	--color-link-hover:#e48d1b;
+
 	/* Nav menu colors */
 	--color-nav-text: var(--color-primary);
 	--color-nav-underline: var(--color-primary);
 	--color-nav-bcg: white;
 
 	/* All colors */
-	--color-sunrise-orange : #f25c19;
-	--color-sunrise-orange-faded : #f37940;  
+	--color-sunrise-orange : #f25c19;  
 	--color-royal-blue: #3047a3;
 }
 
@@ -1309,22 +1312,164 @@ margin-bottom:6px;
 	height: 100%;
 }
 
-/* CUSTOM STYLE LINKS */
-.sektion-wrapper a,
-.post-entry a{
+/****************************/
+/***** LINK STYLING ********/
+/***************************/
+a[rel="noreferrer noopener"],
+.sek-module-inner p > a,
+#content p a{
+	font-weight: 400;
 	color: #444;
 	text-decoration: none !important;
 	position: relative;
-	background-image: linear-gradient(0deg, var(--color-sunrise-orange-faded), var(--color-sunrise-orange-faded) 100%);
+	background-image: linear-gradient(0deg, var(--color-secondary), var(--color-secondary) 100%);
 	background-position-y: 298%;
 	background-size: 100% 70%;
 	background-repeat: no-repeat;
 	transition: background-position-y 0.3s ease-in-out;
 }
 
-.sektion-wrapper a:focus,
-.sektion-wrapper a:hover,
-.post-entry a:focus,
-.post-entry a:hover{
+a[rel*="noreferrer noopener"]:focus,
+a[rel*="noreferrer noopener"]:hover,
+.sek-module-inner p > a:hover,
+.sek-module-inner p > a:focus,
+#content p a:hover,
+#content p a:focus{
+	background-image: linear-gradient(0deg, var(--color-link-hover), var(--color-link-hover) 100%);
 	background-position-y: 180%;
+	color: #444;
+}
+
+/* Chranena dielna */
+.se-custom-col-text-section h3{
+	border: 1px solid var(--color-primary);
+	color: var(--color-primary);
+	padding: 6px 12px;
+	font-size: 16px;
+	width: max-content;
+	border-radius: 15px;
+	margin-bottom: 16px;
+	margin-inline: auto;
+	display: block;
+}
+
+.se-custom-col-text-section.blue h3{
+	border: 1px solid var(--color-primary);
+	color: var(--color-primary);
+}
+
+.se-custom-col-text-section.orange h3{
+	border: 1px solid var(--color-secondary);
+	color: var(--color-secondary);
+}
+@media (min-width: 768px){
+	.se-custom-col-text-section h3{
+		display: none;
+	}
+}
+
+/****************************/
+/**** TOOLTIP SETTINGS *****/
+/***************************/
+.qtip.qtip-bootstrap{
+	background-color: #e9e9e9;
+	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.qtip.qtip-bootstrap .qtip-tip{
+	background: #e9e9e9;
+}
+
+.qtip.qtip-bootstrap .qtip-content{
+	padding: 6px 10px;
+	font-size: 16px;
+}
+
+span.su-tooltip{
+	display: inline;
+}
+
+/****************************/
+/***** Quote komponent ******/
+/***************************/
+.wp-block-quote{
+	margin-top: 32px;
+	margin-bottom: 32px;
+	padding: 0;
+	padding-left: 108px;
+}
+
+.wp-block-quote::before{
+	content: "“";
+	font-size: 72px;
+	font-weight: 900;
+	color: var(--color-primary);
+
+	top: 0;
+	left: 0px;
+}
+
+.wp-block-quote p,
+.wp-block-quote cite{
+	padding: 0;
+	margin: 0;
+}
+
+.wp-block-quote p{
+	font-size: 28px;
+}
+
+.wp-block-quote cite{
+	font-size: 12px;
+}
+
+cite::before{
+	content: none;
+}
+
+.sek-btn[data-tooltip]{
+	position: relative;
+}
+
+[data-tooltip]::after {            
+	position: absolute;
+	content: attr(data-tooltip);
+	opacity: 0;
+	right: 0;
+	color: #333;
+	width: 100%;
+	left: 90%;
+	text-align: left;
+	top: 0;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	background-color: #e9e9e9;
+	font-size: 16px;
+	box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+	padding: 6px 10px;
+	width: max-content;
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 5px;
+	transition: all 400ms ease;
+    transition-property: opacity,left;
+	animation-delay: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .wp-block-quote{
+		padding-left: 32px;
+	}
+}
+
+
+[data-tooltip]:hover:after {        
+	opacity : 1;
+	left: 105%;
+	z-index: 1;
+}
+/*Vypnutie pdf viewera na mobile*/
+@media screen and (max-width: 768px) {
+    .se-pdf-viewer{
+		display: flex;
+	}
 }
