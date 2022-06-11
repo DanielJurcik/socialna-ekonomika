@@ -2,8 +2,8 @@ init();
 
 function init(){
    setTimeout(function() {
+      //addListenerToSearch();
       moveSearch();
-      replaceNoResultText();
       addListenerToSearchButton();
       renameFilterOptions();
       //moveSearchFilter();
@@ -15,8 +15,18 @@ function init(){
       moveClearFilter();
     }, 500);
 
+    // Not optimal, will be changed
     setInterval(moveSearch,200);
     setInterval(moveClearFilter,200);
+    //setInterval(replaceNoResultText,400);
+}
+
+function replaceNoResultText(){
+    let noResultTextElem = document.querySelector('.at-noData .at-noData-message');
+    if(noResultTextElem.classList.contains('translated')) return;
+    noResultTextElem.classList.add('translated');
+    let noResultText = 'Ľutujeme, zadaným kritériám nevyhovuje žiadny sociálny podnik. Skúste spresniť svoje vyhľadávanie a použite diakritiku.';
+    noResultTextElem.innerHTML = noResultText;
 }
 
 function moveSearch(){
@@ -25,11 +35,6 @@ function moveSearch(){
    let searchInputWrapperClass = 'sp-catalog-search-init';
    let searchInputWrapperElem = document.querySelector('.'+searchInputWrapperClass);
    searchInputWrapperElem.appendChild(searchInputElem);
-}
-
-function replaceNoResultText(){
-   let noResultTextElem = document.querySelector('.at-noData .at-noData-message');
-   noResultTextElem.innerHTML = 'Ľutujeme, zadaným podmienkam nevyhovuje žiadne RSP';
 }
 
 function moveSearchFilter(){
@@ -68,4 +73,10 @@ function moveClearFilter(){
    let searchWrapperElement = document.querySelector('.clear-filter-wrapper');
    searchWrapperElement.appendChild(clearFilterElement);
    renameFilterOptions();
+}
+
+function addListenerToSearch(){
+  let searchBar = document.querySelector('.awt-searchFilter-input');
+  if (!searchBar) return;
+  //searchBar.addEventListener("keydown", changeTextForNoResult);
 }
