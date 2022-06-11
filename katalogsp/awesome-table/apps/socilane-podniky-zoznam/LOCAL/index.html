@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="click">TEST</button>
+    <!-- <script src="https://app.awesome-table.com/AwesomeTableInclude.js"></script>
+    <div data-type="AwesomeTableView" data-filters="" data-viewID="-MvU_MuHw3WkbVfy636W"></div> -->
+
+    <script>
+        function HtmlEncode(s)
+        {
+            var el = document.createElement("div");
+            el.innerText = el.textContent = s;
+            s = el.innerHTML;
+            return s;
+        }
+
+        let button = document.querySelector('.click');
+        button.addEventListener('click',() => {
+            alert('test');
+            let iframe = document.querySelector('iframe');
+            console.log(iframe);
+            let currentSrc = iframe.src;
+            iframe.src = currentSrc+"?filterG=dom%20a%20z%C3%A1hrada&filterI=6%20-%2010";
+        })
+
+        
+
+function html_encode(string) {
+    var ret_val = '';
+    for (var i = 0; i < string.length; i++) { 
+        if (string.codePointAt(i) > 127) {
+            ret_val += '&#' + string.codePointAt(i) + ';';
+        } else {
+            ret_val += string.charAt(i);
+        }
+    }
+    return ret_val;
+}
+
+    let string = 'dom a záhrada';
+
+    console.log(encodeURIComponent(string));
+    console.log(html_encode('dom a záhrada'));
+    console.log(html_encode('bižutéria a darčekové predmety'))
+
+    </script>
+</body>
+</html>
