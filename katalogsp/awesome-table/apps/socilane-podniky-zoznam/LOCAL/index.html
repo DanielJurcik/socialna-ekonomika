@@ -8,14 +8,40 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="click">TEST</button>
+    <button class="katalog-map-switch">TEST</button>
 
     <div style="background-color: firebrick;font-size: 24px;color: white;text-align: center;">TEST VERSION</div>
-    
+
     <!-- <script src="https://app.awesome-table.com/AwesomeTableInclude.js"></script>
     <div data-type="AwesomeTableView" data-filters="" data-viewID="-MvU_MuHw3WkbVfy636W"></div> -->
 
     <script>
+        const basePath = '';
+        // ID aplikácie pre Mapu
+        const mapAppId = '';
+        // ID aplikácie pre Katalóg
+        const katalogAppId = '';
+
+        // Filter collum char
+        const filterColNameKraj = 'E';
+        const filterColNameKategoria = 'G';
+        const filterColNamePocetZam = 'I';
+
+        function init(){
+            addListenerToSwitch();
+        }
+
+        function addListenerToSwitch(){
+            const switchElem = document.querySelector('.katalog-map-switch');
+            switchElem.setEventListener(onSwitchClick);
+        }
+
+        function onSwitchClick(){
+            const krajSelected = document.querySelectorAll();
+            const kategoriaSelected = document.querySelectorAll();
+            const pocetZamSelected = document.querySelectorAll();
+        }
+
         function HtmlEncode(s)
         {
             var el = document.createElement("div");
@@ -24,7 +50,7 @@
             return s;
         }
 
-        let button = document.querySelector('.click');
+        let button = document.querySelector('.katalog-map-switch');
         button.addEventListener('click',() => {
             alert('test');
             let iframe = document.querySelector('iframe');
