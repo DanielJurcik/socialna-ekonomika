@@ -4,155 +4,6 @@
 }
 /* FONT SETTINGS - start*/
 
-/******************/
-/** CARD - start **/
-/******************/
-.cards-container{
-  margin-right: 16px;
-  margin-left: 16px;
-}
-
-.cards-container .card .card-content{
-  border-radius: 10px;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  box-shadow: none;
-  border: 1px solid #e3e3e3;
-}
-
-.cards-container .card .sp-card-content{
-  padding: 0;
-}
-
-.sp-card-content .image-wrapper{
-  height: 250px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.sp-card-content .card-image{
-  transition: 0.4s;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  transform: scale(1.05);
-}
-
-.cards-container .card .card-content .sp-icon{
-  width: 16px;
-  height: 16px;
-  z-index: 2;
-}
-
-.card .card-content .sp-card-content .detailed-info{
-  margin-top: 1rem;
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-bottom: 64px;
-}
-
-.card .card-content .sp-card-content .detailed-info h2{
-  margin: 0;
-  color: #5b8300;
-  font-size: 19px;
-}
-
-.card .card-content .sp-card-content .detailed-info .category{
-  opacity: 0.8;
-  font-size: 14px;
-  margin-top: 2px;
-  color: #7f7f7f;
-}
-
-
-.card .detailed-info .more-info{
-  padding: 10px;
-  text-align: center;
-  background-color: #f28837;
-  background-color: #016a66;
-  background-color: #f28837;
-  color: white;
-  border-radius: 10px;
-  margin-bottom: 16px;
-  text-decoration: none;
-  place-self: flex-end;
-  padding-right: 16px;
-  padding-left: 16px;
-}
-
-.card .card-content .sp-card-content .image-container{
-  width: 130px;
-  height: 130px;    
-  overflow: hidden;
-  background: #fff;
-  margin-right: 16px;
-  text-align: center;
-  line-height: 130px;
-}
-
-.card .card-content .sp-card-content .image-container img{
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
-}
-
-.card .sp-card-content .data-container .sp-zoznam-desc-item{
-  display: inline-flex;
-  gap: 10px;
-  margin-top: 4px;
-  margin-bottom: 4px;
-  align-items: center;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-decoration: none;
-  color: #222222;
-  width: 100%;
-}
-
-.card .sp-card-content .data-container .sp-zoznam-desc-item p{
-  margin: 4px;
-}
-
-.card .sp-card-content .sp-show-more-wrapper{
-    position: absolute;
-    bottom: 28px;
-}
-
-.card .sp-card-content .data-container .sp-zoznam-desc-item a{
-  text-decoration: none;
-  color: #303133;
-  position: relative;
-  line-height: 16px;
-  z-index: 1;
-}
-
-.card .sp-card-content .data-container .sp-zoznam-desc-item .web-page-link{
-  color: white;
-  position: relative;
-}
-
-.card .data-container .web-page-link::before{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #5e7df8;
-  z-index: -1;
-  content: "";
-  padding: 5px;
-  padding-right: 40px;
-  border-radius: 10px;
-  top: -5px;
-  left: -32px;
-  box-sizing: content-box;
-}
-
-/******************/
-/*** CARD - end ***/
-/******************/
-
 .unselectable {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -161,48 +12,35 @@
   user-select: none;
 }
 
-/*PAGINATION - start */
-.awesomeTable-visualization-cards .cards-page{
-  border: 0px solid black;
-  height: 50px;
+/****** NO RESULT - TEXT ARE - start *******/
+.at-count .at-nb-results{
+  font-size: 16px;
+  color: #303133;
+  line-height: 1.4em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-weight: normal;
 }
 
-.cards-page .cards-page-button .at-pagination-button{
-  display: contents;
+.at-count .at-icon-results{
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.cards-page .cards-page-button .at-pagination-button .at-svg-icon{
-  height: 40px;
-  width: 40px;
-  background-color: #5b8300;
-  fill: white;
-  margin-left: 16px;
-  border-radius: 50%;
+.at-count .at-icon-results .at-svg-icon{
+  fill: #303133 !important;
 }
 
-.cards-page .cards-page-button .at-pagination-button.cards-page-button-disabled .at-svg-icon{
-  opacity: 0.4;
+#dashboard .at-nb-results::before{
+  content: 'Ľutujeme, zadaným kritériám nevyhovuje žiadny sociálny podnik. Skúste spresniť svoje vyhľadávanie.';
 }
 
-.cards-page{
-  margin-right: 10px;
-  margin-left: 10px;
+#dashboard .at-nb-results b{
+  display: none;
 }
-
-.cards-page .cards-pageNumber{
-  font-size: 13pt;
-  position: absolute;
-  left: 16px;
-}
-
-.at-table-fix .cards-page{
-  justify-content: center;
-}
-
-.awesomeTable-visualization-cards .cards-page-button{
-  margin-left: 0;
-}
-/*PAGINATION - end */
+/****** NO RESULT - TEXT ARE - end *****/
 
 /***************************/
 /*SEARCH AREA STYLE - start*/
@@ -212,7 +50,7 @@
   border: 1px solid transparent;
   background: #f07d10;
   color: white;
-  height: 72px;
+  height: 56px;
   border-radius: 10px;
   align-items: center;
   display: flex;
@@ -224,7 +62,6 @@
   right: 16px;
   display: none;
 }
-
 
 /***************************************************/
 /****************FSEARCH BAR************************/
@@ -269,7 +106,6 @@
   transform: scale(1.2);
 }
 
-
 .at-filter-panel .controlers-filters{
   padding-bottom: 0 !important;
   padding-left: 16px;
@@ -279,26 +115,18 @@
   width: 240px;
 }
 
-.at-filter-panel .csvFilter:last-child{
-  padding-right: 0px;
-}
-
 .awt-vis-controls-csvFilter .csvFilter-item {
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 5px;
   padding-right: 5px;
   font-size: 14px;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .cards-page #at-button-cleanFilter{
   position: absolute;
   right: 0;
-}
-
-.awt-vis-controls-csvFilter .csvFilter-item:hover{
-  
 }
 
 /*DROPDOWN FILTER START*/
@@ -309,7 +137,8 @@
   border-bottom-left-radius: 5px;
   color: rgb(53, 53, 53);
   z-index: 99999;
-  border: solid 15px #fff !important;
+  border: solid 10px #fff !important;
+  border-left-width: 5px !important;
   border-bottom-left-radius: 10px !important;
   border-bottom-right-radius: 10px !important;
   border-bottom-color: transparent;
@@ -344,7 +173,9 @@
 .awt-vis-controls-csvFilter .awt-csvFilter-label{
   display: flex;
   justify-content: center;
-  font-weight: 700;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 1px;
 }
 
 .awt-vis-controls-csvFilter .awt-csvFilter-label.displayNone{
@@ -480,4 +311,32 @@
 
 .at-chart-panel .count{
     padding-left: 8px;
+}
+
+.at-filter-panel .awt-csvFilter-selected li:last-child{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.at-filter-panel .awt-vis-controls-csvFilter .awt-disabled{
+  opacity: 1;
+}
+
+.at-filter-panel .awt-vis-controls-csvFilter .awt-disabled .awt-csvFilter-downArrow{
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+
+/* Pre prípad prelínania filtrov */
+#controlers1{
+  z-index: 4;
+}
+#controlers2{
+  z-index: 3;
+}
+#controlers3{
+  z-index: 2;
+}
+#controlers4{
+  z-index: 1;
 }
