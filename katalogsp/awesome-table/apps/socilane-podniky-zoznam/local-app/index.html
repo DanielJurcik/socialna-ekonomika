@@ -8,13 +8,69 @@
     <title>Document</title>
 </head>
 <body>
-    <button class="katalog-map-switch">TEST</button>
+    <textarea id="output" cols="30" rows="10" disabled>awaiting data...</textarea>
+    <div>
+        <input type="text" id="field" value="type something fun here" />
+        <button id="send">Send</button>
+    </div>
 
     <div style="background-color: firebrick;font-size: 24px;color: white;text-align: center;">TEST VERSION</div>
 
     <script src="https://app.awesome-table.com/AwesomeTableInclude.js"></script>
     <div data-type="AwesomeTableView" data-filters="" data-viewID="-MvU_MuHw3WkbVfy636W"></div>
 
+    <script>
+    // assign variables with references to the DOM nodes we will be interacting with
+      const output = document.getElementById("output");
+      let iWindow = null;
+      let iframe = null;
+
+      window.onload = () => {
+        iframe = document.querySelector('iframe');
+        console.log(iframe);
+
+        iframe.addEventListener("load", () => {
+            iWindow = iframe.contentWindow;
+      });
+      }  
+      const button = document.getElementById("send");
+      const field = document.getElementById("field");
+      // we will assign this value once the iframe is ready
+
+ 
+      // This event listener will run when we click the send button
+      button.addEventListener("click", () => {
+        
+        console.log(iWindow);
+        iWindow = iframe.contentWindow;
+        // don't do anything if the iframe isn't ready yet
+        if (iWindow === null) {
+          return;
+        }
+ 
+        // otherwise, get the value of our text input
+        const text = field.value;
+ 
+        console.log(text);
+        // and send it to the embedded page
+        iWindow.postMessage(text);
+      });
+ 
+      // This event listener will run when the embedded page sends us a message
+      window.addEventListener("message", (event) => {
+        // extract the data from the message event
+        const { data } = event;
+ 
+        // display it in our textarea as formatted JSON
+        output.value = JSON.stringify(data, null, 2);
+      });
+ 
+      // Once the iframe is done loading, assign its window object to the variable we prepared earlier
+      
+    </script>
+    
+    
+    <!--
     <script>
         const basePath = '';
         // ID aplikácie pre Mapu
@@ -80,5 +136,6 @@ function html_encode(string) {
     console.log(html_encode('bižutéria a darčekové predmety'))
 
     </script>
+-->
 </body>
 </html>

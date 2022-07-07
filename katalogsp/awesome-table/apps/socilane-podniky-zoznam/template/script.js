@@ -10,7 +10,9 @@ function init() {
       renameFilterOptions();
       moveClearFilter();
       addGlobalListeners();
+      addListenerToSwitch()
       //moveSearchFilter();
+      initAdaptivSwitch();
    },150)
 
    // Z nejakého dôvodu sa stránka niekedy refresne a stránka sa vráti do pôvodného stavu
@@ -19,6 +21,7 @@ function init() {
    setInterval(moveClearFilter, 200);
    setInterval(replaceNoResultText, 400);
    setInterval(renameFilterTitleAtr, 1000);
+   setInterval(initAdaptivSwitch, 2000);
 }
 
 function moveSearch() {
@@ -105,5 +108,57 @@ function renameFilterTitleAtr(){
       let replacedTitle = orgTitle.replace("Remove","Vybrať:");
       replacedTitle = replacedTitle.replace(/from.*$/i, "");
       item.title = replacedTitle;
+   });
+}
+
+
+//////////////////////////////////////////////////
+/////////////////////////////////////////////////
+////////////////////////////////////////////////
+
+// create a variable for the parent window. We will assign it once we get the first message.
+let parent = null;
+
+
+function addListenerToSwitch(){
+   const switchBtnElem = document.querySelector('.switch');
+   switchBtnElem.addEventListener('click',onSwitchClick);
+}
+
+function onSwitchClick(){
+   console.log('button');
+   console.log(parent);
+   // don't do anything if there is no parent reference yet
+   if (parent === null) {
+      return;
+   }
+
+   // otherwise get the field text, and send it to the parent
+   const text = "Poslana sprava"
+   parent.postMessage(text);
+}
+
+function initAdaptivSwitch(){
+   // set up references to DOM nodes
+   const output = document.getElementById("output");
+   const field = document.getElementById("field");
+   // add an event listener to run when a message is received
+   window.addEventListener("message", ({ data, source }) => {
+      console.log('Received message');
+      console.log(data);
+      // if we don't have a reference to the parent window yet, set it now
+      if (parent === null) {
+         parent = source;
+      }
+   
+      // now we can do whatever we want with the message data.
+      // in this case, displaying it, and then sending it back
+      // wrapped in an object
+      output.textContent = JSON.stringify(data);
+      const response = {
+      success: true,
+      request: { data },
+      };
+      parent.postMessage(response);
    });
 }
