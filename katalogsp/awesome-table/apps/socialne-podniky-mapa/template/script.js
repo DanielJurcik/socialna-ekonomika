@@ -1,7 +1,7 @@
 init();
 
 // Nastavenia :
-// ID pre mapu
+// ID pre katalog
 var baseUrl = 'https://view-awesome-table.com/-N7BA8QUOxo7Pj6nKgQw/view';
 
 function init() {

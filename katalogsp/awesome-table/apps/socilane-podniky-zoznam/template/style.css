@@ -439,56 +439,10 @@
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .at-filter-panel .controlers-filters{
-    width: 100%;
-    padding: 0;
-  }
-  .awt-vis-controls-csvFilter .awt-csvFilter-dropdown-menu{
-    position: relative;
-  }
 
-  .awt-vis-controls-csvFilter .awt-csvFilter-button--active::before {
-    content: '\2715';
-    padding: 8px;
-    text-align: center;
-    border-radius: 50%;
-    display: flex;
-    border: 1px solid white;
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    top: 8px;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    }
-}
-
-.at-layout-container .at-filter-panel{
-    padding-right: 24px;
-    padding-left: 24px;
-}
-
-.at-chart-panel .count{
-    padding-left: 8px;
-}
-
-.at-filter-panel .awt-csvFilter-selected li:last-child{
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.at-filter-panel .awt-vis-controls-csvFilter .awt-disabled{
-  opacity: 1;
-}
-
-.at-filter-panel .awt-vis-controls-csvFilter .awt-disabled .awt-csvFilter-downArrow{
-  transition: opacity 0.4s ease-in-out ;
-  opacity: 0;
-}
-
+/**********************/
 /* DYNAMIC LINK SWITCH */
+/**********************/
 a.dynamic-link-switch .sp-icon{
   width: 16px;
   margin-right: 8px;
@@ -522,6 +476,63 @@ a.dynamic-link-switch:hover::before {
   transform: scaleX(1);
 }
 
+/**********************/
+/**********************/
+
+@media only screen and (max-width: 600px) {
+  .at-filter-panel .controlers-filters{
+    width: 100%;
+    padding: 0;
+  }
+  .awt-vis-controls-csvFilter .awt-csvFilter-dropdown-menu{
+    position: relative;
+  }
+
+  .awt-vis-controls-csvFilter .awt-csvFilter-button--active::before {
+    content: '\2715';
+    padding: 8px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid white;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 8px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    }
+
+    a.dynamic-link-switch{
+      position: relative;
+      display: block;
+      margin: 24px auto;
+    }
+}
+
+.at-layout-container .at-filter-panel{
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+.at-chart-panel .count{
+    padding-left: 8px;
+}
+
+.at-filter-panel .awt-csvFilter-selected li:last-child{
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.at-filter-panel .awt-vis-controls-csvFilter .awt-disabled{
+  opacity: 1;
+}
+
+.at-filter-panel .awt-vis-controls-csvFilter .awt-disabled .awt-csvFilter-downArrow{
+  transition: opacity 0.4s ease-in-out ;
+  opacity: 0;
+}
 
 /* Pre prípad prelínania filtrov */
 #controlers1{
