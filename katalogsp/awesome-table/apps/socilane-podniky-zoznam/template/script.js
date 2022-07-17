@@ -1,8 +1,12 @@
 init();
 
+// Nastavenia :
+// ID pre mapu
+var baseUrl = 'https://view-awesome-table.com/-N4GdMNia8ftO-4Cb88S/view';
+
 function init() {
    // Timeout nastavený , kedže DOMLoad alebo load nechcel ísť
-   setTimeout(()=> {
+   setTimeout(() => {
       renameFilterTitleAtr();
       moveSearch();
       replaceNoResultText();
@@ -10,18 +14,17 @@ function init() {
       renameFilterOptions();
       moveClearFilter();
       addGlobalListeners();
-      addListenerToSwitch()
+      initDynamicLink();
       //moveSearchFilter();
-      initAdaptivSwitch();
-   },150)
+   }, 150)
 
    // Z nejakého dôvodu sa stránka niekedy refresne a stránka sa vráti do pôvodného stavu
    // JS sa ale znova nevykoná.
    setInterval(moveSearch, 200);
-   setInterval(moveClearFilter, 200);
-   setInterval(replaceNoResultText, 400);
+   setInterval(initDynamicLink, 1000);
+   setInterval(moveClearFilter, 800);
+   setInterval(replaceNoResultText, 700);
    setInterval(renameFilterTitleAtr, 1000);
-   setInterval(initAdaptivSwitch, 2000);
 }
 
 function moveSearch() {
@@ -84,8 +87,8 @@ function moveClearFilter() {
 ////////////////////
 
 function addGlobalListeners() {
-   //const filterElems = document.querySelectorAll('.at-filter-panel .awt-csvFilter');
-   document.addEventListener('click', renameElementText)
+   document.addEventListener('click', renameElementText);
+   document.addEventListener('click', onFilterContainerClick)
 }
 
 //Prepíše elementy, ktoré nemajú title na "žiadna možnosť"
@@ -101,64 +104,107 @@ function renameElementText() {
    });
 }
 
-function renameFilterTitleAtr(){
+function renameFilterTitleAtr() {
    const filterItems = document.querySelectorAll('.csvFilter-item .csvFilter-itemText');
    filterItems.forEach(item => {
       const orgTitle = item.title;
-      let replacedTitle = orgTitle.replace("Remove","Vybrať:");
+      let replacedTitle = orgTitle.replace("Remove", "Vybrať:");
       replacedTitle = replacedTitle.replace(/from.*$/i, "");
       item.title = replacedTitle;
    });
 }
 
+/////////////////////////////////////////////////////
+// Adaptivny link - start 
+////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////
-/////////////////////////////////////////////////
-////////////////////////////////////////////////
+// Použitý var namiesto const, kvôli tomu, že Awesome Table si zapamätá premenné 
+// a potom píše error pri opakovanom spustení JS (Je to divné :D)
+var dynamicLinkElem = null;
 
-// create a variable for the parent window. We will assign it once we get the first message.
-let parent = null;
+// Filter collum char
+var filterColNameKraj = 'E';
+var filterColNameKategoria = 'G';
+var filterColNamePocetZam = 'I';
+var filterColNameIne = 'J';
 
+// Selectors
+var filterKrajId = 'controlers0';
+var filterKategoriaId = 'controlers1';
+var filterPocetZamId = 'controlers2';
+var filterIneId = 'controlers3';
+var selectedItemsSelector = '.awt-csvFilter-selected .awt-csvFilter-selected-item'
 
-function addListenerToSwitch(){
-   const switchBtnElem = document.querySelector('.switch');
-   switchBtnElem.addEventListener('click',onSwitchClick);
-}
-
-function onSwitchClick(){
-   console.log('button');
-   console.log(parent);
-   // don't do anything if there is no parent reference yet
-   if (parent === null) {
-      return;
-   }
-
-   // otherwise get the field text, and send it to the parent
-   const text = "Poslana sprava"
-   parent.postMessage(text);
-}
-
-function initAdaptivSwitch(){
-   // set up references to DOM nodes
-   const output = document.getElementById("output");
-   const field = document.getElementById("field");
-   // add an event listener to run when a message is received
-   window.addEventListener("message", ({ data, source }) => {
-      console.log('Received message');
-      console.log(data);
-      // if we don't have a reference to the parent window yet, set it now
-      if (parent === null) {
-         parent = source;
-      }
+function initDynamicLink() {
+   let dynLink = document.querySelector('.dynamic-link-switch')
+   if(dynLink) return;
    
-      // now we can do whatever we want with the message data.
-      // in this case, displaying it, and then sending it back
-      // wrapped in an object
-      output.textContent = JSON.stringify(data);
-      const response = {
-      success: true,
-      request: { data },
-      };
-      parent.postMessage(response);
+   // Init values
+   createDynamicLink();
+   onFilterContainerClick();
+   //addListenerToFilters();
+}
+
+function addListenerToFilters(){
+   const dropdownFilters = document.querySelectorAll(".at-filter-panel awt-csvFilter-dropdown-menu");
+   const filtersContainer = document.querySelector(".at-filter-panel");
+   filtersContainer.addEventListener("click",onFilterContainerClick);
+
+   dropdownFilters.forEach(dropdown => {
+      dropdown.addEventListener("click",onFilterContainerClick);
    });
 }
+
+// Nastavenie clicku na celu sekciu filtrov
+function onFilterContainerClick(){
+   setTimeout(()=> {
+      // Získa všetky označené elementy podla filtrov
+      const krajSelected = Array.from(document.querySelectorAll(`#${filterKrajId} ${selectedItemsSelector}`));
+      const kategoriaSelected = Array.from(document.querySelectorAll(`#${filterKategoriaId} ${selectedItemsSelector}`));
+      const pocetZamSelected = Array.from(document.querySelectorAll(`#${filterPocetZamId} ${selectedItemsSelector}`));
+      const ineSelected = Array.from(document.querySelectorAll(`#${filterIneId} ${selectedItemsSelector}`));
+
+      // Encode a uloženie do pola
+      let krajSelectedStringUrl = (krajSelected.length > 0) ? joinAndEncodeElemsHtml(krajSelected) : '';
+      let kategoriaSelectedStringUrl = (kategoriaSelected.length > 0) ? joinAndEncodeElemsHtml(kategoriaSelected) : '';
+      let pocetZamSelectedStringUrl = (pocetZamSelected.length > 0) ? joinAndEncodeElemsHtml(pocetZamSelected) : '';
+      let ineSelectedStringUrl = (ineSelected.length > 0) ? joinAndEncodeElemsHtml(ineSelected) : '';
+
+      // Prepíše aktuálny link na link s nastavením filtrov
+      changeDynamicLink(krajSelectedStringUrl,kategoriaSelectedStringUrl,pocetZamSelectedStringUrl,ineSelectedStringUrl);
+   },50)
+}
+
+function joinAndEncodeElemsHtml(nodeList){
+   return nodeList.map((elem) => {
+      return encodeURIComponent(elem.innerText);
+   }).join(",");
+}
+
+function changeDynamicLink(krajValue,kategoriaValue,pocZamValue,ineValue){
+   // Na odfiltrovanie prázdnych filtrov
+   let krajFilter = (krajValue != '') ? `filter${filterColNameKraj}=${krajValue}` : '';
+   let kategoriaFilter = (kategoriaValue != '') ? `&filter${filterColNameKategoria}=${kategoriaValue}` : '';
+   let pocetZamFilter = (pocZamValue != '') ? `&filter${filterColNamePocetZam}=${pocZamValue}` : '';
+   let ineFilter = (ineValue != '') ? `&filter${filterColNameIne}=${ineValue}` : '';
+
+   dynamicLinkElem.href = `${baseUrl}?${krajFilter}${kategoriaFilter}${pocetZamFilter}${ineFilter}`
+   //dynamicLinkElem.href = `${baseUrl}?filter${filterColNameKraj}=${krajValue}&filter${filterColNameKategoria}=${kategoriaValue}&filter${filterColNamePocetZam}=${pocZamValue}&filter${filterColNameIne}=${ineValue}`;
+}
+
+function createDynamicLink(){
+   dynamicLinkElem = document.createElement("a");
+   dynamicLinkElem.href = baseUrl;
+   dynamicLinkElem.innerHTML = '<img class="sp-icon" alt="Odkaz na mapu" src="https://katalogsp.sk/wp-content/uploads/2022/07/location-icon-black.png">'
+   dynamicLinkElem.innerHTML += 'Zobraziť podniky na mape'
+   dynamicLinkElem.classList.add('dynamic-link-switch')
+
+   const containerElem = document.querySelector('.at-table-fix');
+   //let dynamicLinkElem = document.querySelector('.sp-catalog-hero-section a.dynamic-link-switch');
+   containerElem.prepend(dynamicLinkElem);
+   //document.body.insertBefore(dynamicLinkElem, containerElem);
+}
+
+/////////////////////////////////////////////////////
+// Adaptivny link - end 
+////////////////////////////////////////////////////
