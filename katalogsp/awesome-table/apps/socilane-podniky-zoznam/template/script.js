@@ -3,6 +3,7 @@ init();
 // Nastavenia :
 // ID pre mapu
 var baseUrl = 'https://view-awesome-table.com/-N4GdMNia8ftO-4Cb88S/view';
+var dynamicLinkText = 'Zobraziť podniky na mape';
 
 function init() {
    // Timeout nastavený , kedže DOMLoad alebo load nechcel ísť
@@ -81,10 +82,6 @@ function moveClearFilter() {
    searchWrapperElement.appendChild(clearFilterElement);
    renameFilterOptions();
 }
-
-////////////////////
-// NEW 
-////////////////////
 
 function addGlobalListeners() {
    document.addEventListener('click', renameElementText);
@@ -175,6 +172,7 @@ function onFilterContainerClick(){
    },50)
 }
 
+// Prevedenie diakritiky na text, ktorý sa dá vložiž do URL
 function joinAndEncodeElemsHtml(nodeList){
    return nodeList.map((elem) => {
       return encodeURIComponent(elem.innerText);
@@ -196,7 +194,7 @@ function createDynamicLink(){
    dynamicLinkElem = document.createElement("a");
    dynamicLinkElem.href = baseUrl;
    dynamicLinkElem.innerHTML = '<img class="sp-icon" alt="Odkaz na mapu" src="https://katalogsp.sk/wp-content/uploads/2022/07/location-icon-black.png">'
-   dynamicLinkElem.innerHTML += 'Zobraziť podniky na mape'
+   dynamicLinkElem.innerHTML += dynamicLinkText;
    dynamicLinkElem.classList.add('dynamic-link-switch')
 
    const containerElem = document.querySelector('.at-table-fix');

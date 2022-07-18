@@ -3,6 +3,7 @@ init();
 // Nastavenia :
 // ID pre katalog
 var baseUrl = 'https://view-awesome-table.com/-N7BA8QUOxo7Pj6nKgQw/view';
+var dynamicLinkText = 'Zobraziť podniky na katalógu';
 
 function init() {
    // Timeout nastavený , kedže DOMLoad alebo load nechcel ísť
@@ -169,6 +170,7 @@ function onFilterContainerClick(){
    },50)
 }
 
+// Prevedenie diakritiky na text, ktorý sa dá vložiž do URL
 function joinAndEncodeElemsHtml(nodeList){
    return nodeList.map((elem) => {
       return encodeURIComponent(elem.innerText);
@@ -189,8 +191,8 @@ function changeDynamicLink(krajValue,kategoriaValue,pocZamValue,ineValue){
 function createDynamicLink(){
    dynamicLinkElem = document.createElement("a");
    dynamicLinkElem.href = baseUrl;
-   dynamicLinkElem.innerHTML = '<img class="sp-icon" alt="Odkaz na mapu" src="https://katalogsp.sk/wp-content/uploads/2022/07/nakupujme-srdcom-logo.png">'
-   dynamicLinkElem.innerHTML += 'Zobraziť podniky na katalógu'
+   dynamicLinkElem.innerHTML = '<img class="sp-icon" alt="Odkaz na katalóg" src="https://katalogsp.sk/wp-content/uploads/2022/07/nakupujme-srdcom-logo.png">'
+   dynamicLinkElem.innerHTML += dynamicLinkText;
    dynamicLinkElem.classList.add('dynamic-link-switch')
 
    const containerElem = document.querySelector('.at-layout-vertical.at-chart-panel');
