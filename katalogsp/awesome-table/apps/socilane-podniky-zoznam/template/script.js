@@ -2,7 +2,7 @@ init();
 
 // Nastavenia :
 // ID pre mapu
-var baseUrl = 'https://view-awesome-table.com/-N4GdMNia8ftO-4Cb88S/view';
+var baseUrl = 'https://view-awesome-table.com/-N7VEa07cERxO2Q9L5uO/view';
 var dynamicLinkText = 'Zobraziť podniky na mape';
 
 function init() {
@@ -133,12 +133,14 @@ var filterIneId = 'controlers3';
 var selectedItemsSelector = '.awt-csvFilter-selected .awt-csvFilter-selected-item'
 
 function initDynamicLink() {
+
+   onFilterContainerClick();
+
    let dynLink = document.querySelector('.dynamic-link-switch')
    if(dynLink) return;
    
    // Init values
    createDynamicLink();
-   onFilterContainerClick();
    //addListenerToFilters();
 }
 

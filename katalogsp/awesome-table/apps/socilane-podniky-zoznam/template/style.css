@@ -513,6 +513,10 @@ a.dynamic-link-switch:hover::before {
       position: relative;
       display: block;
       margin: 24px auto;
+      text-align: center;
+      margin-bottom: 32px;
+      right: unset;
+      top: unset;
     }
 }
 

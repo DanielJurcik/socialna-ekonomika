@@ -2,7 +2,7 @@ init();
 
 // Nastavenia :
 // ID pre katalog
-var baseUrl = 'https://view-awesome-table.com/-N7BA8QUOxo7Pj6nKgQw/view';
+var baseUrl = 'https://view-awesome-table.com/-MvTMIaaEUq5mkRRcfFA/view';
 var dynamicLinkText = 'Zobraziť podniky na katalógu';
 
 function init() {
@@ -131,12 +131,14 @@ var filterIneId = 'controlers3';
 var selectedItemsSelector = '.awt-csvFilter-selected .awt-csvFilter-selected-item'
 
 function initDynamicLink() {
+   
+   onFilterContainerClick();
+   
    let dynLink = document.querySelector('.dynamic-link-switch')
    if(dynLink) return;
    
    // Init values
    createDynamicLink();
-   onFilterContainerClick();
    //addListenerToFilters();
 }
 
