@@ -2,7 +2,7 @@ init();
 
 // Nastavenia :
 // ID pre mapu
-var baseUrl = 'https://view-awesome-table.com/-N7VEa07cERxO2Q9L5uO/view';
+var baseUrl = 'https://view-awesome-table.com/-NALCDgDCAV_DF-eRmZ2/view';
 var dynamicLinkText = 'Zobraziť podniky na mape';
 
 function init() {
@@ -22,10 +22,10 @@ function init() {
    // Z nejakého dôvodu sa stránka niekedy refresne a stránka sa vráti do pôvodného stavu
    // JS sa ale znova nevykoná.
    setInterval(moveSearch, 200);
-   setInterval(initDynamicLink, 1000);
+   setInterval(initDynamicLink, 2000);
    setInterval(moveClearFilter, 800);
-   setInterval(replaceNoResultText, 700);
-   setInterval(renameFilterTitleAtr, 1000);
+   setInterval(replaceNoResultText, 2000);
+   setInterval(renameFilterTitleAtr, 3000);
 }
 
 function moveSearch() {
@@ -124,12 +124,14 @@ var filterColNameKraj = 'E';
 var filterColNameKategoria = 'G';
 var filterColNamePocetZam = 'I';
 var filterColNameIne = 'J';
+var textFilterName = 'L'
 
 // Selectors
 var filterKrajId = 'controlers0';
 var filterKategoriaId = 'controlers1';
 var filterPocetZamId = 'controlers2';
 var filterIneId = 'controlers3';
+var textSearchInputSelector = 'input.awt-searchFilter-input';
 var selectedItemsSelector = '.awt-csvFilter-selected .awt-csvFilter-selected-item'
 
 function initDynamicLink() {
@@ -162,33 +164,41 @@ function onFilterContainerClick(){
       const kategoriaSelected = Array.from(document.querySelectorAll(`#${filterKategoriaId} ${selectedItemsSelector}`));
       const pocetZamSelected = Array.from(document.querySelectorAll(`#${filterPocetZamId} ${selectedItemsSelector}`));
       const ineSelected = Array.from(document.querySelectorAll(`#${filterIneId} ${selectedItemsSelector}`));
+      const textSearchValue = document.querySelector(textSearchInputSelector).value;
+      console.log(textSearchValue);
 
       // Encode a uloženie do pola
       let krajSelectedStringUrl = (krajSelected.length > 0) ? joinAndEncodeElemsHtml(krajSelected) : '';
       let kategoriaSelectedStringUrl = (kategoriaSelected.length > 0) ? joinAndEncodeElemsHtml(kategoriaSelected) : '';
       let pocetZamSelectedStringUrl = (pocetZamSelected.length > 0) ? joinAndEncodeElemsHtml(pocetZamSelected) : '';
       let ineSelectedStringUrl = (ineSelected.length > 0) ? joinAndEncodeElemsHtml(ineSelected) : '';
+      let textSearchStringUrl = (textSearchValue) ? encodeURIComponent(textSearchValue) : '';
+
+      console.log(textSearchStringUrl);
+
 
       // Prepíše aktuálny link na link s nastavením filtrov
-      changeDynamicLink(krajSelectedStringUrl,kategoriaSelectedStringUrl,pocetZamSelectedStringUrl,ineSelectedStringUrl);
+      changeDynamicLink(krajSelectedStringUrl,kategoriaSelectedStringUrl,pocetZamSelectedStringUrl,ineSelectedStringUrl,textSearchStringUrl);
    },50)
 }
 
 // Prevedenie diakritiky na text, ktorý sa dá vložiž do URL
 function joinAndEncodeElemsHtml(nodeList){
-   return nodeList.map((elem) => {
+   const arrayList = Array.from(nodeList)
+   return arrayList.map((elem) => {
       return encodeURIComponent(elem.innerText);
    }).join(",");
 }
 
-function changeDynamicLink(krajValue,kategoriaValue,pocZamValue,ineValue){
+function changeDynamicLink(krajValue,kategoriaValue,pocZamValue,ineValue,textValue){
    // Na odfiltrovanie prázdnych filtrov
    let krajFilter = (krajValue != '') ? `filter${filterColNameKraj}=${krajValue}` : '';
    let kategoriaFilter = (kategoriaValue != '') ? `&filter${filterColNameKategoria}=${kategoriaValue}` : '';
    let pocetZamFilter = (pocZamValue != '') ? `&filter${filterColNamePocetZam}=${pocZamValue}` : '';
    let ineFilter = (ineValue != '') ? `&filter${filterColNameIne}=${ineValue}` : '';
+   let textSearch = (textValue != '') ? `&filter${textFilterName}=${textValue}` : '';
 
-   dynamicLinkElem.href = `${baseUrl}?${krajFilter}${kategoriaFilter}${pocetZamFilter}${ineFilter}`
+   dynamicLinkElem.href = `${baseUrl}?${krajFilter}${kategoriaFilter}${pocetZamFilter}${ineFilter}${textSearch}`
    //dynamicLinkElem.href = `${baseUrl}?filter${filterColNameKraj}=${krajValue}&filter${filterColNameKategoria}=${kategoriaValue}&filter${filterColNamePocetZam}=${pocZamValue}&filter${filterColNameIne}=${ineValue}`;
 }
 
