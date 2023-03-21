@@ -1,0 +1,609 @@
+body {
+    font-family: 'Roboto';
+    background-color: #fefefe;
+    /*POZADIE STRÁNKY :*/
+    background-image: url('/wp-content/uploads/2021/12/se_pozadie_4.png');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.mobile-navbar__wrapper{
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.su-tabs-nav span {
+	font-size: 1.1em !important;
+}
+.su-tabs-pane{
+	font-size: 1em !important;
+}
+.header-skin-light [class*="nav__menu"] .nav__title::before {
+	background-color:  #3047a3 !important;
+}
+
+
+
+/*FARBY - zac*/
+.color-1{
+	background: #3047a3;
+}
+.color-2{
+	background: #ef5f22;
+}
+.color-3{
+	background: #6f6f6f;
+}
+.color-4{
+	background: #2f80a2;
+}
+/*FARBY - koniec */
+
+.article-container{
+	z-index: 0;
+}
+.archive-header-inner  .header-bottom{
+	display:none;
+}
+.featurette-divider{
+	margin-top: 0px !important;
+}
+.archive-header-inner hr{
+	margin: 0px;
+}
+.n2-ss-widget{
+	height:42px;
+}
+.n2-clear{
+	display:none;
+}
+.su-spoiler br {
+	display: none;
+}
+.grid__item {
+	outline: 0px;
+}
+article {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.nav__title {
+		color: white !important;
+}
+.caret__dropdown-toggler{
+	color: white !important;
+}
+.tc-sidebar.left{
+	margin-top:-23px;
+	padding-right:0px;
+}
+
+.menu-item{
+	padding: 14px 8px 14px !important;
+	font-size: 12px;
+	margin:0px !important;
+}
+
+.primary-navbar__row{
+	margin-right:-30px !important;
+}
+.primary-nav__wrapper {
+	background: #3047a3 !important;
+}
+.nav__utils a {
+	color: white !important;
+}
+.primary-navbar__wrapper .primary-nav__menu-wrapper{
+	display: flex;
+	justify-content: flex-end !important;
+	width: calc(100% - 281px);
+	padding-right: 50px;
+}
+.primary-navbar__wrapper .col {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.nav__menu .menu-item .nav__link .nav__title{
+	border-bottom: 4px solid transparent;
+	transition: border 0.3s ease-in-out
+}
+.nav__menu .menu-item .nav__link .nav__title:hover,
+.nav__menu .menu-item .nav__link .nav__title:focus
+{
+	border-bottom: 4px solid #fff;
+}
+
+.acc a,
+.su-note-inner a{
+	text-decoration: none !important;
+	color:white;
+}
+.acc a:hover,
+.su-note-inner a:hover
+{
+	text-decoration:underline !important;
+	color:white !important;
+}
+
+.acc-tab{
+	margin-left: 20px;
+}
+
+.acc1 {
+	background: #1f618d;
+	color:white;
+	padding: 1rem;
+}
+.acc2 {
+	margin-top: -30px;
+	background: orangered;
+	color:white;
+	padding: 1rem;
+}
+
+
+.menu-item {
+    font-size: 14px;
+}
+.left{
+	margin-top:1px !important;
+}
+
+.czr-overlay {
+    opacity: 0;
+    visibility: hidden;
+    width: 50%;
+    height: 15%;
+    margin: 0 auto;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 39.6%;
+    z-index: 90;
+}
+
+.qe-faqs-filters-container li a {
+    display: none;
+}
+
+/*ROZŠÍRENIE STRÁNKY - start*/
+  @media (min-width: 1366px){
+    .czr-boxed-layout .container{
+      width: 1366px;
+      max-width: 1366px;
+    }
+  }
+/*ROZŠÍRENIE STRÁNKY - end*/
+
+/*Úvodná stránka - start*/
+  .sek-post-grid-wrapper .sek-list-layout article{
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 1rem;
+  }
+
+/*Carousel - zac */
+.rsp-carousel .sek-column-inner {
+    height: 100%;
+}
+
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows{
+	width: 32px;
+}
+
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows:hover{
+	width: 40px;
+}
+
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows[title="next"]{
+	border-radius: 20px 0px 0px 20px;
+}
+
+.rsp-carousel .sek-swiper-nav .sek-swiper-arrows[title="previous"]{
+	border-radius: 0px 20px 20px 0px;
+}
+
+.rsp-carousel [data-sek-module-type="czr_img_slider_module"] .swiper-container[data-sek-image-layout="cover"] .sek-carousel-img img{
+	border-radius: 0px;
+    margin: 0 !important;
+}
+/*Carousel - zac */
+
+#se-news-section .sek-post-grid-wrapper{
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+#se-news-section .sek-pg-content .sek-excerpt p{
+	margin-bottom:0;
+}
+#se-news-section .sek-grid-items article .sek-pg-metas{
+	line-height: normal;
+	margin-bottom: 4px
+}
+#se-news-section .sek-grid-items article .sek-pg-title{
+	margin-bottom: 0px
+}
+
+[data-sek-module-type="czr_img_slider_module"] .sek-swiper-nav .sek-swiper-next, [data-sek-module-type="czr_img_slider_module"] .sek-swiper-nav .sek-swiper-prev{
+	background: white;
+}
+
+[data-sek-module-type="czr_img_slider_module"] .sek-swiper-nav .sek-swiper-next:hover, [data-sek-module-type="czr_img_slider_module"] .sek-swiper-nav .sek-swiper-prev:hover{
+	background: white;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+	width: 16px;
+	height: 16px;
+	margin-right: 8px;
+}
+
+[data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner .sek-post-grid-wrapper .sek-pg-title a, [data-sek-id="__nimble__5d63a7a50ec5"] .sek-module-inner .sek-post-grid-wrapper .sek-pg-title{
+	line-height:1.1em;
+}
+/*Úvodná obrazovka - end*/
+
+
+/*Odtránenie autora článku "by admin"- zaciatok*/
+.post-info .author-meta,
+.post-info .v-separator{
+display: none;
+}
+.post-info .row [class*="col"]{
+	padding-left: 2px;
+}
+/*Odtránenie autora článku - koniec*/
+
+/*Nastavenia tlačidiel - zac */
+     .se-btn.se-btn-full-width button,.se-btn.se-btn-full-width a{
+        width: 100%;
+        font-weight: 6%;
+    }
+
+    .se-btn.se-btn-full-width-center button,.se-btn.se-btn-full-width-center a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+/*Nastavenia tlačidiel - kon */
+
+/*CESTY ISTOTY CARDS - zac */
+.custom-cs-acc-card{
+	position:relative;
+}
+
+.custom-cs-acc-card .custom-cs-numbers{
+	position: absolute;
+	z-index: 2;
+}
+/*CESTY ISTOTY CARDS - kon */
+
+/*e-katalóg karty - zac*/
+.rsp-section-prevadzka .sek-module-inner img, .rsp-section-introduction .sek-module-inner img {
+	margin: 4px !important;
+	padding:0 ;
+}
+
+.rsp-section-introduction  .sek-module-inner p{
+	margin-top:8px;
+	margin-bottom:8px;
+}
+
+.rsp-karta-button a{
+	width: 140px;
+}
+
+.rsp-category-text  p{
+	margin: 0!important;
+	line-height: 1.6em
+}
+
+.se-gradient-style-2{
+ background: rgb(91,131,0);
+background: linear-gradient(157deg, rgba(91,131,0,05) 0%, rgba(240,125,16,0.5) 58%); 
+}
+/*e-katalóg karty - kon */
+
+.sp-cisla-section .rsp-cisla-headline span{
+	background: #efe5d4;
+	position: relative;
+	z-index:999;
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+
+
+#tc-page-wrap{
+	background: white;
+}
+/* POZADIE STRANKY - zac */
+
+.custom-section-full-width{
+	margin-left: -30px;
+	margin-right: -30px;
+}
+
+@media screen and (max-width: 575px) {
+    .custom-section-full-width{
+			margin-left: -15px;
+			margin-right: -15px;
+		}
+  }
+
+/************************/
+/* NAVIGACNE MENU - zac */
+/************************/
+
+nav#primary-nav, header .primary-navbar__wrapper,header .dropdown-menu .dropdown-item{
+	/*TU ZMENIT FARBU NAVIGACNE MENU*/
+	background-color: white!important;
+}
+
+#primary-nav .nav__title,.caret__dropdown-toggler,.mobile-nav__container .nav__title {
+	/*TU ZMENIT FARBU TEXTU V NAVIGACNOM MENU*/
+	color: #5b8300!important;
+}
+	/*TU ZMENIT VELKOST PISMA*/
+.menu-item{
+	font-size: 15px;
+}
+
+.nav__menu .menu-item .nav__link .nav__title:hover, .nav__menu .menu-item .nav__link .nav__title:focus{
+	/*TU ZMENIT FARBU PODCIARKNUTIA TEXTU V NAVIGACNOM MENU*/
+	border-bottom: 4px solid #5b8300;
+}
+
+.navbar-brand img{
+	height:54px;
+}
+
+header .branding .navbar-brand span{
+    /*LOGO TEXT */
+	font-size: 26px;
+	color: #f25c19;
+}
+
+header .primary-navbar__wrapper .branding__container{
+    /*FARBA POD LOGOM*/
+    background: white;
+        
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+
+.header-skin-light [class*="nav__menu"] .nav__title::before{
+	background: transparent !important;
+}
+
+#primary-nav .nav__title [aria-current="true"]{
+	border-bottom: 4px solid #5a5a5a;
+}
+
+
+header .dropdown-menu .menu-item{
+	padding-top: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+header .menu-item-has-children > ul.dropdown-menu, header .dropdownmenu .menu-item:last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/*NEW*/
+.nav__menu .menu-item .nav__link::after {
+	content: '';
+	background: #5b8300;
+	width: 3px;
+	height: 18px;
+	position: absolute;
+	right: -18px;
+	z-index: 10;
+	top: 12px;
+}
+.nav__menu .menu-item .dropdown-menu .nav__link::after, .mobile-nav__container #mobile-nav-menu .nav__link:after{
+	content: none;
+}
+
+
+.nav__menu .menu-item:last-child .nav__link::after {
+	content: none;
+}
+
+.nav__menu .menu-item .nav__link{
+	overflow: visible;
+	position: relative;
+	margin-right: 14px
+}
+
+.mobile-navbar__wrapper .mobile-nav__inner{
+	margin-bottom:0;
+}
+
+    @media screen and (min-width: 960px) {
+        header .primary-navbar__wrapper .branding__container{
+            border-radius: 0px 0px 20px 20px;
+        }
+    }
+
+/************************/
+/* NAVIGACNE MENU - kon */
+/************************/
+
+.button_full-width button{
+	width: 100% ;
+	border-radius: 10px !important;
+}
+
+.to-front{
+	z-index: 1;
+}
+
+.w-break span, .w-break p, .w-break a{
+	word-break: break-word;
+}
+
+.custom-white-border{
+	box-shadow: 0 0 0 10px white;
+}
+
+.custom-button-bordered .sek-module-inner{
+	height: 100%;
+}
+
+.custom-button-bordered .sek-module-inner .sek-btn{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.divider-orange{
+	background-color: transparent;
+	height: 3px;
+	margin-right: 50px;
+background: linear-gradient(157deg, rgba(242,136,55,1) 2%, rgba(255,255,255,0) 100%); 
+	width: 40%;
+	position: relative;
+	margin-bottom: 16px;
+	margin-top: 8px;
+}
+
+.divider-blue{
+	background-color: transparent;
+	height: 3px;
+	margin-right: 50px;
+ background: rgb(48,71,163);
+background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 100%); 
+	width: 40%;
+	position: relative;
+}
+
+.padding-sides{
+	padding-right:32px;
+	padding-left: 32px;
+}
+
+.servisne-poukazky_img {
+	max-width: 500px !important;
+	min-width: auto !important;
+}
+.rsp-section-prevadzka:last-child::after{
+	position: absolute;
+	bottom: -15px;
+	content: 'Informácie dodal a za obsah zverejnených údajov na stránke zodpovedá registrovaný sociálny podnik.';
+	right: 0px;
+	padding-right: 16px;
+	padding-left: 16px;
+	font-style: italic; 
+}
+/*FOOTER SETTINGS - start */
+#footer #footer-widget-area p{
+	margin:0;
+}
+#footer #footer-widget-area {
+	padding-bottom:32px;
+	padding-top:48px;
+}
+
+#footer .widget__wrapper .widget{
+	margin: 0;
+}
+/*FOOTER SETTINGS - start */
+
+/* TIMELINE COMPONENT - stat */
+	.timeline-wrapper {
+					padding-top: 1px;
+					margin-left: 1.5rem;
+					border-left: 3px solid #ddd;
+				}
+.timeline-wrapper.small {
+	margin-left: 0.4rem;
+}
+				.timeline-wrapper .node {
+					padding-left: .5rem;
+					padding-bottom: 0.2rem;
+					position: relative;
+				}
+				.timeline-wrapper .node h4,.timeline-wrapper .node p {
+					margin-left: 25px;
+				}
+
+				.timeline-wrapper .node p{
+					margin-bottom: 4px;
+					margin-top: 4px;
+				}
+				
+				.timeline-wrapper .node h4{
+					color: #f28837;
+				}
+
+				.node::before {
+					content: "";
+					width: 2rem;
+					height: 2rem;
+					opacity: 0.9;
+					background: #f28837;
+					border: 4px solid #f2f2f2;
+					border-radius: 50%;
+					position: absolute;
+					top: 0rem;
+					left: -1.1rem;
+				}
+
+.timeline-wrapper.small .node::before{
+	width: 1.7rem;
+					height: 1.7rem;
+					opacity: 0.9;
+					left: -0.9rem;
+}
+.timeline-wrapper.small.blue .node::before{
+	background: #68d0e5;
+}
+
+.timeline-wrapper.small.pink .node::before{
+	background: #f6cedd;
+}
+/* TIMELINE COMPONENT - end */
+
+/************************/
+/* SCROLL UP - tlacidlo */
+/************************/
+.czr-btt.czr-btta{
+	display: block;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color:#f07d10
+}
+/************************/
+/* FOOTER      */
+/************************/
+
+@media screen and (min-width: 768px) {
+    footer #footer_one{
+        max-width: 55%;
+        flex: 0 0 55%
+     }
+    
+     footer #footer_two{
+        max-width: 22%;
+        flex: 0 0 22%
+     }
+    
+     footer #footer_three{
+        max-width: 22%;
+        flex: 0 0 22%
+     }
+  }
