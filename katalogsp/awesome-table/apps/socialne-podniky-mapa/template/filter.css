@@ -294,7 +294,7 @@ a.dynamic-link-switch{
   text-decoration: none;
   position: absolute;
   right: 16px;
-  top: -22px;
+  top: 0px;
   font-size: 13pt;
   color: black;
 }
@@ -388,4 +388,8 @@ a.dynamic-link-switch:hover::before {
 }
 #controlers4{
   z-index: 1;
+}
+
+#dashboard .at-layout-vertical .awesomeTable-viz-maps{
+  margin-top: 40px;
 }
