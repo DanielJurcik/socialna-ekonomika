@@ -593,9 +593,13 @@ background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 10
 
 @media screen and (min-width: 768px) {
     footer #footer_one{
-        max-width: 55%;
-        flex: 0 0 55%
+        max-width: 62%;
+        flex: 0 0 62%
      }
+
+	 footer #footer_one .textwidget{
+		width: 100%;
+	 }
     
      footer #footer_two{
         max-width: 22%;
@@ -603,7 +607,7 @@ background: linear-gradient(157deg, rgba(48,71,163,1) 2%, rgba(255,255,255,0) 10
      }
     
      footer #footer_three{
-        max-width: 22%;
-        flex: 0 0 22%
+        max-width: 16%;
+        flex: 0 0 16%
      }
   }
