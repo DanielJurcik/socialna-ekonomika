@@ -1473,3 +1473,7 @@ cite::before{
 		display: flex;
 	}
 }
+
+.footer__wrapper .widget__wrapper .widget{
+	margin: 0;
+}
