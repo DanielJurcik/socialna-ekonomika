@@ -1570,3 +1570,11 @@ p{
 	position: absolute;
 	left: 12px;
   }
+
+.footer__wrapper .widget__wrapper .widget{
+	margin: 0;
+}
+
+.flickity-slider .entry-header-inner .entry-title{
+	display: block;
+}
