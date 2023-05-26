@@ -1570,11 +1570,25 @@ p{
 	position: absolute;
 	left: 12px;
   }
-
+ 
 .footer__wrapper .widget__wrapper .widget{
 	margin: 0;
 }
 
 .flickity-slider .entry-header-inner .entry-title{
 	display: block;
+}
+
+/* NASTAVENIE KOMPONENTU PRE ALERT MSG - .se-alert-msg*/
+.se-alert-msg::after{
+	content: 'V súvislosti s rozsiahlou novelou Zákona č. 112/2018 o sociálnej ekonomike a sociálnych podnikoch a o zmene a doplnení niektorých zákonov aktualizujeme odborné texty a metodiky na našom webovom sídle. V prípade potreby sú vám k dispozícii pracovníci našich Regionálnych sociálnej ekonomiky, ktorí vás ochotne usmernia.';
+	position: absolute;
+	top: 60px;
+	font-style: italic;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.se-alert-msg{
+	position: relative;
 }
