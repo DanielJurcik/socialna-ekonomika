@@ -1581,14 +1581,35 @@ p{
 
 /* NASTAVENIE KOMPONENTU PRE ALERT MSG - .se-alert-msg*/
 .se-alert-msg::after{
-	content: 'V súvislosti s rozsiahlou novelou Zákona č. 112/2018 o sociálnej ekonomike a sociálnych podnikoch a o zmene a doplnení niektorých zákonov aktualizujeme odborné texty a metodiky na našom webovom sídle. V prípade potreby sú vám k dispozícii pracovníci našich Regionálnych sociálnej ekonomiky, ktorí vás ochotne usmernia.';
+	content: 'V súvislosti s rozsiahlou novelou Zákona č. 112/2018 o sociálnej ekonomike a sociálnych podnikoch a o zmene a doplnení niektorých zákonov aktualizujeme odborné texty a metodiky na našom webovom sídle. V prípade potreby sú vám k dispozícii pracovníci našich Regionálnych centier sociálnej ekonomiky, ktorí vás ochotne usmernia.';
 	position: absolute;
 	top: 60px;
 	font-style: italic;
 	font-size: 14px;
 	text-align: justify;
+	margin-bottom: 12px;
 }
 
 .se-alert-msg{
+	margin-bottom: 12px;
 	position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .se-alert-msg{
+		margin-bottom: 136px;
+	}
+}
+
+[data-title="Dane a účtovníctvo"]{
+	position: relative;
+}
+
+
+.su-tabs-pane[data-title="Dane a účtovníctvo"]::after{
+	margin-top: 12px;
+	font-style: italic;
+	font-size: 14px;
+	text-align: justify;
+	content: 'V súvislosti s rozsiahlou novelou Zákona č. 112/2018 o sociálnej ekonomike a sociálnych podnikoch a o zmene a doplnení niektorých zákonov aktualizujeme odborné texty a metodiky na našom webovom sídle. V prípade potreby sú vám k dispozícii pracovníci našich Regionálnych centier sociálnej ekonomiky, ktorí vás ochotne usmernia.';
 }
