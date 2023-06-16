@@ -1613,3 +1613,12 @@ p{
 	text-align: justify;
 	content: 'V súvislosti s rozsiahlou novelou Zákona č. 112/2018 o sociálnej ekonomike a sociálnych podnikoch a o zmene a doplnení niektorých zákonov aktualizujeme odborné texty a metodiky na našom webovom sídle. V prípade potreby sú vám k dispozícii pracovníci našich Regionálnych centier sociálnej ekonomiky, ktorí vás ochotne usmernia.';
 }
+
+
+/* ALERT BLOCK */
+.wp-block-coblocks-alert{
+	border-radius: 10px;
+	margin-bottom: 24px;
+	margin-top: 24px ;
+	box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;	
+}
