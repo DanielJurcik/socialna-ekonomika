@@ -1275,6 +1275,9 @@ margin-bottom:6px;
 	margin-left: 16px;
 	list-style: none;
 }
+.hp-color-blocks.black .sek-section ul{
+	border-left: 2px solid #222;
+}
 
 .hp-color-blocks a{
 	text-decoration: none !important;
@@ -1284,6 +1287,10 @@ margin-bottom:6px;
 .hp-color-blocks a:hover,.hp-color-blocks a:active{
 	border-bottom: 2px solid white;
 	transition: border 0.3s ease-in-out;
+}
+
+.hp-color-blocks.black a:hover,.hp-color-blocks.black a:active{
+	border-bottom: 2px solid #222;
 }
 
 .se-hp-links-btn .sek-btn-text{
@@ -1467,13 +1474,103 @@ cite::before{
 	left: 105%;
 	z-index: 1;
 }
-/*Vypnutie pdf viewera na mobile*/
+
+.desktop-padding{
+	padding: 20px 88px;
+}
+
 @media screen and (max-width: 768px) {
+	/*Vypnutie pdf viewera na mobile*/
     .se-pdf-viewer{
 		display: flex;
 	}
+	/*Nastavenie inej výšky pre kontaktný formulár na mobile*/
+	.se-contact-form{
+		height: 1300px;
+	}
+	input{
+		touch-action: none;
+	}
+	
+	.desktop-padding{
+		padding: 0;
+	}
 }
 
+/************************/
+/* SCROLL UP - tlacidlo */
+/************************/
+.czr-btt.czr-btta{
+	display: block;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	
+	opacity: 0.9;
+}
+.czr-btt.czr-btta:hover{
+	opacity: 1;
+}
+
+
+p{
+	margin-top: 0;
+}
+
+/*Odstranenie Updated pri clankoch*/
+.post-info .entry-meta,.grid-container__alternate .entry-footer .post-info{
+	font-size: 0;	
+}
+
+.post-info .entry-date.published{
+		font-size: 12px;
+		margin-left: -12px;
+}
+
+.post-info .entry-date.published:before{
+		font-size: 12px;
+		content:"Publikované "
+}
+
+/************************/
+/* FOOTER      */
+/************************/
+.footer__wrapper .widget__wrapper{
+	padding-bottom: 8px;
+	padding-top: 24px;
+}
+
+
+@media screen and (min-width: 768px) {
+    footer #footer_one{
+        max-width: 50%;
+        flex: 0 0 50%
+     }
+
+	 footer #footer_one .textwidget{
+		width: 100%;
+	 }
+    
+     footer #footer_two{
+        max-width: 30%;
+        flex: 0 0 30%
+     }
+    
+     footer #footer_three{
+        max-width: 20%;
+        flex: 0 0 20%
+     }
+  }
+
+  .carousel-inner .czr-related-post .entry-meta{
+	visibility: hidden;
+  }
+
+ .carousel-inner .czr-related-post .entry-meta a{
+	visibility: visible;
+	position: absolute;
+	left: 12px;
+  }
+ 
 .footer__wrapper .widget__wrapper .widget{
 	margin: 0;
 }
@@ -1489,4 +1586,52 @@ cite::before{
     padding-left: 16px;
     font-style: italic;
 	display: contents;
+}
+
+.flickity-slider .entry-header-inner .entry-title{
+	display: block;
+}
+
+/* NASTAVENIE KOMPONENTU PRE ALERT MSG - .se-alert-msg*/
+.se-alert-msg::after{
+	content: 'V súvislosti s rozsiahlou novelou Zákona č. 112/2018 o sociálnej ekonomike a sociálnych podnikoch a o zmene a doplnení niektorých zákonov aktualizujeme odborné texty a metodiky na našom webovom sídle. V prípade potreby sú vám k dispozícii pracovníci našich Regionálnych centier sociálnej ekonomiky, ktorí vás ochotne usmernia.';
+	position: absolute;
+	top: 60px;
+	font-style: italic;
+	font-size: 14px;
+	text-align: justify;
+	margin-bottom: 12px;
+}
+
+.se-alert-msg{
+	margin-bottom: 12px;
+	position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .se-alert-msg{
+		margin-bottom: 136px;
+	}
+}
+
+[data-title="Dane a účtovníctvo"]{
+	position: relative;
+}
+
+
+.su-tabs-pane[data-title="Dane a účtovníctvo"]::after{
+	margin-top: 12px;
+	font-style: italic;
+	font-size: 14px;
+	text-align: justify;
+	content: 'V súvislosti s rozsiahlou novelou Zákona č. 112/2018 o sociálnej ekonomike a sociálnych podnikoch a o zmene a doplnení niektorých zákonov aktualizujeme odborné texty a metodiky na našom webovom sídle. V prípade potreby sú vám k dispozícii pracovníci našich Regionálnych centier sociálnej ekonomiky, ktorí vás ochotne usmernia.';
+}
+
+
+/* ALERT BLOCK */
+.wp-block-coblocks-alert{
+	border-radius: 10px;
+	margin-bottom: 24px;
+	margin-top: 24px ;
+	box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;	
 }
