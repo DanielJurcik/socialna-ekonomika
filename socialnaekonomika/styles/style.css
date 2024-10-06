@@ -1477,3 +1477,16 @@ cite::before{
 .footer__wrapper .widget__wrapper .widget{
 	margin: 0;
 }
+
+
+/* TEXT pre každú stránku */
+#main-wrapper::after{
+	position: absolute;
+    bottom: 20px;
+    content: 'V súčasnosti aktualizujeme texty na stránke z dôvodu rozsiahlej novely Zákona č. 112/2018 o sociálnej ekonomike a sociálnych podnikoch a o zmene a doplnení niektorých zákonov. V prípade záujmu sú vám k dispozícii Regionálne centrá SE s bezplatnou konzultáciou.';
+    right: 0px;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-style: italic;
+	display: contents;
+}
