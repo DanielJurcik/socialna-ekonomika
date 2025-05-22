@@ -2,7 +2,7 @@ init();
 
 // Nastavenia :
 // ID pre mapu
-var baseUrl = 'https://view-awesome-table.com/-NLKqu5PH3BxTscJdhsG/view';
+var baseUrl = 'https://view-awesome-table.com/-Nv90QnO-UA8cWERvAOp/view';
 var dynamicLinkText = 'Zobraziť podniky na mape';
 
 function init() {
@@ -165,7 +165,6 @@ function onFilterContainerClick(){
       const pocetZamSelected = Array.from(document.querySelectorAll(`#${filterPocetZamId} ${selectedItemsSelector}`));
       const ineSelected = Array.from(document.querySelectorAll(`#${filterIneId} ${selectedItemsSelector}`));
       const textSearchValue = document.querySelector(textSearchInputSelector).value;
-      console.log(textSearchValue);
 
       // Encode a uloženie do pola
       let krajSelectedStringUrl = (krajSelected.length > 0) ? joinAndEncodeElemsHtml(krajSelected) : '';
@@ -173,9 +172,6 @@ function onFilterContainerClick(){
       let pocetZamSelectedStringUrl = (pocetZamSelected.length > 0) ? joinAndEncodeElemsHtml(pocetZamSelected) : '';
       let ineSelectedStringUrl = (ineSelected.length > 0) ? joinAndEncodeElemsHtml(ineSelected) : '';
       let textSearchStringUrl = (textSearchValue) ? encodeURIComponent(textSearchValue) : '';
-
-      console.log(textSearchStringUrl);
-
 
       // Prepíše aktuálny link na link s nastavením filtrov
       changeDynamicLink(krajSelectedStringUrl,kategoriaSelectedStringUrl,pocetZamSelectedStringUrl,ineSelectedStringUrl,textSearchStringUrl);
