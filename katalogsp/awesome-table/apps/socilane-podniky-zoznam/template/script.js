@@ -2,7 +2,7 @@ init();
 
 // Nastavenia :
 // ID pre mapu
-var baseUrl = 'https://view-awesome-table.com/-Nv90QnO-UA8cWERvAOp/view';
+var baseUrl = 'https://view-awesome-table.com/-OVh9bczUnE2X4iNFdUJ/view';
 var dynamicLinkText = 'Zobraziť podniky na mape';
 
 function init() {
@@ -139,26 +139,26 @@ function initDynamicLink() {
    onFilterContainerClick();
 
    let dynLink = document.querySelector('.dynamic-link-switch')
-   if(dynLink) return;
-   
+   if (dynLink) return;
+
    // Init values
    createDynamicLink();
    //addListenerToFilters();
 }
 
-function addListenerToFilters(){
+function addListenerToFilters() {
    const dropdownFilters = document.querySelectorAll(".at-filter-panel awt-csvFilter-dropdown-menu");
    const filtersContainer = document.querySelector(".at-filter-panel");
-   filtersContainer.addEventListener("click",onFilterContainerClick);
+   filtersContainer.addEventListener("click", onFilterContainerClick);
 
    dropdownFilters.forEach(dropdown => {
-      dropdown.addEventListener("click",onFilterContainerClick);
+      dropdown.addEventListener("click", onFilterContainerClick);
    });
 }
 
 // Nastavenie clicku na celu sekciu filtrov
-function onFilterContainerClick(){
-   setTimeout(()=> {
+function onFilterContainerClick() {
+   setTimeout(() => {
       // Získa všetky označené elementy podla filtrov
       const krajSelected = Array.from(document.querySelectorAll(`#${filterKrajId} ${selectedItemsSelector}`));
       const kategoriaSelected = Array.from(document.querySelectorAll(`#${filterKategoriaId} ${selectedItemsSelector}`));
@@ -174,19 +174,19 @@ function onFilterContainerClick(){
       let textSearchStringUrl = (textSearchValue) ? encodeURIComponent(textSearchValue) : '';
 
       // Prepíše aktuálny link na link s nastavením filtrov
-      changeDynamicLink(krajSelectedStringUrl,kategoriaSelectedStringUrl,pocetZamSelectedStringUrl,ineSelectedStringUrl,textSearchStringUrl);
-   },50)
+      changeDynamicLink(krajSelectedStringUrl, kategoriaSelectedStringUrl, pocetZamSelectedStringUrl, ineSelectedStringUrl, textSearchStringUrl);
+   }, 50)
 }
 
 // Prevedenie diakritiky na text, ktorý sa dá vložiž do URL
-function joinAndEncodeElemsHtml(nodeList){
+function joinAndEncodeElemsHtml(nodeList) {
    const arrayList = Array.from(nodeList)
    return arrayList.map((elem) => {
       return encodeURIComponent(elem.innerText);
    }).join(",");
 }
 
-function changeDynamicLink(krajValue,kategoriaValue,pocZamValue,ineValue,textValue){
+function changeDynamicLink(krajValue, kategoriaValue, pocZamValue, ineValue, textValue) {
    // Na odfiltrovanie prázdnych filtrov
    let krajFilter = (krajValue != '') ? `filter${filterColNameKraj}=${krajValue}` : '';
    let kategoriaFilter = (kategoriaValue != '') ? `&filter${filterColNameKategoria}=${kategoriaValue}` : '';
@@ -198,10 +198,10 @@ function changeDynamicLink(krajValue,kategoriaValue,pocZamValue,ineValue,textVal
    //dynamicLinkElem.href = `${baseUrl}?filter${filterColNameKraj}=${krajValue}&filter${filterColNameKategoria}=${kategoriaValue}&filter${filterColNamePocetZam}=${pocZamValue}&filter${filterColNameIne}=${ineValue}`;
 }
 
-function createDynamicLink(){
+function createDynamicLink() {
    dynamicLinkElem = document.createElement("a");
    dynamicLinkElem.href = baseUrl;
-   dynamicLinkElem.innerHTML = '<img class="sp-icon" alt="Odkaz na mapu" src="https://katalogsp.sk/wp-content/uploads/2022/07/location-icon-black.png">'
+   dynamicLinkElem.innerHTML = '<img class="sp-icon" alt="Odkaz na mapu" src="https://katalogsp.gov.sk/wp-content/uploads/2022/07/location-icon-black.png">'
    dynamicLinkElem.innerHTML += dynamicLinkText;
    dynamicLinkElem.classList.add('dynamic-link-switch')
 
